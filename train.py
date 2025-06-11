@@ -16,7 +16,6 @@ from mmdet3d.datasets import build_dataset
 from mmdet3d.models import build_model
 from loaders.builder import build_dataloader
 
-
 def main():
     parser = argparse.ArgumentParser(description='Train a detector')
     parser.add_argument('--config', required=True)
@@ -118,6 +117,7 @@ def main():
     )
 
     logging.info('Creating model: %s' % cfgs.model.type)
+
     model = build_model(cfgs.model)
     model.init_weights()
     model.cuda()
@@ -128,7 +128,7 @@ def main():
     logging.info('Batch size per GPU: %d' % (cfgs.batch_size // world_size))
 
     if world_size > 1:
-        model = MMDistributedDataParallel(model, [local_rank], broadcast_buffers=False)
+        model = MMDistributedDataParallel(model, [local_rank], broadcast_buffers=False, find_unused_parameters=True)
     else:
         model = MMDataParallel(model, [0])
 

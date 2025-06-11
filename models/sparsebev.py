@@ -9,12 +9,16 @@ from mmdet3d.core import bbox3d2result
 from mmdet3d.models.detectors.mvx_two_stage import MVXTwoStageDetector
 from .utils import GridMask, pad_multiple, GpuPhotoMetricDistortion
 
+# import vis_features
+from models.backbones.pts_backbone import PtsBackbone           
+# from models.fuser.multimodal_feature_aggregation import MFAFuser 
+from models.fuser.per_view_fuse import PerViewFuser
 
 @DETECTORS.register_module()
 class SparseBEV(MVXTwoStageDetector):
     def __init__(self,
                  data_aug=None,
-                 stop_prev_grad=0,
+                 stop_prev_grad=0,     
                  pts_voxel_layer=None,
                  pts_voxel_encoder=None,
                  pts_middle_encoder=None,
@@ -42,6 +46,11 @@ class SparseBEV(MVXTwoStageDetector):
 
         self.memory = {}
         self.queue = queue.Queue()
+
+        self.backbone_pts = PtsBackbone(pts_voxel_layer, pts_voxel_encoder,     
+                            pts_middle_encoder, pts_backbone, pts_neck,)
+        # self.fuser = MFAFuser(**pts_fusion_layer)
+        self.fuser = PerViewFuser(**pts_fusion_layer)
 
     @auto_fp16(apply_to=('img'), out_fp32=True)
     def extract_img_feat(self, img):
@@ -135,7 +144,8 @@ class SparseBEV(MVXTwoStageDetector):
                           gt_bboxes_3d,
                           gt_labels_3d,
                           img_metas,
-                          gt_bboxes_ignore=None):
+                          gt_bboxes_ignore=None,
+                          ptss_context=None):
         """Forward function for point cloud branch.
         Args:
             pts_feats (list[torch.Tensor]): Features of point cloud branch
@@ -182,7 +192,8 @@ class SparseBEV(MVXTwoStageDetector):
                       proposals=None,
                       gt_bboxes_ignore=None,
                       img_depth=None,
-                      img_mask=None):
+                      img_mask=None,
+                      augmented_radar=None):
         """Forward training function.
         Args:
             points (list[torch.Tensor], optional): Points of each sample.
@@ -206,23 +217,100 @@ class SparseBEV(MVXTwoStageDetector):
         Returns:
             dict: Losses of different branches.
         """
-        img_feats = self.extract_feat(img, img_metas)
+        # vis_features.main(feature=img_feats[0][0], name = 'cam_feat_64x176_0', out_dir='images/cam_rad_sync_check/')
+        '''
+import matplotlib.pyplot as plt
 
-        for i in range(len(img_metas)):
+cam_feat_vis = img_feats[0][0][0].mean(dim=0).detach().cpu().numpy()        #img_feats[scale][0][CAM]
+radar_feat_vis = ptss_context[0][0][0].mean(dim=0).detach().cpu().numpy()   #ptss_context[scale][CAM][0]
+
+plt.figure(figsize=(8, 4))
+plt.subplot(1, 2, 1)
+plt.title("Camera Features (32x88)")
+plt.imshow(cam_feat_vis, cmap='viridis')
+plt.colorbar()
+
+plt.subplot(1, 2, 2)
+plt.title("Radar Features (32x88)")
+plt.imshow(radar_feat_vis, cmap='viridis')
+plt.colorbar()
+
+plt.tight_layout()
+plt.savefig("images/cam_rad_sync_check/cam_rad_feat_64_0.png")
+plt.close()
+        '''
+
+        # radar
+        if len(augmented_radar[0].shape) == 4:
+            augmented_radar[0] = augmented_radar[0].unsqueeze(1)
+        # ptss_context, ptss_occupancy, _ = self.backbone_pts(augmented_radar[0])   #DARC
+        ptss_context, _ = self.backbone_pts(augmented_radar[0])     #take output of neck
+        
+        img_feats = self.extract_feat(img, img_metas)   #sbev
+
+        # camera features + radar features
+        # for feat_index in range(0,len(img_feats)):
+        #     radar_feats = ptss_context[feat_index].permute(1, 0, 2, 3, 4)
+        #     radar_feats = self.reshape_samples(radar_feats)
+        #     curr_cam_frame = (img_feats[feat_index][:,:6,:,:,:])
+
+        #     '''
+        #     ###temp vis code start
+        #     import torch
+        #     from torchvision.transforms.functional import to_pil_image
+
+        #     img1 = img[0][0].cpu().detach()  # move to CPU if it's on GPU
+        #     img_pil = to_pil_image(img1)  # Converts tensor to PIL image
+        #     img_pil.save(f'images/cam_rad_sync_check/rgb_image_{feat_index}.png')
+
+        #     vis_features.main(feature=radar_feats[0][0], name = f'radar_feat_{feat_index}', out_dir='images/cam_rad_sync_check/')
+        #     vis_features.main(feature=curr_cam_frame[0][0], name = f'cam_feat_{feat_index}', out_dir='images/cam_rad_sync_check/')
+        #     ###temp vis code end
+        #     '''
+
+        #     curr_frame_feats = torch.cat((curr_cam_frame,radar_feats),dim=2)
+        #     B, N, C, H, W = curr_frame_feats.shape
+        #     curr_frame_feats = curr_frame_feats.view(B*N,C,H,W).unsqueeze(1)
+        #     fused_curr_feats = (self.fuser(curr_frame_feats, feat_index))
+        #     C = fused_curr_feats[0].shape[1]
+        #     fused_curr_feats = list(fused_curr_feats)
+        #     fused_curr_feats[0] = fused_curr_feats[0].view(B,N,C,H,W)
+        #     img_feats[feat_index][:,:6,:,:,:] = fused_curr_feats[0]
+        radar_feats=[]
+        curr_cam_feats=[]
+        for feat_index in range(0,len(ptss_context)):
+            radar_feat = ptss_context[feat_index].permute(1, 0, 2, 3, 4)
+            radar_feats.append(self.reshape_samples(radar_feat))
+            curr_cam_feats.append(img_feats[feat_index][:,:6,:,:,:])
+
+        fused_feats = self.fuser(curr_cam_feats, radar_feats)
+
+        for feat_index in range(0,len(fused_feats)):
+            img_feats[feat_index][:,:6,:,:,:] = fused_feats[feat_index]
+
+        for i in range(len(img_metas)):     #sbev
             img_metas[i]['gt_bboxes_3d'] = gt_bboxes_3d[i]
             img_metas[i]['gt_labels_3d'] = gt_labels_3d[i]
 
         losses = self.forward_pts_train(img_feats, gt_bboxes_3d, gt_labels_3d, img_metas, gt_bboxes_ignore)
-
+        
         return losses
 
-    def forward_test(self, img_metas, img=None, **kwargs):
+    def reshape_samples(self, radar_samples, samples_per_batch=6):
+        if radar_samples.shape[1] != samples_per_batch:
+            _, N, C, H, W = radar_samples.shape 
+            batch_size = N // samples_per_batch
+            return radar_samples.view(batch_size, samples_per_batch, C, H, W)
+        else:
+            return radar_samples
+
+    def forward_test(self, img_metas, img=None, augmented_radar=None, **kwargs):
         for var, name in [(img_metas, 'img_metas')]:
             if not isinstance(var, list):
                 raise TypeError('{} must be a list, but got {}'.format(
                     name, type(var)))
         img = [img] if img is None else img
-        return self.simple_test(img_metas[0], img[0], **kwargs)
+        return self.simple_test(img_metas[0], img[0], augmented_radar, **kwargs)    #modded
 
     def simple_test_pts(self, x, img_metas, rescale=False):
         outs = self.pts_bbox_head(x, img_metas)
@@ -235,15 +323,33 @@ class SparseBEV(MVXTwoStageDetector):
 
         return bbox_results
     
-    def simple_test(self, img_metas, img=None, rescale=False):
+    def simple_test(self, img_metas, img=None, augmented_radar=None, rescale=False):
         world_size = get_dist_info()[1]
-        if world_size == 1:  # online
-            return self.simple_test_online(img_metas, img, rescale)
-        else:  # offline
-            return self.simple_test_offline(img_metas, img, rescale)
+        # if world_size == 1:  # online
+        return self.simple_test_online(img_metas, img, augmented_radar, rescale)  
+        # else:  # offline
+        # return self.simple_test_offline(img_metas, img, augmented_radar, rescale)
 
-    def simple_test_offline(self, img_metas, img=None, rescale=False):
+    def simple_test_offline(self, img_metas, img=None, augmented_radar=None, rescale=False):
+        # radar
+        if len(augmented_radar[0][0].shape) == 4:
+            augmented_radar[0][0] = augmented_radar[0][0].unsqueeze(1)
+        ptss_context, ptss_occupancy, _ = self.backbone_pts(augmented_radar[0][0])
+
         img_feats = self.extract_feat(img=img, img_metas=img_metas)
+
+        # camera features + radar features
+        radar_feats=[]
+        curr_cam_feats=[]
+        for feat_index in range(0,len(ptss_context)):
+            radar_feat = ptss_context[feat_index].permute(1, 0, 2, 3, 4)
+            radar_feats.append(self.reshape_samples(radar_feat))
+            curr_cam_feats.append(img_feats[feat_index][:,:6,:,:,:])
+
+        fused_feats = self.fuser(curr_cam_feats, radar_feats)
+
+        for feat_index in range(0,len(fused_feats)):
+            img_feats[feat_index][:,:6,:,:,:] = fused_feats[feat_index]
 
         bbox_list = [dict() for _ in range(len(img_metas))]
         bbox_pts = self.simple_test_pts(img_feats, img_metas, rescale=rescale)
@@ -252,7 +358,8 @@ class SparseBEV(MVXTwoStageDetector):
 
         return bbox_list
 
-    def simple_test_online(self, img_metas, img=None, rescale=False):
+    def simple_test_online(self, img_metas, img=None, augmented_radar=None, rescale=False):
+
         self.fp16_enabled = False
         assert len(img_metas) == 1  # batch_size = 1
 
@@ -311,6 +418,24 @@ class SparseBEV(MVXTwoStageDetector):
         img_feats = img_feats_reorganized
         img_metas = img_metas_reorganized
         img_feats = cast_tensor_type(img_feats, torch.half, torch.float32)
+
+        # radar
+        if len(augmented_radar[0][0].shape) == 4:
+            augmented_radar[0][0] = augmented_radar[0][0].unsqueeze(1)
+        # ptss_context, ptss_occupancy, _ = self.backbone_pts(augmented_radar[0][0])    #DARC
+        ptss_context, _ = self.backbone_pts(augmented_radar[0][0])         #take output of neck
+
+        radar_feats=[]
+        curr_cam_feats=[]
+        for feat_index in range(0,len(ptss_context)):
+            radar_feat = ptss_context[feat_index].permute(1, 0, 2, 3, 4)
+            radar_feats.append(self.reshape_samples(radar_feat))
+            curr_cam_feats.append(img_feats[feat_index][:,:6,:,:,:])
+
+        fused_feats = self.fuser(curr_cam_feats, radar_feats)
+
+        for feat_index in range(0,len(fused_feats)):
+            img_feats[feat_index][:,:6,:,:,:] = fused_feats[feat_index]
 
         # run detector
         bbox_list = [dict() for _ in range(1)]

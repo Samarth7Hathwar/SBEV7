@@ -217,13 +217,29 @@ class PhotoMetricDistortionMultiViewImage:
 
 @PIPELINES.register_module()
 class RandomTransformImage(object):
-    def __init__(self, ida_aug_conf=None, training=True):
+    def __init__(self, ida_aug_conf=None, bda_aug_conf=None, rda_aug_conf=None, training=True):
         self.ida_aug_conf = ida_aug_conf
+        self.bda_aug_conf = bda_aug_conf
+        self.rda_aug_conf = rda_aug_conf
+        self.max_distance_pv = rda_aug_conf['max_distance_pv']
+        self.max_radar_points_pv = rda_aug_conf['max_radar_points_pv']
+        self.remove_z_axis = rda_aug_conf['remove_z_axis']
         self.training = training
 
     def __call__(self, results):
         resize, resize_dims, crop, flip, rotate = self.sample_augmentation()
+        radar_idx = self.sample_radar_augmentation()    #from DARC
         
+        sweep_radar_points = list()
+        radar_points = list()
+        for radar_point in results['raw_radar']:    #augmenting raw radar points
+            radar_point_augmented = self.transform_radar_pv(
+                        radar_point, resize, self.ida_aug_conf['final_dim'],
+                        crop, flip, rotate, radar_idx)  #assuming rotate is same as rotate_ida(DARC) - todo check
+            radar_points.append(radar_point_augmented)
+        sweep_radar_points.append(torch.stack(radar_points))
+        results['augmented_radar'] = sweep_radar_points
+
         if len(results['lidar2img']) == len(results['img']):
             for i in range(len(results['img'])):
                 img = Image.fromarray(np.uint8(results['img'][i]))
@@ -339,6 +355,79 @@ class RandomTransformImage(object):
             rotate = 0
 
         return resize, resize_dims, crop, flip, rotate
+
+    def sample_radar_augmentation(self):    #taken from DARC 
+        """Generate bda augmentation values based on bda_config."""
+        if self.training:
+            radar_idx = np.random.choice(self.rda_aug_conf['N_sweeps'],
+                                         self.rda_aug_conf['N_use'],
+                                         replace=False)
+        else:
+            radar_idx = np.arange(self.rda_aug_conf['N_sweeps'])
+        return radar_idx
+
+    def transform_radar_pv(self, points, resize, resize_dims, crop, flip, rotate, radar_idx):   #from DARC
+        points = points[points[:, 2] < self.max_distance_pv, :]
+
+        H, W = resize_dims
+        points[:, :2] = points[:, :2] * resize
+        points[:, 0] -= crop[0]
+        points[:, 1] -= crop[1]
+        if flip:
+            points[:, 0] = resize_dims[1] - points[:, 0]
+
+        points[:, 0] -= W / 2.0
+        points[:, 1] -= H / 2.0
+
+        h = rotate / 180 * np.pi
+        rot_matrix = [
+            [np.cos(h), np.sin(h)],
+            [-np.sin(h), np.cos(h)],
+        ]
+        points[:, :2] = np.matmul(rot_matrix, points[:, :2].T).T
+
+        points[:, 0] += W / 2.0
+        points[:, 1] += H / 2.0
+
+        depth_coords = points[:, :2].astype(np.int16)
+
+        valid_mask = ((depth_coords[:, 1] < resize_dims[0])
+                      & (depth_coords[:, 0] < resize_dims[1])
+                      & (depth_coords[:, 1] >= 0)
+                      & (depth_coords[:, 0] >= 0))
+
+        points = torch.Tensor(points[valid_mask])
+
+        if self.remove_z_axis:
+            points[:, 1] = 1.  # dummy height value
+
+        points_save = []
+        for i in radar_idx:
+            points_save.append(points[points[:, 6] == i])
+        points = torch.cat(points_save, dim=0)
+
+        # mean, std of rcs and speed are from train set
+        points[:, 3] = (points[:, 3] - 4.783) / 7.576
+        points[:, 4] = (torch.norm(points[:, 4:6], dim=1) - 0.677) / 1.976
+
+        if self.training:
+            drop_idx = np.random.uniform(size=points.shape[0])  # randomly drop points
+            points = points[drop_idx > self.rda_aug_conf['drop_ratio']]
+
+        num_points, num_feat = points.shape
+        if num_points > self.max_radar_points_pv:
+            choices = np.random.choice(num_points, self.max_radar_points_pv, replace=False)
+            points = points[choices]
+        else:
+            num_append = self.max_radar_points_pv - num_points
+            points = torch.cat([points, -999*torch.ones(num_append, num_feat)], dim=0)
+
+        if num_points == 0:
+            points[0, :] = points.new_tensor([0.1, 0.1, self.max_distance_pv-1, 0, 0, 0, 0])
+
+        points[..., [0, 1, 2]] = points[..., [0, 2, 1]]  # convert [w, h, d] to [w, d, h]
+
+        return points[..., :5]
 
 
 @PIPELINES.register_module()

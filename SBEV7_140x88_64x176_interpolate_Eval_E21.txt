@@ -1,0 +1,105 @@
+srun: jobinfo: version v1.0.0
+srun: job 1851609 queued and waiting for resources
+srun: Job has been cancelled
+srun: error: Unable to allocate resources: Job/step already completing or completed
+2025-05-21 12:21:50+0200
+Monitor this job here: http://monitoring.pegasus.kl.dfki.de/d/slurm-job-details/job-details?var-jobid=1851609&from=1747822910000
+Job 1851609: creating container for /netscratch/kpatil/container/SparseBEV.sqsh
+Job 1851609: creating container for /netscratch/kpatil/container/SparseBEV.sqsh took 175.4 seconds
+*********************************Move to SABEV directory*********************************
+*********************************build*********************************
+Looking in indexes: http://pypi-cache/index, https://pypi.ngc.nvidia.com
+Collecting fvcore
+  Downloading http://pypi-cache/packages/a5/93/d056a9c4efc6c79ba7b5159cc66bb436db93d2cc46dca18ed65c59cc8e4e/fvcore-0.1.5.post20221221.tar.gz (50 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Requirement already satisfied: numpy in /root/miniconda/envs/sparsebev/lib/python3.8/site-packages (from fvcore) (1.23.5)
+Collecting yacs>=0.1.6 (from fvcore)
+  Downloading http://pypi-cache/packages/38/4f/fe9a4d472aa867878ce3bb7efb16654c5d63672b86dc0e6e953a67018433/yacs-0.1.8-py3-none-any.whl.metadata (639 bytes)
+Requirement already satisfied: pyyaml>=5.1 in /root/miniconda/envs/sparsebev/lib/python3.8/site-packages (from fvcore) (6.0.2)
+Requirement already satisfied: tqdm in /root/miniconda/envs/sparsebev/lib/python3.8/site-packages (from fvcore) (4.65.2)
+Requirement already satisfied: termcolor>=1.1 in /root/miniconda/envs/sparsebev/lib/python3.8/site-packages (from fvcore) (2.4.0)
+Collecting Pillow (from fvcore)
+  Downloading http://pypi-cache/packages/fb/ad/435fe29865f98a8fbdc64add8875a6e4f8c97749a93577a8919ec6f32c64/pillow-10.4.0-cp38-cp38-manylinux_2_28_x86_64.whl.metadata (9.2 kB)
+Requirement already satisfied: tabulate in /root/miniconda/envs/sparsebev/lib/python3.8/site-packages (from fvcore) (0.9.0)
+Collecting iopath>=0.1.7 (from fvcore)
+  Downloading http://pypi-cache/packages/72/73/b3d451dfc523756cf177d3ebb0af76dc7751b341c60e2a21871be400ae29/iopath-0.1.10.tar.gz (42 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Requirement already satisfied: typing_extensions in /root/miniconda/envs/sparsebev/lib/python3.8/site-packages (from iopath>=0.1.7->fvcore) (4.11.0)
+Collecting portalocker (from iopath>=0.1.7->fvcore)
+  Downloading http://pypi-cache/packages/3d/4c/4cb6bb4061910ac74c444be76e7d17dba97d9057030cca2f96947c3f7a0f/portalocker-3.0.0-py3-none-any.whl.metadata (8.5 kB)
+Downloading http://pypi-cache/packages/38/4f/fe9a4d472aa867878ce3bb7efb16654c5d63672b86dc0e6e953a67018433/yacs-0.1.8-py3-none-any.whl (14 kB)
+Downloading http://pypi-cache/packages/fb/ad/435fe29865f98a8fbdc64add8875a6e4f8c97749a93577a8919ec6f32c64/pillow-10.4.0-cp38-cp38-manylinux_2_28_x86_64.whl (4.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.5/4.5 MB 547.6 MB/s eta 0:00:00
+Downloading http://pypi-cache/packages/3d/4c/4cb6bb4061910ac74c444be76e7d17dba97d9057030cca2f96947c3f7a0f/portalocker-3.0.0-py3-none-any.whl (19 kB)
+Building wheels for collected packages: fvcore, iopath
+  Building wheel for fvcore (setup.py): started
+  Building wheel for fvcore (setup.py): finished with status 'done'
+  Created wheel for fvcore: filename=fvcore-0.1.5.post20221221-py3-none-any.whl size=61419 sha256=b424300505baa67fe801e4603b1b40128b22cfd026ec41f30352b5f8755a0b6c
+  Stored in directory: /tmp/pip-ephem-wheel-cache-uqsmcy4l/wheels/4f/df/18/f44ed114b5816829930ed7b91cd9bb654c82f20e07c299f4c1
+  Building wheel for iopath (setup.py): started
+  Building wheel for iopath (setup.py): finished with status 'done'
+  Created wheel for iopath: filename=iopath-0.1.10-py3-none-any.whl size=31545 sha256=90cb9d13bcf0c5237f30b84b5b5217604a5bfeeb0045ab0cf16b688870a1b2b5
+  Stored in directory: /tmp/pip-ephem-wheel-cache-uqsmcy4l/wheels/4b/8e/74/b5e44943bda300dc7f6cc14cee373107e6fc0a6e765131a968
+Successfully built fvcore iopath
+Installing collected packages: yacs, portalocker, Pillow, iopath, fvcore
+Successfully installed Pillow-10.4.0 fvcore-0.1.5.post20221221 iopath-0.1.10 portalocker-3.0.0 yacs-0.1.8
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable.It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+Looking in indexes: http://pypi-cache/index, https://pypi.ngc.nvidia.com
+Collecting einops
+  Downloading http://pypi-cache/packages/87/62/9773de14fe6c45c23649e98b83231fffd7b9892b6cf863251dc2afa73643/einops-0.8.1-py3-none-any.whl.metadata (13 kB)
+Downloading http://pypi-cache/packages/87/62/9773de14fe6c45c23649e98b83231fffd7b9892b6cf863251dc2afa73643/einops-0.8.1-py3-none-any.whl (64 kB)
+Installing collected packages: einops
+Successfully installed einops-0.8.1
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable.It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+Looking in indexes: http://pypi-cache/index, https://pypi.ngc.nvidia.com
+Requirement already satisfied: iopath in /root/miniconda/envs/sparsebev/lib/python3.8/site-packages (0.1.10)
+Requirement already satisfied: tqdm in /root/miniconda/envs/sparsebev/lib/python3.8/site-packages (from iopath) (4.65.2)
+Requirement already satisfied: typing-extensions in /root/miniconda/envs/sparsebev/lib/python3.8/site-packages (from iopath) (4.11.0)
+Requirement already satisfied: portalocker in /root/miniconda/envs/sparsebev/lib/python3.8/site-packages (from iopath) (3.0.0)
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable.It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+*********************************training model*********************************
+True
+GPU 0: NVIDIA A100-SXM4-40GB (UUID: GPU-3358df17-34bd-a83f-37ed-a3fe08320d69)
+0
+Warning: failed to load one or more CUDA extensions, performance may be hurt.
+Error message: No module named 'models.csrc._msmv_sampling_cuda'
+[2025-05-21 12:25:03,207][INFO] - Using GPU: NVIDIA A100-SXM4-40GB
+[2025-05-21 12:25:03,207][INFO] - Setting random seed: 0
+[2025-05-21 12:25:03,208][INFO] - Loading validation set from data/nuscenes/
+[2025-05-21 12:25:07,572][INFO] - Creating model: SparseBEV
+[2025-05-21 12:25:08,522][INFO] - Loading checkpoint from outputs/SparseBEV/2025-05-19/18-28-43/ep21.pth
+/root/miniconda/envs/sparsebev/lib/python3.8/site-packages/torch/utils/data/dataloader.py:561: UserWarning: This DataLoader will create 12 worker processes in total. Our suggested max number of worker in current system is 8, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Traceback (most recent call last):
+  File "val.py", line 141, in <module>
+    main()
+  File "val.py", line 134, in main
+    results = single_gpu_test(model, val_loader)
+  File "/root/miniconda/envs/sparsebev/lib/python3.8/site-packages/mmdet/apis/test.py", line 29, in single_gpu_test
+    result = model(return_loss=False, rescale=True, **data)
+  File "/root/miniconda/envs/sparsebev/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/root/miniconda/envs/sparsebev/lib/python3.8/site-packages/mmcv/parallel/data_parallel.py", line 51, in forward
+    return super().forward(*inputs, **kwargs)
+  File "/root/miniconda/envs/sparsebev/lib/python3.8/site-packages/torch/nn/parallel/data_parallel.py", line 169, in forward
+    return self.module(*inputs[0], **kwargs[0])
+  File "/root/miniconda/envs/sparsebev/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/root/miniconda/envs/sparsebev/lib/python3.8/site-packages/mmcv/runner/fp16_utils.py", line 233, in new_func
+    output = old_func(*new_args, **new_kwargs)
+  File "/netscratch/kpatil/SparseBEV/SparseBEV7_Radar_S5_withNeck/models/sparsebev.py", line 182, in forward
+    return self.forward_test(**kwargs)
+  File "/netscratch/kpatil/SparseBEV/SparseBEV7_Radar_S5_withNeck/models/sparsebev.py", line 313, in forward_test
+    return self.simple_test(img_metas[0], img[0], augmented_radar, **kwargs)    #modded
+  File "/netscratch/kpatil/SparseBEV/SparseBEV7_Radar_S5_withNeck/models/sparsebev.py", line 329, in simple_test
+    return self.simple_test_online(img_metas, img, augmented_radar, rescale)  
+  File "/netscratch/kpatil/SparseBEV/SparseBEV7_Radar_S5_withNeck/models/sparsebev.py", line 426, in simple_test_online
+    ptss_context, _ = self.backbone_pts(augmented_radar[0])         #take output of neck
+  File "/root/miniconda/envs/sparsebev/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/netscratch/kpatil/SparseBEV/SparseBEV7_Radar_S5_withNeck/models/backbones/pts_backbone.py", line 224, in forward
+    batch_size, num_sweeps, num_cams, _, _ = ptss.shape
+AttributeError: 'list' object has no attribute 'shape'
+[                                                  ] 0/6019, elapsed: 0s, ETA:*********************************testing model*********************************

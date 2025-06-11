@@ -121,7 +121,7 @@ def main():
 
     logging.info('Loading checkpoint from %s' % args.weights)
     checkpoint = load_checkpoint(
-        model, args.weights, map_location='cuda', strict=True,
+        model, args.weights, map_location='cuda', strict=False,      #strict=True  SBEV
         logger=logging.Logger(__name__, logging.ERROR)
     )
 

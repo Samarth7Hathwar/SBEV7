@@ -56,6 +56,23 @@ class LoadMultiViewImageFromMultiSweeps(object):
             'CAM_BACK', 'CAM_BACK_LEFT', 'CAM_BACK_RIGHT'
         ]
 
+        #load radar for the corresponding image
+        radar_points = []
+        for name in results['filename']:
+            file_name = os.path.split(name)[-1]
+            radar_point = np.fromfile(os.path.join(   #actual code
+                            'data/nuscenes/', 'radar_pv_filter', f'{file_name}.bin'),
+                            dtype=np.float32,
+                            count=-1).reshape(-1, 7)
+
+            # radar_point = np.fromfile(  #temp code for loading specific radar   's'
+            #     'data/nuscenes/radar_pv_filter/n008-2018-07-26-12-13-50-0400__CAM_FRONT_LEFT__1532622007904799.jpg.bin',
+            #     dtype=np.float32,
+            #     count=-1).reshape(-1, 7)
+
+            radar_points.append(radar_point)
+        results['raw_radar'] = radar_points
+
         if len(results['sweeps']['prev']) == 0:
             for _ in range(self.sweeps_num):
                 for j in range(len(cam_types)):
@@ -98,6 +115,14 @@ class LoadMultiViewImageFromMultiSweeps(object):
                         sweep[sensor]['cam_intrinsic'],
                     ))
 
+                    # #load radar for the sweeped images - path for file isnt existing, need to work on this
+                    # file_name = os.path.split(sweep[sensor]['data_path'])[-1]
+                    # radar_point = np.fromfile(os.path.join(
+                    #         'data/nuscenes/', 'radar_pv_filter', f'{file_name}.bin'),
+                    #         dtype=np.float32,
+                    #         count=-1).reshape(-1, 7)
+                    # radar_points.append(radar_point)
+
         return results
 
     def load_online(self, results):
@@ -109,6 +134,23 @@ class LoadMultiViewImageFromMultiSweeps(object):
             'CAM_FRONT', 'CAM_FRONT_RIGHT', 'CAM_FRONT_LEFT',
             'CAM_BACK', 'CAM_BACK_LEFT', 'CAM_BACK_RIGHT'
         ]
+
+        #load radar for the corresponding image
+        radar_points = []
+        for name in results['filename']:
+            file_name = os.path.split(name)[-1]
+            radar_point = np.fromfile(os.path.join(   #actual code
+                            'data/nuscenes/', 'radar_pv_filter', f'{file_name}.bin'),
+                            dtype=np.float32,
+                            count=-1).reshape(-1, 7)
+
+            # radar_point = np.fromfile(  #temp code for loading specific radar   's'
+            #     'data/nuscenes/radar_pv_filter/n008-2018-07-26-12-13-50-0400__CAM_FRONT_LEFT__1532622007904799.jpg.bin',
+            #     dtype=np.float32,
+            #     count=-1).reshape(-1, 7)
+
+            radar_points.append(radar_point)
+        results['raw_radar'] = radar_points
 
         if len(results['sweeps']['prev']) == 0:
             for _ in range(self.sweeps_num):

@@ -1,0 +1,66 @@
+*********************************Move to SABEV directory*********************************
+*********************************build*********************************
+Looking in indexes: http://pypi-cache/index, https://pypi.ngc.nvidia.com
+Collecting fvcore
+  Downloading http://pypi-cache/packages/a5/93/d056a9c4efc6c79ba7b5159cc66bb436db93d2cc46dca18ed65c59cc8e4e/fvcore-0.1.5.post20221221.tar.gz (50 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Requirement already satisfied: numpy in /root/miniconda/envs/sparsebev/lib/python3.8/site-packages (from fvcore) (1.23.5)
+Collecting yacs>=0.1.6 (from fvcore)
+  Downloading http://pypi-cache/packages/38/4f/fe9a4d472aa867878ce3bb7efb16654c5d63672b86dc0e6e953a67018433/yacs-0.1.8-py3-none-any.whl.metadata (639 bytes)
+Requirement already satisfied: pyyaml>=5.1 in /root/miniconda/envs/sparsebev/lib/python3.8/site-packages (from fvcore) (6.0.2)
+Requirement already satisfied: tqdm in /root/miniconda/envs/sparsebev/lib/python3.8/site-packages (from fvcore) (4.65.2)
+Requirement already satisfied: termcolor>=1.1 in /root/miniconda/envs/sparsebev/lib/python3.8/site-packages (from fvcore) (2.4.0)
+Collecting Pillow (from fvcore)
+  Downloading http://pypi-cache/packages/fb/ad/435fe29865f98a8fbdc64add8875a6e4f8c97749a93577a8919ec6f32c64/pillow-10.4.0-cp38-cp38-manylinux_2_28_x86_64.whl.metadata (9.2 kB)
+Requirement already satisfied: tabulate in /root/miniconda/envs/sparsebev/lib/python3.8/site-packages (from fvcore) (0.9.0)
+Collecting iopath>=0.1.7 (from fvcore)
+  Downloading http://pypi-cache/packages/72/73/b3d451dfc523756cf177d3ebb0af76dc7751b341c60e2a21871be400ae29/iopath-0.1.10.tar.gz (42 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Requirement already satisfied: typing_extensions in /root/miniconda/envs/sparsebev/lib/python3.8/site-packages (from iopath>=0.1.7->fvcore) (4.11.0)
+Collecting portalocker (from iopath>=0.1.7->fvcore)
+  Downloading http://pypi-cache/packages/3d/4c/4cb6bb4061910ac74c444be76e7d17dba97d9057030cca2f96947c3f7a0f/portalocker-3.0.0-py3-none-any.whl.metadata (8.5 kB)
+Downloading http://pypi-cache/packages/38/4f/fe9a4d472aa867878ce3bb7efb16654c5d63672b86dc0e6e953a67018433/yacs-0.1.8-py3-none-any.whl (14 kB)
+Downloading http://pypi-cache/packages/fb/ad/435fe29865f98a8fbdc64add8875a6e4f8c97749a93577a8919ec6f32c64/pillow-10.4.0-cp38-cp38-manylinux_2_28_x86_64.whl (4.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.5/4.5 MB 486.7 MB/s eta 0:00:00
+Downloading http://pypi-cache/packages/3d/4c/4cb6bb4061910ac74c444be76e7d17dba97d9057030cca2f96947c3f7a0f/portalocker-3.0.0-py3-none-any.whl (19 kB)
+Building wheels for collected packages: fvcore, iopath
+  Building wheel for fvcore (setup.py): started
+  Building wheel for fvcore (setup.py): finished with status 'done'
+  Created wheel for fvcore: filename=fvcore-0.1.5.post20221221-py3-none-any.whl size=61419 sha256=8c18d76441fbc6a2aa2d833169d886fc5db7ad97ea9b7c71cf471e4660eced31
+  Stored in directory: /tmp/pip-ephem-wheel-cache-r3itc8nr/wheels/4f/df/18/f44ed114b5816829930ed7b91cd9bb654c82f20e07c299f4c1
+  Building wheel for iopath (setup.py): started
+  Building wheel for iopath (setup.py): finished with status 'done'
+  Created wheel for iopath: filename=iopath-0.1.10-py3-none-any.whl size=31545 sha256=a7a1f0d85e0f2b4382500fd95c9de3b1048823a030e096e86ad50b0e155eb3e2
+  Stored in directory: /tmp/pip-ephem-wheel-cache-r3itc8nr/wheels/4b/8e/74/b5e44943bda300dc7f6cc14cee373107e6fc0a6e765131a968
+Successfully built fvcore iopath
+Installing collected packages: yacs, portalocker, Pillow, iopath, fvcore
+Successfully installed Pillow-10.4.0 fvcore-0.1.5.post20221221 iopath-0.1.10 portalocker-3.0.0 yacs-0.1.8
+Looking in indexes: http://pypi-cache/index, https://pypi.ngc.nvidia.com
+Collecting einops
+  Downloading http://pypi-cache/packages/87/62/9773de14fe6c45c23649e98b83231fffd7b9892b6cf863251dc2afa73643/einops-0.8.1-py3-none-any.whl.metadata (13 kB)
+Downloading http://pypi-cache/packages/87/62/9773de14fe6c45c23649e98b83231fffd7b9892b6cf863251dc2afa73643/einops-0.8.1-py3-none-any.whl (64 kB)
+Installing collected packages: einops
+Successfully installed einops-0.8.1
+Looking in indexes: http://pypi-cache/index, https://pypi.ngc.nvidia.com
+Requirement already satisfied: iopath in /root/miniconda/envs/sparsebev/lib/python3.8/site-packages (0.1.10)
+Requirement already satisfied: tqdm in /root/miniconda/envs/sparsebev/lib/python3.8/site-packages (from iopath) (4.65.2)
+Requirement already satisfied: typing-extensions in /root/miniconda/envs/sparsebev/lib/python3.8/site-packages (from iopath) (4.11.0)
+Requirement already satisfied: portalocker in /root/miniconda/envs/sparsebev/lib/python3.8/site-packages (from iopath) (3.0.0)
+*********************************training model*********************************
+True
+GPU 0: NVIDIA A100-SXM4-40GB (UUID: GPU-bb995b8a-89fc-78be-9caf-3f9b6dac95c8)
+GPU 1: NVIDIA A100-SXM4-40GB (UUID: GPU-755b8fd8-e57b-8871-de43-68ff0f1d6971)
+GPU 2: NVIDIA A100-SXM4-40GB (UUID: GPU-ddd3fc56-0c15-fc36-4f05-e560a1003308)
+GPU 3: NVIDIA A100-SXM4-40GB (UUID: GPU-f93e8bd5-a4c6-60ba-35df-e90b3d4d0c0f)
+0,1,2,3
+Warning: failed to load one or more CUDA extensions, performance may be hurt.
+Error message:Warning: failed to load one or more CUDA extensions, performance may be hurt.
+ No module named 'models.csrc._msmv_sampling_cuda'Error message:
+ No module named 'models.csrc._msmv_sampling_cuda'
+Warning: failed to load one or more CUDA extensions, performance may be hurt.
+Error message: No module named 'models.csrc._msmv_sampling_cuda'
+Warning: failed to load one or more CUDA extensions, performance may be hurt.
+Error message: No module named 'models.csrc._msmv_sampling_cuda'
+*********************************testing model*********************************

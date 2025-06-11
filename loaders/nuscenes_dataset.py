@@ -56,8 +56,19 @@ class CustomNuScenesDataset(NuScenesDataset):
             img_paths = []
             img_timestamps = []
             lidar2img_rts = []
+            # radar_points = []   #to pile up radar for each camera
 
             for _, cam_info in info['cams'].items():
+
+                # #CODE FOR INSERTING RADAR BEGINS
+                # file_name = os.path.split(cam_info['data_path'])[-1]
+                # radar_point = np.fromfile(os.path.join(
+                #                 self.data_root, 'radar_pv_filter', f'{file_name}.bin'),
+                #                 dtype=np.float32,
+                #                 count=-1).reshape(-1, 7)
+                # radar_points.append(radar_point)
+                # #CODE FOR INSERTING RADAR ENDS
+
                 img_paths.append(os.path.relpath(cam_info['data_path']))
                 img_timestamps.append(cam_info['timestamp'] / 1e6)
 
@@ -79,6 +90,7 @@ class CustomNuScenesDataset(NuScenesDataset):
                 img_filename=img_paths,
                 img_timestamp=img_timestamps,
                 lidar2img=lidar2img_rts,
+                # radar_info=radar_points,    #adding radar to info_dict
             ))
 
         if not self.test_mode:

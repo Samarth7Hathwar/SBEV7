@@ -4,7 +4,7 @@ dataset_root = 'data/nuscenes/'
 input_modality = dict(
     use_lidar=False,
     use_camera=True,
-    use_radar=False,
+    use_radar=True,    #False originally
     use_map=False,
     use_external=True
 )
@@ -37,7 +37,7 @@ img_backbone = dict(
     norm_cfg=dict(type='BN2d', requires_grad=True),
     norm_eval=True,
     style='pytorch',
-    with_cp=True)
+    with_cp=False)   #true sbev
 img_neck = dict(
     type='FPN',
     in_channels=[256, 512, 1024, 2048],
@@ -48,15 +48,97 @@ img_norm_cfg = dict(
     std=[58.395, 57.120, 57.375],
     to_rgb=True)
 
+#DARC radar config
+pts_voxel_layer = dict(         #op coors, etc
+    max_num_points=8,
+    voxel_size=[8, 0.4, 2],     #DARC[8, 0.4, 2],    #SBEV[8, 0.875, 2]
+    point_cloud_range=[0, 2.0, 0, 704, 58.0, 2],
+    max_voxels=(768, 1024)
+)
+pts_voxel_encoder = dict(           #op voxel feats
+    type='PillarFeatureNet',
+    in_channels=5,
+    feat_channels=[32, 64],
+    with_distance=False,
+    with_cluster_center=False,
+    with_voxel_center=True,
+    voxel_size=[8, 0.4, 2],        #DARC[8, 0.4, 2],    #SBEV[8, 0.875, 2]
+    point_cloud_range=[0, 2.0, 0, 704, 58.0, 2],
+    norm_cfg=dict(type='BN1d', eps=1e-3, momentum=0.01),
+    legacy=True
+)
+pts_middle_encoder = dict(
+    type='PointPillarsScatter',
+    in_channels=64,
+    output_shape=(140,88)      #DARC(140, 88)  #desired(64, 176)
+)
+pts_backbone = dict(
+    type='SECOND',
+    in_channels=64,
+    out_channels=[64, 128, 256 ,512],
+    layer_nums=[3, 5, 5, 5],   
+    layer_strides=[1, 2, 2, 2],
+    norm_cfg=dict(type='BN', eps=1e-3, momentum=0.01),
+    conv_cfg=dict(type='Conv2d', bias=True, padding_mode='reflect')
+)
+pts_neck = dict(
+    type='SECONDFPN_Custom',
+    in_channels=[64, 128, 256, 512],
+    out_channels=[256, 256, 256, 256],
+    upsample_strides=[1, 1, 1, 1],
+    norm_cfg=dict(type='BN', eps=1e-3, momentum=0.01),
+    upsample_cfg=dict(type='deconv', bias=False),
+    use_conv_for_no_stride=True,
+    target_sizes = [(64, 176),(32,  88),(16,  44),(8,  22)]
+
+)
+occupancy_init = 0.01
+out_channels_pts = 80
+
+#DARC fuser conf
+# fuser_conf = dict(
+#         type = 'MFAFuser',
+#         num_sweeps=1,
+#         img_dims = 256,
+#         pts_dims = 256,
+#         embed_dims = 256,
+#         num_layers = 6,
+#         num_heads = 4,
+#         # bev_shape = (128, 128)    #CRN
+#         bev_shape = [(64, 176), (32, 88), (16, 44), (8, 22)]
+#         )
+
+# per view fuser
+fuser_conf = dict(
+    type='PerViewFuser',
+    in_channels=512,     # camera (256) + radar (256)
+    out_channels=256,
+    num_cams=6,
+    bev_shapes=[(64, 176), (32, 88), (16, 44), (8, 22)],
+    conv_cfg=dict(
+        type='Conv2d',
+        kernel_size=1,
+        norm_cfg=dict(type='BN2d'),
+        activation='ReLU'
+        )
+    )
+            
+
 model = dict(
     type='SparseBEV',
     data_aug=dict(
         img_color_aug=True,  # Move some augmentations to GPU
         img_norm_cfg=img_norm_cfg,
         img_pad_cfg=dict(size_divisor=32)),
-    stop_prev_grad=0,
+    stop_prev_grad=1,
+    pts_voxel_layer=pts_voxel_layer,        #DARC
+    pts_voxel_encoder=pts_voxel_encoder,    #DARC
+    pts_middle_encoder=pts_middle_encoder,  #DARC
+    pts_fusion_layer=fuser_conf,              #DARC
     img_backbone=img_backbone,
+    pts_backbone=pts_backbone,              #DARC
     img_neck=img_neck,
+    pts_neck=pts_neck,
     pts_bbox_head=dict(
         type='SparseBEVHead',
         num_classes=10,
@@ -121,23 +203,40 @@ ida_aug_conf = {
     'rand_flip': True,
 }
 
+bda_aug_conf = {      #added for radar from DARC
+            'rot_ratio': 1.0,
+            'rot_lim': (-22.5, 22.5),
+            'scale_lim': (0.9, 1.1),
+            'flip_dx_ratio': 0.5,
+            'flip_dy_ratio': 0.5
+        }
+
+rda_aug_conf = {                     #added for radar from DARC
+    'N_sweeps': 6,                   #DARC 6
+    'N_use': 5,                      #DARC 5
+    'drop_ratio': 0.1,               #randomly drop radar points
+    'max_distance_pv': 58.0,         #d_bound[1] of DARC added
+    'max_radar_points_pv': 1536,     #was hardcoded in DARC added
+    'remove_z_axis': True            #from DARC added
+}
+
 train_pipeline = [
     dict(type='LoadMultiViewImageFromFiles', to_float32=False, color_type='color'),
     dict(type='LoadMultiViewImageFromMultiSweeps', sweeps_num=num_frames - 1),
     dict(type='LoadAnnotations3D', with_bbox_3d=True, with_label_3d=True, with_attr_label=False),
     dict(type='ObjectRangeFilter', point_cloud_range=point_cloud_range),
     dict(type='ObjectNameFilter', classes=class_names),
-    dict(type='RandomTransformImage', ida_aug_conf=ida_aug_conf, training=True),
+    dict(type='RandomTransformImage', ida_aug_conf=ida_aug_conf, bda_aug_conf=bda_aug_conf, rda_aug_conf=rda_aug_conf, training=True),
     dict(type='GlobalRotScaleTransImage', rot_range=[-0.3925, 0.3925], scale_ratio_range=[0.95, 1.05]),
     dict(type='DefaultFormatBundle3D', class_names=class_names),
-    dict(type='Collect3D', keys=['gt_bboxes_3d', 'gt_labels_3d', 'img'], meta_keys=(
+    dict(type='Collect3D', keys=['gt_bboxes_3d', 'gt_labels_3d', 'img', 'augmented_radar'], meta_keys=(
         'filename', 'ori_shape', 'img_shape', 'pad_shape', 'lidar2img', 'img_timestamp'))
 ]
 
 test_pipeline = [
     dict(type='LoadMultiViewImageFromFiles', to_float32=False, color_type='color'),
     dict(type='LoadMultiViewImageFromMultiSweeps', sweeps_num=num_frames - 1, test_mode=True),
-    dict(type='RandomTransformImage', ida_aug_conf=ida_aug_conf, training=False),
+    dict(type='RandomTransformImage', ida_aug_conf=ida_aug_conf, bda_aug_conf=bda_aug_conf, rda_aug_conf=rda_aug_conf, training=False),
     dict(
         type='MultiScaleFlipAug3D',
         img_scale=(1600, 900),
@@ -145,18 +244,20 @@ test_pipeline = [
         flip=False,
         transforms=[
             dict(type='DefaultFormatBundle3D', class_names=class_names, with_label=False),
-            dict(type='Collect3D', keys=['img'], meta_keys=(
+            dict(type='Collect3D', keys=['img', 'augmented_radar'], meta_keys=(
                 'filename', 'box_type_3d', 'ori_shape', 'img_shape', 'pad_shape',
                 'lidar2img', 'img_timestamp'))
         ])
 ]
 
 data = dict(
-    workers_per_gpu=8,
+    workers_per_gpu=2,
     train=dict(
         type=dataset_type,
         data_root=dataset_root,
-        ann_file=dataset_root + 'nuscenes_infos_train_sweep.pkl',
+        ann_file=dataset_root + 'nuscenes_infos_train_sweep_downloaded.pkl',   #PKL of sparsebev
+        # ann_file=dataset_root + 'nuscenes_infos_train_sweep_dict.pkl',    #PKL generated by KP
+        # ann_file=dataset_root + 'nuscenes_infos_train_dict_3.pkl',    #PKL generated by KP with metadata
         pipeline=train_pipeline,
         classes=class_names,
         modality=input_modality,
@@ -166,7 +267,7 @@ data = dict(
     val=dict(
         type=dataset_type,
         data_root=dataset_root,
-        ann_file=dataset_root + 'nuscenes_infos_val_sweep.pkl',
+        ann_file=dataset_root + 'nuscenes_infos_val_sweep_downloaded.pkl',
         pipeline=test_pipeline,
         classes=class_names,
         modality=input_modality,
@@ -207,8 +308,8 @@ lr_config = dict(
     warmup_ratio=1.0 / 3,
     min_lr_ratio=1e-3
 )
-total_epochs = 24
-batch_size = 8
+total_epochs = 24   #24
+batch_size = 1
 
 # load pretrained weights
 load_from = 'pretrain/cascade_mask_rcnn_r50_fpn_coco-20e_20e_nuim_20201009_124951-40963960.pth'
@@ -233,4 +334,4 @@ log_config = dict(
 eval_config = dict(interval=total_epochs)
 
 # other flags
-debug = False
+debug = True

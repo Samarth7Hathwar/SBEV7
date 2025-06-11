@@ -1,0 +1,55 @@
+Job 1888749: Running on node(s) serv-3331
+Job 1888749: Started at 2025-06-09 10:04:16+0200
+Monitor this job here: http://monitoring.pegasus.kl.dfki.de/d/slurm-job-details/job-details?var-jobid=1888749&from=1749456256000
+Job 1888749: creating container for /netscratch/kpatil/container/SparseBEV.sqsh
+Job 1888749: creating container for /netscratch/kpatil/container/SparseBEV.sqsh took 64.2 seconds
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable.It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable.It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable.It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+WARNING:torch.distributed.run:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+Traceback (most recent call last):
+  File "train.py", line 180, in <module>
+    main()
+  File "train.py", line 74, in main
+    os.makedirs(work_dir, exist_ok=False)
+  File "/root/miniconda/envs/sparsebev/lib/python3.8/os.py", line 213, in makedirs
+    makedirs(head, exist_ok=exist_ok)
+  File "/root/miniconda/envs/sparsebev/lib/python3.8/os.py", line 223, in makedirs
+    mkdir(name, mode)
+PermissionError: [Errno 13] Permission denied: 'outputs/SparseBEV/2025-06-09'
+WARNING:torch.distributed.elastic.multiprocessing.api:Sending process 1652124 closing signal SIGTERM
+WARNING:torch.distributed.elastic.multiprocessing.api:Sending process 1652125 closing signal SIGTERM
+WARNING:torch.distributed.elastic.multiprocessing.api:Sending process 1652126 closing signal SIGTERM
+ERROR:torch.distributed.elastic.multiprocessing.api:failed (exitcode: 1) local_rank: 0 (pid: 1652123) of binary: /root/miniconda/envs/sparsebev/bin/python
+Traceback (most recent call last):
+  File "/root/miniconda/envs/sparsebev/bin/torchrun", line 33, in <module>
+    sys.exit(load_entry_point('torch==2.0.0', 'console_scripts', 'torchrun')())
+  File "/root/miniconda/envs/sparsebev/lib/python3.8/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 346, in wrapper
+    return f(*args, **kwargs)
+  File "/root/miniconda/envs/sparsebev/lib/python3.8/site-packages/torch/distributed/run.py", line 794, in main
+    run(args)
+  File "/root/miniconda/envs/sparsebev/lib/python3.8/site-packages/torch/distributed/run.py", line 785, in run
+    elastic_launch(
+  File "/root/miniconda/envs/sparsebev/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 134, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/root/miniconda/envs/sparsebev/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 250, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+train.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2025-06-09_10:05:48
+  host      : serv-3331.kl.dfki.de
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 1652123)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

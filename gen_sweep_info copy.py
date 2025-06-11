@@ -38,8 +38,8 @@ def get_cam_info(nusc, sample_data):
 
 
 def add_sweep_info(nusc, sample_infos):
-    for curr_id in tqdm.tqdm(range(len(sample_infos['infos']))):         #len(sample_infos)
-        sample = nusc.get('sample', sample_infos['infos'][curr_id]['sample_token'])     #['infos']
+    for curr_id in tqdm.tqdm(range(len(sample_infos['infos']))):
+        sample = nusc.get('sample', sample_infos['infos'][curr_id]['token'])
 
         cam_types = [
             'CAM_FRONT', 'CAM_FRONT_RIGHT', 'CAM_BACK_RIGHT',
@@ -53,15 +53,15 @@ def add_sweep_info(nusc, sample_infos):
         for cam in cam_types:
             sample_data = nusc.get('sample_data', sample['data'][cam])
             sweep_cam = get_cam_info(nusc, sample_data)
-            sample_infos['infos'][curr_id]['cam_infos'][cam].update(sweep_cam)      #['infos']
+            sample_infos['infos'][curr_id]['cams'][cam].update(sweep_cam)
 
         # remove unnecessary
         for cam in cam_types:
-            del sample_infos['infos'][curr_id]['cam_infos'][cam]['sample_token']       #['infos']
-            # del sample_infos['infos'][curr_id]['cams'][cam]['sensor2ego_translation']
-            # del sample_infos['infos'][curr_id]['cams'][cam]['sensor2ego_rotation']
-            # del sample_infos['infos'][curr_id]['cams'][cam]['ego2global_translation']
-            # del sample_infos['infos'][curr_id]['cams'][cam]['ego2global_rotation']
+            del sample_infos['infos'][curr_id]['cams'][cam]['sample_data_token']
+            del sample_infos['infos'][curr_id]['cams'][cam]['sensor2ego_translation']
+            del sample_infos['infos'][curr_id]['cams'][cam]['sensor2ego_rotation']
+            del sample_infos['infos'][curr_id]['cams'][cam]['ego2global_translation']
+            del sample_infos['infos'][curr_id]['cams'][cam]['ego2global_rotation']
 
         sweep_infos = []
         if sample['prev'] != '':  # add sweep frame between two key frame
@@ -77,7 +77,7 @@ def add_sweep_info(nusc, sample_infos):
                     sweep_info[cam] = sweep_cam
                 sweep_infos.append(sweep_info)
 
-        sample_infos['infos'][curr_id]['cam_sweeps'] = sweep_infos
+        sample_infos['infos'][curr_id]['sweeps'] = sweep_infos
 
     return sample_infos
 
@@ -87,25 +87,8 @@ if __name__ == '__main__':
 
     if args.version == 'v1.0-trainval':
         sample_infos = pickle.load(open(os.path.join(args.data_root, 'nuscenes_infos_train.pkl'), 'rb'))
-        # sample_infos = pickle.load(open(os.path.join(args.data_root, 'nuscenes_infos_train_sweep_downloaded.pkl'), 'rb'))
-        # sample_infos_dict = {'infos':sample_infos}
-        # sample_infos_dict = add_sweep_info(nusc, sample_infos_dict)
-        # mmcv.dump(sample_infos_dict, os.path.join(args.data_root, 'nuscenes_infos_train_sweep_dict.pkl'))
-        # sample_infos = add_sweep_info(nusc, sample_infos)
-        # mmcv.dump(sample_infos, os.path.join(args.data_root, 'nuscenes_infos_train_sweep.pkl'))
-        my_pkl_file = pickle.load(open(os.path.join(args.data_root, 'nuscenes_infos_train_dict_3.pkl'), 'rb'))
-        sparsebev_pkl_file = pickle.load(open(os.path.join(args.data_root, 'nuscenes_infos_train_sweep_downloaded.pkl'), 'rb'))
-
-        #add metadata key in my file
-        # my_pkl_file['metadata'] = {'version': 'v1.0-trainval'}
-        # mmcv.dump(my_pkl_file, os.path.join(args.data_root, 'nuscenes_infos_train_dict_3.pkl'))
-        # print(my_pkl_file.keys())
-
-        #trial code for merging cam infos
-        # for curr_id in tqdm.tqdm(range(len(my_pkl_file['infos']))):
-        #     my_pkl_file['infos'][curr_id]['cam_infos'] = sparsebev_pkl_file['infos'][curr_id]['cams']
-        # mmcv.dump(my_pkl_file, os.path.join(args.data_root, 'nuscenes_infos_train_sweep_dict_2.pkl'))
-            
+        sample_infos = add_sweep_info(nusc, sample_infos)
+        mmcv.dump(sample_infos, os.path.join(args.data_root, 'nuscenes_infos_train_sweep.pkl'))
 
         sample_infos = pickle.load(open(os.path.join(args.data_root, 'nuscenes_infos_val.pkl'), 'rb'))
         sample_infos = add_sweep_info(nusc, sample_infos)
