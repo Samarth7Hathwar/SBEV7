@@ -308,8 +308,8 @@ lr_config = dict(
     warmup_ratio=1.0 / 3,
     min_lr_ratio=1e-3
 )
-total_epochs = 24   #24
-batch_size = 1
+total_epochs = 1   #24
+batch_size = 4
 
 # load pretrained weights
 load_from = 'pretrain/cascade_mask_rcnn_r50_fpn_coco-20e_20e_nuim_20201009_124951-40963960.pth'

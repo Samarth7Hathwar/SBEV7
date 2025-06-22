@@ -1,0 +1,5 @@
+Job 1895336: Running on node(s) serv-[3315-3316]
+Job 1895336: Started at 2025-06-12 17:03:41+0200
+Monitor this job here: http://monitoring.pegasus.kl.dfki.de/d/slurm-job-details/job-details?var-jobid=1895336&from=1749740621000
+srun: jobinfo: version v1.0.0
+srun: error: Unable to create step for job 1895336: More processors requested than permitted

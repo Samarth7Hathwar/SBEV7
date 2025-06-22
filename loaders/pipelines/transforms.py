@@ -4,6 +4,8 @@ import numpy as np
 from PIL import Image
 from numpy import random
 from mmdet.datasets.builder import PIPELINES
+import matplotlib.pyplot as plt
+import os
 
 
 @PIPELINES.register_module()
@@ -237,6 +239,71 @@ class RandomTransformImage(object):
                         radar_point, resize, self.ida_aug_conf['final_dim'],
                         crop, flip, rotate, radar_idx)  #assuming rotate is same as rotate_ida(DARC) - todo check
             radar_points.append(radar_point_augmented)
+            # Sam : Adding start here
+            if len(radar_point_augmented) > 0 and len(radar_points) == 1:
+                os.makedirs("/netscratch/hathwar/guided_research/SparseBEV7_Radar_S5_withNeck/images/experiment1", exist_ok=True)
+                radar_np = radar_point_augmented.cpu().numpy()
+                plt.figure(figsize=(6, 6))
+                plt.scatter(radar_np[:, 0], radar_np[:, 1], s=2, alpha=0.5, c='blue')
+                plt.gca().invert_yaxis()  # 👈 try disabling this if it looks upside down
+                plt.title('Radar BEV Points')
+                plt.xlabel('Width')
+                plt.ylabel('Height')
+                plt.grid(True)
+                plt.savefig("/netscratch/hathwar/guided_research/SparseBEV7_Radar_S5_withNeck/images/experiment1/radar_bev.png")
+                plt.close()
+
+                try:
+                    import cv2
+                    cam_imgs = results['img']
+                    lidar2img = results['lidar2img']
+
+                    front_idx = 0  # adjust if needed
+                    print("Selected camera index:", front_idx)
+                    print("Image shape for selected view:", cam_imgs[front_idx].shape)
+                    img_front = cam_imgs[front_idx].copy()
+                    lidar2img_front = lidar2img[front_idx]
+
+                    radar_np = radar_point_augmented.cpu().numpy()
+                    
+                    print("Radar_np shape: ", radar_np.shape)
+                    print("Before projection, sample radar points (first 5): ")
+                    print(radar_np[:5, :3])
+                    radar_np[:, [1,2]] = radar_np[:, [2,1]]
+
+
+
+                    radar_xyz = radar_np[:, :3]
+                    radar_xyz_homo = np.concatenate([radar_xyz, np.ones((radar_xyz.shape[0], 1))], axis=1)  # shape (N, 4)
+                    proj = (lidar2img_front @ radar_xyz_homo.T).T  # shape (N, 3)
+                    proj[:, 0] /= proj[:, 2]
+                    proj[:, 1] /= proj[:, 2]
+                    print("Projected X range:", proj[0].min(), proj[0].max())
+                    print("Projected Y range:", proj[1].min(), proj[1].max())
+                    print("Image shape (H,W):", img_front.shape[:2])
+
+                    x_img = proj[:, 0]
+                    y_img = proj[:, 1]
+
+                    valid = (proj[:, 2] > 0) & \
+                            (x_img >= 0) & (x_img < img_front.shape[1]) & \
+                            (y_img >= 0) & (y_img < img_front.shape[0])
+
+                    print("Valid radar points projected onto image:", valid.sum())
+                    img_vis = img_front.copy()
+                    for x, y in zip(x_img[valid], y_img[valid]):
+                        cv2.circle(img_vis, (int(x), int(y)), 2, (0, 255, 0), -1)
+
+                    from PIL import Image
+                    Image.fromarray(img_vis.astype(np.uint8)).save(
+                        "/netscratch/hathwar/guided_research/SparseBEV7_Radar_S5_withNeck/images/experiment1/radar_on_frontview.png"
+                    )
+
+                except Exception as e:
+                    print("⚠️ Radar projection failed:", e)
+
+
+                #SAM : Adding end here
         sweep_radar_points.append(torch.stack(radar_points))
         results['augmented_radar'] = sweep_radar_points
 

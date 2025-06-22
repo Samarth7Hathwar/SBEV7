@@ -1,0 +1,184 @@
+Job 1895361: Running on node(s) serv-3315
+Job 1895361: Started at 2025-06-12 17:34:40+0200
+Monitor this job here: http://monitoring.pegasus.kl.dfki.de/d/slurm-job-details/job-details?var-jobid=1895361&from=1749742480000
+srun: jobinfo: version v1.0.0
+Job 1895361: Running on node(s) serv-3315
+Job 1895361: creating container for /netscratch/kpatil/container/SparseBEV.sqsh
+Job 1895361: Started at 2025-06-12 17:34:41+0200
+Monitor this job here: http://monitoring.pegasus.kl.dfki.de/d/slurm-job-details/job-details?var-jobid=1895361&from=1749742481000
+Job 1895361: creating container for /netscratch/kpatil/container/SparseBEV.sqsh took 46.2 seconds
+[W socket.cpp:426] [c10d] The server socket has failed to bind to [::]:29500 (errno: 98 - Address already in use).
+[W socket.cpp:426] [c10d] The server socket has failed to bind to 0.0.0.0:29500 (errno: 98 - Address already in use).
+[E socket.cpp:462] [c10d] The server socket has failed to listen on any local network address.
+Traceback (most recent call last):
+  File "/usr/local/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 346, in wrapper
+    return f(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/run.py", line 794, in main
+    run(args)
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/run.py", line 785, in run
+    elastic_launch(
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/launcher/api.py", line 134, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/launcher/api.py", line 241, in launch_agent
+    result = agent.run()
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/elastic/metrics/api.py", line 129, in wrapper
+    result = f(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/elastic/agent/server/api.py", line 723, in run
+    result = self._invoke_run(role)
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/elastic/agent/server/api.py", line 858, in _invoke_run
+    self._initialize_workers(self._worker_group)
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/elastic/metrics/api.py", line 129, in wrapper
+    result = f(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/elastic/agent/server/api.py", line 692, in _initialize_workers
+    self._rendezvous(worker_group)
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/elastic/metrics/api.py", line 129, in wrapper
+    result = f(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/elastic/agent/server/api.py", line 546, in _rendezvous
+    store, group_rank, group_world_size = spec.rdzv_handler.next_rendezvous()
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/elastic/rendezvous/static_tcp_rendezvous.py", line 55, in next_rendezvous
+    self._store = TCPStore(  # type: ignore[call-arg]
+RuntimeError: The server socket has failed to listen on any local network address. The server socket has failed to bind to [::]:29500 (errno: 98 - Address already in use). The server socket has failed to bind to 0.0.0.0:29500 (errno: 98 - Address already in use).
+[W socket.cpp:426] [c10d] The server socket has failed to bind to [::]:29500 (errno: 98 - Address already in use).
+[W socket.cpp:426] [c10d] The server socket has failed to bind to 0.0.0.0:29500 (errno: 98 - Address already in use).
+[E socket.cpp:462] [c10d] The server socket has failed to listen on any local network address.
+[W socket.cpp:426] [c10d] The server socket has failed to bind to [::]:29500 (errno: 98 - Address already in use).
+[W socket.cpp:426] [c10d] The server socket has failed to bind to 0.0.0.0:29500 (errno: 98 - Address already in use).
+[E socket.cpp:462] [c10d] The server socket has failed to listen on any local network address.
+Traceback (most recent call last):
+  File "/usr/local/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 346, in wrapper
+    return f(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/run.py", line 794, in main
+    run(args)
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/run.py", line 785, in run
+    elastic_launch(
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/launcher/api.py", line 134, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/launcher/api.py", line 241, in launch_agent
+    result = agent.run()
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/elastic/metrics/api.py", line 129, in wrapper
+    result = f(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/elastic/agent/server/api.py", line 723, in run
+    result = self._invoke_run(role)
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/elastic/agent/server/api.py", line 858, in _invoke_run
+    self._initialize_workers(self._worker_group)
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/elastic/metrics/api.py", line 129, in wrapper
+    result = f(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/elastic/agent/server/api.py", line 692, in _initialize_workers
+    self._rendezvous(worker_group)
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/elastic/metrics/api.py", line 129, in wrapper
+    result = f(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/elastic/agent/server/api.py", line 546, in _rendezvous
+    store, group_rank, group_world_size = spec.rdzv_handler.next_rendezvous()
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/elastic/rendezvous/static_tcp_rendezvous.py", line 55, in next_rendezvous
+    self._store = TCPStore(  # type: ignore[call-arg]
+RuntimeError: The server socket has failed to listen on any local network address. The server socket has failed to bind to [::]:29500 (errno: 98 - Address already in use). The server socket has failed to bind to 0.0.0.0:29500 (errno: 98 - Address already in use).
+Traceback (most recent call last):
+  File "/usr/local/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 346, in wrapper
+    return f(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/run.py", line 794, in main
+    run(args)
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/run.py", line 785, in run
+    elastic_launch(
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/launcher/api.py", line 134, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/launcher/api.py", line 241, in launch_agent
+    result = agent.run()
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/elastic/metrics/api.py", line 129, in wrapper
+    result = f(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/elastic/agent/server/api.py", line 723, in run
+    result = self._invoke_run(role)
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/elastic/agent/server/api.py", line 858, in _invoke_run
+    self._initialize_workers(self._worker_group)
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/elastic/metrics/api.py", line 129, in wrapper
+    result = f(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/elastic/agent/server/api.py", line 692, in _initialize_workers
+    self._rendezvous(worker_group)
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/elastic/metrics/api.py", line 129, in wrapper
+    result = f(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/elastic/agent/server/api.py", line 546, in _rendezvous
+    store, group_rank, group_world_size = spec.rdzv_handler.next_rendezvous()
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/elastic/rendezvous/static_tcp_rendezvous.py", line 55, in next_rendezvous
+    self._store = TCPStore(  # type: ignore[call-arg]
+RuntimeError: The server socket has failed to listen on any local network address. The server socket has failed to bind to [::]:29500 (errno: 98 - Address already in use). The server socket has failed to bind to 0.0.0.0:29500 (errno: 98 - Address already in use).
+srun: error: serv-3315: tasks 0-1,3: Exited with exit code 1
+Traceback (most recent call last):
+  File "train.py", line 2, in <module>
+    import utils
+  File "/netscratch/hathwar/guided_research/SparseBEV7_Radar_S5_withNeck/utils.py", line 8, in <module>
+    from mmcv.runner.hooks import HOOKS
+ModuleNotFoundError: No module named 'mmcv'
+Traceback (most recent call last):
+  File "train.py", line 2, in <module>
+    import utils
+  File "/netscratch/hathwar/guided_research/SparseBEV7_Radar_S5_withNeck/utils.py", line 8, in <module>
+    from mmcv.runner.hooks import HOOKS
+ModuleNotFoundError: No module named 'mmcv'
+Traceback (most recent call last):
+  File "train.py", line 2, in <module>
+    import utils
+  File "/netscratch/hathwar/guided_research/SparseBEV7_Radar_S5_withNeck/utils.py", line 8, in <module>
+    from mmcv.runner.hooks import HOOKS
+ModuleNotFoundError: No module named 'mmcv'
+Traceback (most recent call last):
+  File "train.py", line 2, in <module>
+    import utils
+  File "/netscratch/hathwar/guided_research/SparseBEV7_Radar_S5_withNeck/utils.py", line 8, in <module>
+    from mmcv.runner.hooks import HOOKS
+ModuleNotFoundError: No module named 'mmcv'
+ERROR:torch.distributed.elastic.multiprocessing.api:failed (exitcode: 1) local_rank: 0 (pid: 3281080) of binary: /usr/bin/python
+Traceback (most recent call last):
+  File "/usr/local/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 346, in wrapper
+    return f(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/run.py", line 794, in main
+    run(args)
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/run.py", line 785, in run
+    elastic_launch(
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/launcher/api.py", line 134, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/launcher/api.py", line 250, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+train.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2025-06-12_17:35:34
+  host      : serv-3315.kl.dfki.de
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 3281081)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[2]:
+  time      : 2025-06-12_17:35:34
+  host      : serv-3315.kl.dfki.de
+  rank      : 2 (local_rank: 2)
+  exitcode  : 1 (pid: 3281082)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2025-06-12_17:35:34
+  host      : serv-3315.kl.dfki.de
+  rank      : 3 (local_rank: 3)
+  exitcode  : 1 (pid: 3281083)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2025-06-12_17:35:34
+  host      : serv-3315.kl.dfki.de
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 3281080)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+srun: error: serv-3315: task 2: Exited with exit code 1

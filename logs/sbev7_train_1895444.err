@@ -1,0 +1,587 @@
+Job 1895444: Running on node(s) serv-3316
+Job 1895444: Started at 2025-06-12 18:39:56+0200
+Monitor this job here: http://monitoring.pegasus.kl.dfki.de/d/slurm-job-details/job-details?var-jobid=1895444&from=1749746396000
+srun: jobinfo: version v1.0.0
+Job 1895444: creating container for /netscratch/kpatil/container/SparseBEV.sqsh
+Job 1895444: Running on node(s) serv-3316
+Job 1895444: Started at 2025-06-12 18:39:57+0200
+Monitor this job here: http://monitoring.pegasus.kl.dfki.de/d/slurm-job-details/job-details?var-jobid=1895444&from=1749746397000
+Job 1895444: creating container for /netscratch/kpatil/container/SparseBEV.sqsh took 38.9 seconds
+WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProtocolError('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))': /index/openmim/
+WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProtocolError('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))': /index/openmim/
+ERROR: Could not install packages due to an OSError: [Errno 2] No such file or directory: '/usr/local/lib/python3.8/dist-packages/setuptools-59.5.0.dist-info/'
+
+WARNING: You are using pip version 21.2.4; however, version 25.0.1 is available.
+You should consider upgrading via the '/usr/bin/python -m pip install --upgrade pip' command.
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+torchtext 0.13.0a0+fae8e8c requires torch==1.13.0a0+936e930, but you have torch 2.0.0 which is incompatible.
+torch-tensorrt 1.3.0a0 requires torch<1.14.0,>=1.13.0.dev0, but you have torch 2.0.0 which is incompatible.
+onnx 1.12.0 requires numpy>=1.16.6, but you have numpy 1.16.5 which is incompatible.
+onnx 1.12.0 requires protobuf<=3.20.1,>=3.12.2, but you have protobuf 3.7.1 which is incompatible.
+mdit-py-plugins 0.3.1 requires markdown-it-py<3.0.0,>=1.0.0, but you have markdown-it-py 3.0.0 which is incompatible.
+jupytext 1.14.1 requires markdown-it-py<3.0.0,>=1.0.0, but you have markdown-it-py 3.0.0 which is incompatible.
+dask-cuda 22.8.0a0+36.g9860cad requires numba>=0.54, but you have numba 0.48.0 which is incompatible.
+cudf 22.8.0a0+304.g6ca81bbc78.dirty requires numba>=0.53.1, but you have numba 0.48.0 which is incompatible.
+cudf 22.8.0a0+304.g6ca81bbc78.dirty requires protobuf<3.21.0a0,>=3.20.1, but you have protobuf 3.7.1 which is incompatible.
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+WARNING: You are using pip version 21.2.4; however, version 25.0.1 is available.
+You should consider upgrading via the '/usr/bin/python -m pip install --upgrade pip' command.
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+torchtext 0.13.0a0+fae8e8c requires torch==1.13.0a0+936e930, but you have torch 2.0.0 which is incompatible.
+torch-tensorrt 1.3.0a0 requires torch<1.14.0,>=1.13.0.dev0, but you have torch 2.0.0 which is incompatible.
+onnx 1.12.0 requires numpy>=1.16.6, but you have numpy 1.16.5 which is incompatible.
+onnx 1.12.0 requires protobuf<=3.20.1,>=3.12.2, but you have protobuf 3.7.1 which is incompatible.
+mdit-py-plugins 0.3.1 requires markdown-it-py<3.0.0,>=1.0.0, but you have markdown-it-py 3.0.0 which is incompatible.
+jupytext 1.14.1 requires markdown-it-py<3.0.0,>=1.0.0, but you have markdown-it-py 3.0.0 which is incompatible.
+dask-cuda 22.8.0a0+36.g9860cad requires numba>=0.54, but you have numba 0.48.0 which is incompatible.
+cudf 22.8.0a0+304.g6ca81bbc78.dirty requires numba>=0.53.1, but you have numba 0.48.0 which is incompatible.
+cudf 22.8.0a0+304.g6ca81bbc78.dirty requires protobuf<3.21.0a0,>=3.20.1, but you have protobuf 3.7.1 which is incompatible.
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+WARNING: You are using pip version 21.2.4; however, version 25.0.1 is available.
+You should consider upgrading via the '/usr/bin/python -m pip install --upgrade pip' command.
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+torchtext 0.13.0a0+fae8e8c requires torch==1.13.0a0+936e930, but you have torch 2.0.0 which is incompatible.
+torch-tensorrt 1.3.0a0 requires torch<1.14.0,>=1.13.0.dev0, but you have torch 2.0.0 which is incompatible.
+onnx 1.12.0 requires numpy>=1.16.6, but you have numpy 1.16.5 which is incompatible.
+onnx 1.12.0 requires protobuf<=3.20.1,>=3.12.2, but you have protobuf 3.7.1 which is incompatible.
+mdit-py-plugins 0.3.1 requires markdown-it-py<3.0.0,>=1.0.0, but you have markdown-it-py 3.0.0 which is incompatible.
+jupytext 1.14.1 requires markdown-it-py<3.0.0,>=1.0.0, but you have markdown-it-py 3.0.0 which is incompatible.
+dask-cuda 22.8.0a0+36.g9860cad requires numba>=0.54, but you have numba 0.48.0 which is incompatible.
+cudf 22.8.0a0+304.g6ca81bbc78.dirty requires numba>=0.53.1, but you have numba 0.48.0 which is incompatible.
+cudf 22.8.0a0+304.g6ca81bbc78.dirty requires protobuf<3.21.0a0,>=3.20.1, but you have protobuf 3.7.1 which is incompatible.
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+WARNING: You are using pip version 21.2.4; however, version 25.0.1 is available.
+You should consider upgrading via the '/usr/bin/python -m pip install --upgrade pip' command.
+Traceback (most recent call last):
+  File "train.py", line 2, in <module>
+    import utils
+  File "/workspace/utils.py", line 8, in <module>
+    from mmcv.runner.hooks import HOOKS
+ModuleNotFoundError: No module named 'mmcv'
+Traceback (most recent call last):
+  File "train.py", line 2, in <module>
+    import utils
+  File "/workspace/utils.py", line 8, in <module>
+    from mmcv.runner.hooks import HOOKS
+ModuleNotFoundError: No module named 'mmcv'
+Traceback (most recent call last):
+  File "train.py", line 2, in <module>
+    import utils
+  File "/workspace/utils.py", line 8, in <module>
+    from mmcv.runner.hooks import HOOKS
+ModuleNotFoundError: No module named 'mmcv'
+Traceback (most recent call last):
+  File "train.py", line 2, in <module>
+    import utils
+  File "/workspace/utils.py", line 8, in <module>
+    from mmcv.runner.hooks import HOOKS
+ModuleNotFoundError: No module named 'mmcv'
+WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProtocolError('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))': /index/mmcv-full/
+WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProtocolError('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))': /index/mmcv-full/
+ERROR:torch.distributed.elastic.multiprocessing.api:failed (exitcode: 1) local_rank: 0 (pid: 2160486) of binary: /usr/bin/python
+Traceback (most recent call last):
+  File "/usr/local/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 346, in wrapper
+    return f(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/run.py", line 794, in main
+    run(args)
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/run.py", line 785, in run
+    elastic_launch(
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/launcher/api.py", line 134, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/launcher/api.py", line 250, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+train.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2025-06-12_18:41:05
+  host      : serv-3316.kl.dfki.de
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 2160487)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[2]:
+  time      : 2025-06-12_18:41:05
+  host      : serv-3316.kl.dfki.de
+  rank      : 2 (local_rank: 2)
+  exitcode  : 1 (pid: 2160488)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2025-06-12_18:41:05
+  host      : serv-3316.kl.dfki.de
+  rank      : 3 (local_rank: 3)
+  exitcode  : 1 (pid: 2160489)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2025-06-12_18:41:05
+  host      : serv-3316.kl.dfki.de
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 2160486)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+srun: error: serv-3316: task 2: Exited with exit code 1
+WARNING: Error parsing requirements for platformdirs: [Errno 2] No such file or directory: '/usr/local/lib/python3.8/dist-packages/platformdirs-2.5.4.dist-info/METADATA'
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+torchtext 0.13.0a0+fae8e8c requires torch==1.13.0a0+936e930, but you have torch 2.0.0 which is incompatible.
+rmm 22.8.0a0+62.gf6bf047.dirty requires numba>=0.49, but you have numba 0.48.0 which is incompatible.
+raft 22.8.0a0+70.g9070c30.dirty requires numba>=0.49, but you have numba 0.48.0 which is incompatible.
+onnx 1.12.0 requires protobuf<=3.20.1,>=3.12.2, but you have protobuf 3.7.1 which is incompatible.
+jupyter-client 7.4.7 requires python-dateutil>=2.8.2, but you have python-dateutil 2.8.1 which is incompatible.
+jupyter-client 7.4.7 requires tornado>=6.2, but you have tornado 6.1 which is incompatible.
+dask-cuda 22.8.0a0+36.g9860cad requires numba>=0.54, but you have numba 0.48.0 which is incompatible.
+cudf 22.8.0a0+304.g6ca81bbc78.dirty requires numba>=0.53.1, but you have numba 0.48.0 which is incompatible.
+cudf 22.8.0a0+304.g6ca81bbc78.dirty requires protobuf<3.21.0a0,>=3.20.1, but you have protobuf 3.7.1 which is incompatible.
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+WARNING: Error parsing requirements for numpy: [Errno 2] No such file or directory: '/usr/local/lib/python3.8/dist-packages/numpy-1.16.5.dist-info/METADATA'
+WARNING: You are using pip version 21.2.4; however, version 25.0.1 is available.
+You should consider upgrading via the '/usr/bin/python -m pip install --upgrade pip' command.
+ERROR: Could not open requirements file: [Errno 2] No such file or directory: 'requirements.txt'
+WARNING: You are using pip version 21.2.4; however, version 25.0.1 is available.
+You should consider upgrading via the '/usr/bin/python -m pip install --upgrade pip' command.
+WARNING: Error parsing requirements for platformdirs: [Errno 2] No such file or directory: '/usr/local/lib/python3.8/dist-packages/platformdirs-2.5.4.dist-info/METADATA'
+WARNING: Error parsing requirements for numpy: [Errno 2] No such file or directory: '/usr/local/lib/python3.8/dist-packages/numpy-1.16.5.dist-info/METADATA'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/numpy/core/__init__.py", line 23, in <module>
+    from . import multiarray
+  File "/usr/local/lib/python3.8/dist-packages/numpy/core/multiarray.py", line 10, in <module>
+    from . import overrides
+  File "/usr/local/lib/python3.8/dist-packages/numpy/core/overrides.py", line 6, in <module>
+    from numpy.core._multiarray_umath import (
+ImportError: /usr/local/lib/python3.8/dist-packages/numpy/core/_multiarray_umath.cpython-38-x86_64-linux-gnu.so: cannot read file data
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "train.py", line 2, in <module>
+    import utils
+  File "/workspace/utils.py", line 4, in <module>
+    import torch
+  File "/usr/local/lib/python3.8/dist-packages/torch/__init__.py", line 934, in <module>
+    from .storage import _StorageBase, TypedStorage, _LegacyStorage, UntypedStorage, _warn_typed_storage_removal
+  File "/usr/local/lib/python3.8/dist-packages/torch/storage.py", line 12, in <module>
+    import numpy as np
+  File "/usr/local/lib/python3.8/dist-packages/numpy/__init__.py", line 141, in <module>
+    from . import core
+  File "/usr/local/lib/python3.8/dist-packages/numpy/core/__init__.py", line 49, in <module>
+    raise ImportError(msg)
+ImportError: 
+
+IMPORTANT: PLEASE READ THIS FOR ADVICE ON HOW TO SOLVE THIS ISSUE!
+
+Importing the numpy C-extensions failed. This error can happen for
+many reasons, often due to issues with your setup or how NumPy was
+installed.
+
+We have compiled some common reasons and troubleshooting tips at:
+
+    https://numpy.org/devdocs/user/troubleshooting-importerror.html
+
+Please note and check the following:
+
+  * The Python version is: Python3.8 from "/usr/bin/python"
+  * The NumPy version is: "1.24.4"
+
+and make sure that they are the versions you expect.
+Please carefully study the documentation linked above for further help.
+
+Original error was: /usr/local/lib/python3.8/dist-packages/numpy/core/_multiarray_umath.cpython-38-x86_64-linux-gnu.so: cannot read file data
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/numpy/core/__init__.py", line 23, in <module>
+    from . import multiarray
+  File "/usr/local/lib/python3.8/dist-packages/numpy/core/multiarray.py", line 10, in <module>
+    from . import overrides
+  File "/usr/local/lib/python3.8/dist-packages/numpy/core/overrides.py", line 6, in <module>
+    from numpy.core._multiarray_umath import (
+ImportError: /usr/local/lib/python3.8/dist-packages/numpy/core/_multiarray_umath.cpython-38-x86_64-linux-gnu.so: cannot read file data
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "train.py", line 2, in <module>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/numpy/core/__init__.py", line 23, in <module>
+    from . import multiarray
+  File "/usr/local/lib/python3.8/dist-packages/numpy/core/multiarray.py", line 10, in <module>
+    from . import overrides
+  File "/usr/local/lib/python3.8/dist-packages/numpy/core/overrides.py", line 6, in <module>
+    from numpy.core._multiarray_umath import (
+ImportError: /usr/local/lib/python3.8/dist-packages/numpy/core/_multiarray_umath.cpython-38-x86_64-linux-gnu.so: cannot read file data
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "train.py", line 2, in <module>
+    import utils
+  File "/workspace/utils.py", line 4, in <module>
+    import torch
+  File "/usr/local/lib/python3.8/dist-packages/torch/__init__.py", line 934, in <module>
+    import utils
+  File "/workspace/utils.py", line 4, in <module>
+    from .storage import _StorageBase, TypedStorage, _LegacyStorage, UntypedStorage, _warn_typed_storage_removal
+  File "/usr/local/lib/python3.8/dist-packages/torch/storage.py", line 12, in <module>
+    import numpy as np
+  File "/usr/local/lib/python3.8/dist-packages/numpy/__init__.py", line 141, in <module>
+    from . import core
+  File "/usr/local/lib/python3.8/dist-packages/numpy/core/__init__.py", line 49, in <module>
+    raise ImportError(msg)
+ImportError: 
+
+IMPORTANT: PLEASE READ THIS FOR ADVICE ON HOW TO SOLVE THIS ISSUE!
+
+Importing the numpy C-extensions failed. This error can happen for
+many reasons, often due to issues with your setup or how NumPy was
+installed.
+
+We have compiled some common reasons and troubleshooting tips at:
+
+    https://numpy.org/devdocs/user/troubleshooting-importerror.html
+
+Please note and check the following:
+
+  * The Python version is: Python3.8 from "/usr/bin/python"
+  * The NumPy version is: "1.24.4"
+
+and make sure that they are the versions you expect.
+Please carefully study the documentation linked above for further help.
+
+Original error was: /usr/local/lib/python3.8/dist-packages/numpy/core/_multiarray_umath.cpython-38-x86_64-linux-gnu.so: cannot read file data
+
+    import torch
+  File "/usr/local/lib/python3.8/dist-packages/torch/__init__.py", line 934, in <module>
+    from .storage import _StorageBase, TypedStorage, _LegacyStorage, UntypedStorage, _warn_typed_storage_removal
+  File "/usr/local/lib/python3.8/dist-packages/torch/storage.py", line 12, in <module>
+    import numpy as np
+  File "/usr/local/lib/python3.8/dist-packages/numpy/__init__.py", line 141, in <module>
+    from . import core
+  File "/usr/local/lib/python3.8/dist-packages/numpy/core/__init__.py", line 49, in <module>
+    raise ImportError(msg)
+ImportError: 
+
+IMPORTANT: PLEASE READ THIS FOR ADVICE ON HOW TO SOLVE THIS ISSUE!
+
+Importing the numpy C-extensions failed. This error can happen for
+many reasons, often due to issues with your setup or how NumPy was
+installed.
+
+We have compiled some common reasons and troubleshooting tips at:
+
+    https://numpy.org/devdocs/user/troubleshooting-importerror.html
+
+Please note and check the following:
+
+  * The Python version is: Python3.8 from "/usr/bin/python"
+  * The NumPy version is: "1.24.4"
+
+and make sure that they are the versions you expect.
+Please carefully study the documentation linked above for further help.
+
+Original error was: /usr/local/lib/python3.8/dist-packages/numpy/core/_multiarray_umath.cpython-38-x86_64-linux-gnu.so: cannot read file data
+
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+torchtext 0.13.0a0+fae8e8c requires torch==1.13.0a0+936e930, but you have torch 2.0.0 which is incompatible.
+rmm 22.8.0a0+62.gf6bf047.dirty requires numba>=0.49, but you have numba 0.48.0 which is incompatible.
+raft 22.8.0a0+70.g9070c30.dirty requires numba>=0.49, but you have numba 0.48.0 which is incompatible.
+onnx 1.12.0 requires protobuf<=3.20.1,>=3.12.2, but you have protobuf 3.7.1 which is incompatible.
+jupyter-client 7.4.7 requires python-dateutil>=2.8.2, but you have python-dateutil 2.8.1 which is incompatible.
+jupyter-client 7.4.7 requires tornado>=6.2, but you have tornado 6.1 which is incompatible.
+dask-cuda 22.8.0a0+36.g9860cad requires numba>=0.54, but you have numba 0.48.0 which is incompatible.
+cudf 22.8.0a0+304.g6ca81bbc78.dirty requires numba>=0.53.1, but you have numba 0.48.0 which is incompatible.
+cudf 22.8.0a0+304.g6ca81bbc78.dirty requires protobuf<3.21.0a0,>=3.20.1, but you have protobuf 3.7.1 which is incompatible.
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+WARNING: You are using pip version 21.2.4; however, version 25.0.1 is available.
+You should consider upgrading via the '/usr/bin/python -m pip install --upgrade pip' command.
+Traceback (most recent call last):
+  File "train.py", line 2, in <module>
+    import utils
+  File "/workspace/utils.py", line 8, in <module>
+    from mmcv.runner.hooks import HOOKS
+  File "/usr/local/lib/python3.8/dist-packages/mmcv/__init__.py", line 4, in <module>
+    from .fileio import *
+  File "/usr/local/lib/python3.8/dist-packages/mmcv/fileio/__init__.py", line 2, in <module>
+    from .file_client import BaseStorageBackend, FileClient
+  File "/usr/local/lib/python3.8/dist-packages/mmcv/fileio/file_client.py", line 15, in <module>
+    from mmcv.utils.misc import has_method
+  File "/usr/local/lib/python3.8/dist-packages/mmcv/utils/__init__.py", line 41, in <module>
+    from .env import collect_env
+  File "/usr/local/lib/python3.8/dist-packages/mmcv/utils/env.py", line 9, in <module>
+    import cv2
+  File "/usr/local/lib/python3.8/dist-packages/cv2/__init__.py", line 181, in <module>
+    bootstrap()
+  File "/usr/local/lib/python3.8/dist-packages/cv2/__init__.py", line 175, in bootstrap
+    if __load_extra_py_code_for_module("cv2", submodule, DEBUG):
+  File "/usr/local/lib/python3.8/dist-packages/cv2/__init__.py", line 28, in __load_extra_py_code_for_module
+    py_module = importlib.import_module(module_name)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/usr/local/lib/python3.8/dist-packages/cv2/typing/__init__.py", line 162, in <module>
+    LayerId = cv2.dnn.DictValue
+AttributeError: module 'cv2.dnn' has no attribute 'DictValue'
+ERROR: Could not open requirements file: [Errno 2] No such file or directory: 'requirements.txt'
+WARNING: You are using pip version 21.2.4; however, version 25.0.1 is available.
+You should consider upgrading via the '/usr/bin/python -m pip install --upgrade pip' command.
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+torchtext 0.13.0a0+fae8e8c requires torch==1.13.0a0+936e930, but you have torch 2.0.0 which is incompatible.
+rmm 22.8.0a0+62.gf6bf047.dirty requires numba>=0.49, but you have numba 0.48.0 which is incompatible.
+raft 22.8.0a0+70.g9070c30.dirty requires numba>=0.49, but you have numba 0.48.0 which is incompatible.
+onnx 1.12.0 requires protobuf<=3.20.1,>=3.12.2, but you have protobuf 3.7.1 which is incompatible.
+jupyter-client 7.4.7 requires python-dateutil>=2.8.2, but you have python-dateutil 2.8.1 which is incompatible.
+jupyter-client 7.4.7 requires tornado>=6.2, but you have tornado 6.1 which is incompatible.
+dask-cuda 22.8.0a0+36.g9860cad requires numba>=0.54, but you have numba 0.48.0 which is incompatible.
+cudf 22.8.0a0+304.g6ca81bbc78.dirty requires numba>=0.53.1, but you have numba 0.48.0 which is incompatible.
+cudf 22.8.0a0+304.g6ca81bbc78.dirty requires protobuf<3.21.0a0,>=3.20.1, but you have protobuf 3.7.1 which is incompatible.
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+WARNING: You are using pip version 21.2.4; however, version 25.0.1 is available.
+You should consider upgrading via the '/usr/bin/python -m pip install --upgrade pip' command.
+[W socket.cpp:426] [c10d] The server socket has failed to bind to [::]:29500 (errno: 98 - Address already in use).
+[W socket.cpp:426] [c10d] The server socket has failed to bind to 0.0.0.0:29500 (errno: 98 - Address already in use).
+[E socket.cpp:462] [c10d] The server socket has failed to listen on any local network address.
+Traceback (most recent call last):
+  File "/usr/local/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 346, in wrapper
+    return f(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/run.py", line 794, in main
+    run(args)
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/run.py", line 785, in run
+    elastic_launch(
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/launcher/api.py", line 134, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/launcher/api.py", line 241, in launch_agent
+    result = agent.run()
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/elastic/metrics/api.py", line 129, in wrapper
+    result = f(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/elastic/agent/server/api.py", line 723, in run
+    result = self._invoke_run(role)
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/elastic/agent/server/api.py", line 858, in _invoke_run
+    self._initialize_workers(self._worker_group)
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/elastic/metrics/api.py", line 129, in wrapper
+    result = f(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/elastic/agent/server/api.py", line 692, in _initialize_workers
+    self._rendezvous(worker_group)
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/elastic/metrics/api.py", line 129, in wrapper
+    result = f(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/elastic/agent/server/api.py", line 546, in _rendezvous
+    store, group_rank, group_world_size = spec.rdzv_handler.next_rendezvous()
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/elastic/rendezvous/static_tcp_rendezvous.py", line 55, in next_rendezvous
+    self._store = TCPStore(  # type: ignore[call-arg]
+RuntimeError: The server socket has failed to listen on any local network address. The server socket has failed to bind to [::]:29500 (errno: 98 - Address already in use). The server socket has failed to bind to 0.0.0.0:29500 (errno: 98 - Address already in use).
+srun: error: serv-3316: task 1: Exited with exit code 1
+ERROR: Could not open requirements file: [Errno 2] No such file or directory: 'requirements.txt'
+WARNING: You are using pip version 21.2.4; however, version 25.0.1 is available.
+You should consider upgrading via the '/usr/bin/python -m pip install --upgrade pip' command.
+ERROR:torch.distributed.elastic.multiprocessing.api:failed (exitcode: 1) local_rank: 0 (pid: 2166842) of binary: /usr/bin/python
+Traceback (most recent call last):
+  File "/usr/local/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 346, in wrapper
+    return f(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/run.py", line 794, in main
+    run(args)
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/run.py", line 785, in run
+    elastic_launch(
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/launcher/api.py", line 134, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/launcher/api.py", line 250, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+train.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2025-06-12_18:43:30
+  host      : serv-3316.kl.dfki.de
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 2166843)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[2]:
+  time      : 2025-06-12_18:43:30
+  host      : serv-3316.kl.dfki.de
+  rank      : 2 (local_rank: 2)
+  exitcode  : 1 (pid: 2166844)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2025-06-12_18:43:30
+  host      : serv-3316.kl.dfki.de
+  rank      : 3 (local_rank: 3)
+  exitcode  : 1 (pid: 2166845)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2025-06-12_18:43:30
+  host      : serv-3316.kl.dfki.de
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 2166842)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+srun: error: serv-3316: task 0: Exited with exit code 1
+Traceback (most recent call last):
+  File "train.py", line 2, in <module>
+    import utils
+  File "/workspace/utils.py", line 8, in <module>
+    from mmcv.runner.hooks import HOOKS
+  File "/usr/local/lib/python3.8/dist-packages/mmcv/__init__.py", line 4, in <module>
+    from .fileio import *
+  File "/usr/local/lib/python3.8/dist-packages/mmcv/fileio/__init__.py", line 2, in <module>
+    from .file_client import BaseStorageBackend, FileClient
+  File "/usr/local/lib/python3.8/dist-packages/mmcv/fileio/file_client.py", line 15, in <module>
+    from mmcv.utils.misc import has_method
+  File "/usr/local/lib/python3.8/dist-packages/mmcv/utils/__init__.py", line 41, in <module>
+    from .env import collect_env
+  File "/usr/local/lib/python3.8/dist-packages/mmcv/utils/env.py", line 9, in <module>
+    import cv2
+  File "/usr/local/lib/python3.8/dist-packages/cv2/__init__.py", line 181, in <module>
+    bootstrap()
+  File "/usr/local/lib/python3.8/dist-packages/cv2/__init__.py", line 175, in bootstrap
+    if __load_extra_py_code_for_module("cv2", submodule, DEBUG):
+  File "/usr/local/lib/python3.8/dist-packages/cv2/__init__.py", line 28, in __load_extra_py_code_for_module
+    py_module = importlib.import_module(module_name)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/usr/local/lib/python3.8/dist-packages/cv2/typing/__init__.py", line 162, in <module>
+    LayerId = cv2.dnn.DictValue
+AttributeError: module 'cv2.dnn' has no attribute 'DictValue'
+Traceback (most recent call last):
+  File "train.py", line 2, in <module>
+    import utils
+  File "/workspace/utils.py", line 8, in <module>
+    from mmcv.runner.hooks import HOOKS
+  File "/usr/local/lib/python3.8/dist-packages/mmcv/__init__.py", line 4, in <module>
+    from .fileio import *
+  File "/usr/local/lib/python3.8/dist-packages/mmcv/fileio/__init__.py", line 2, in <module>
+    from .file_client import BaseStorageBackend, FileClient
+  File "/usr/local/lib/python3.8/dist-packages/mmcv/fileio/file_client.py", line 15, in <module>
+    from mmcv.utils.misc import has_method
+  File "/usr/local/lib/python3.8/dist-packages/mmcv/utils/__init__.py", line 41, in <module>
+    from .env import collect_env
+  File "/usr/local/lib/python3.8/dist-packages/mmcv/utils/env.py", line 9, in <module>
+    import cv2
+  File "/usr/local/lib/python3.8/dist-packages/cv2/__init__.py", line 181, in <module>
+    bootstrap()
+  File "/usr/local/lib/python3.8/dist-packages/cv2/__init__.py", line 175, in bootstrap
+    if __load_extra_py_code_for_module("cv2", submodule, DEBUG):
+  File "/usr/local/lib/python3.8/dist-packages/cv2/__init__.py", line 28, in __load_extra_py_code_for_module
+    py_module = importlib.import_module(module_name)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/usr/local/lib/python3.8/dist-packages/cv2/typing/__init__.py", line 162, in <module>
+    LayerId = cv2.dnn.DictValue
+AttributeError: module 'cv2.dnn' has no attribute 'DictValue'
+Traceback (most recent call last):
+  File "train.py", line 2, in <module>
+    import utils
+  File "/workspace/utils.py", line 8, in <module>
+    from mmcv.runner.hooks import HOOKS
+  File "/usr/local/lib/python3.8/dist-packages/mmcv/__init__.py", line 4, in <module>
+    from .fileio import *
+  File "/usr/local/lib/python3.8/dist-packages/mmcv/fileio/__init__.py", line 2, in <module>
+    from .file_client import BaseStorageBackend, FileClient
+  File "/usr/local/lib/python3.8/dist-packages/mmcv/fileio/file_client.py", line 15, in <module>
+    from mmcv.utils.misc import has_method
+  File "/usr/local/lib/python3.8/dist-packages/mmcv/utils/__init__.py", line 41, in <module>
+    from .env import collect_env
+  File "/usr/local/lib/python3.8/dist-packages/mmcv/utils/env.py", line 9, in <module>
+    import cv2
+  File "/usr/local/lib/python3.8/dist-packages/cv2/__init__.py", line 181, in <module>
+    bootstrap()
+  File "/usr/local/lib/python3.8/dist-packages/cv2/__init__.py", line 175, in bootstrap
+    if __load_extra_py_code_for_module("cv2", submodule, DEBUG):
+  File "/usr/local/lib/python3.8/dist-packages/cv2/__init__.py", line 28, in __load_extra_py_code_for_module
+    py_module = importlib.import_module(module_name)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/usr/local/lib/python3.8/dist-packages/cv2/typing/__init__.py", line 162, in <module>
+    LayerId = cv2.dnn.DictValue
+AttributeError: module 'cv2.dnn' has no attribute 'DictValue'
+Traceback (most recent call last):
+  File "train.py", line 2, in <module>
+    import utils
+  File "/workspace/utils.py", line 8, in <module>
+    from mmcv.runner.hooks import HOOKS
+  File "/usr/local/lib/python3.8/dist-packages/mmcv/__init__.py", line 4, in <module>
+    from .fileio import *
+  File "/usr/local/lib/python3.8/dist-packages/mmcv/fileio/__init__.py", line 2, in <module>
+    from .file_client import BaseStorageBackend, FileClient
+  File "/usr/local/lib/python3.8/dist-packages/mmcv/fileio/file_client.py", line 15, in <module>
+    from mmcv.utils.misc import has_method
+  File "/usr/local/lib/python3.8/dist-packages/mmcv/utils/__init__.py", line 41, in <module>
+    from .env import collect_env
+  File "/usr/local/lib/python3.8/dist-packages/mmcv/utils/env.py", line 9, in <module>
+    import cv2
+  File "/usr/local/lib/python3.8/dist-packages/cv2/__init__.py", line 181, in <module>
+    bootstrap()
+  File "/usr/local/lib/python3.8/dist-packages/cv2/__init__.py", line 175, in bootstrap
+    if __load_extra_py_code_for_module("cv2", submodule, DEBUG):
+  File "/usr/local/lib/python3.8/dist-packages/cv2/__init__.py", line 28, in __load_extra_py_code_for_module
+    py_module = importlib.import_module(module_name)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/usr/local/lib/python3.8/dist-packages/cv2/typing/__init__.py", line 162, in <module>
+    LayerId = cv2.dnn.DictValue
+AttributeError: module 'cv2.dnn' has no attribute 'DictValue'
+ERROR:torch.distributed.elastic.multiprocessing.api:failed (exitcode: 1) local_rank: 0 (pid: 2166923) of binary: /usr/bin/python
+Traceback (most recent call last):
+  File "/usr/local/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 346, in wrapper
+    return f(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/run.py", line 794, in main
+    run(args)
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/run.py", line 785, in run
+    elastic_launch(
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/launcher/api.py", line 134, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/usr/local/lib/python3.8/dist-packages/torch/distributed/launcher/api.py", line 250, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+train.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2025-06-12_18:43:36
+  host      : serv-3316.kl.dfki.de
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 2166924)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[2]:
+  time      : 2025-06-12_18:43:36
+  host      : serv-3316.kl.dfki.de
+  rank      : 2 (local_rank: 2)
+  exitcode  : 1 (pid: 2166925)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2025-06-12_18:43:36
+  host      : serv-3316.kl.dfki.de
+  rank      : 3 (local_rank: 3)
+  exitcode  : 1 (pid: 2166926)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2025-06-12_18:43:36
+  host      : serv-3316.kl.dfki.de
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 2166923)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+srun: error: serv-3316: task 3: Exited with exit code 1

@@ -1,7 +1,7 @@
 #!/bin/bash
 export CUDA_LAUNCH_BLOCKING=1
 echo "*********************************Move to SABEV directory*********************************"
-cd /netscratch/kpatil/SparseBEV/SparseBEV7_Radar_S5_withNeck/
+cd /netscratch/hathwar/guided_research/SparseBEV7_Radar_S5_withNeck/
 
 echo "*********************************build*********************************"
 #python setup.py develop

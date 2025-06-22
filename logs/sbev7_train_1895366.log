@@ -1,0 +1,870 @@
+Looking in indexes: http://pypi-cache/index, https://pypi.ngc.nvidia.com
+Requirement already satisfied: pip in /usr/local/lib/python3.8/dist-packages (21.2.4)
+Looking in indexes: http://pypi-cache/index, https://pypi.ngc.nvidia.com
+Looking in indexes: http://pypi-cache/index, https://pypi.ngc.nvidia.com
+Requirement already satisfied: pip in /usr/local/lib/python3.8/dist-packages (21.2.4)
+Requirement already satisfied: pip in /usr/local/lib/python3.8/dist-packages (21.2.4)
+Looking in indexes: http://pypi-cache/index, https://pypi.ngc.nvidia.com
+Requirement already satisfied: pip in /usr/local/lib/python3.8/dist-packages (21.2.4)
+Collecting pip
+Collecting pip
+  Downloading http://pypi-cache/packages/c9/bc/b7db44f5f39f9d0494071bddae6880eb645970366d0a200022a1a93d57f5/pip-25.0.1-py3-none-any.whl (1.8 MB)
+Collecting pip
+  Downloading http://pypi-cache/packages/c9/bc/b7db44f5f39f9d0494071bddae6880eb645970366d0a200022a1a93d57f5/pip-25.0.1-py3-none-any.whl (1.8 MB)
+  Downloading http://pypi-cache/packages/c9/bc/b7db44f5f39f9d0494071bddae6880eb645970366d0a200022a1a93d57f5/pip-25.0.1-py3-none-any.whl (1.8 MB)
+Installing collected packages: pip
+  Attempting uninstall: pip
+    Found existing installation: pip 21.2.4
+Installing collected packages: pip
+  Attempting uninstall: pip
+Installing collected packages: pip
+  Attempting uninstall: pip
+    Found existing installation: pip 21.2.4
+    Found existing installation: pip 21.2.4
+    Uninstalling pip-21.2.4:
+      Successfully uninstalled pip-21.2.4
+    Uninstalling pip-21.2.4:
+    Uninstalling pip-21.2.4:
+Successfully installed pip-25.0.1
+Looking in indexes: http://pypi-cache/index, https://pypi.ngc.nvidia.com
+Looking in indexes: http://pypi-cache/index, https://pypi.ngc.nvidia.com
+Collecting openmim
+  Downloading http://pypi-cache/packages/00/b3/95531cee452028869d0e08974561f83e9c256c98f62c7a45a51893a61c54/openmim-0.3.9-py2.py3-none-any.whl.metadata (16 kB)
+Requirement already satisfied: Click in /usr/local/lib/python3.8/dist-packages (from openmim) (8.1.3)
+Requirement already satisfied: colorama in /usr/local/lib/python3.8/dist-packages (from openmim) (0.4.6)
+Collecting openmim
+  Downloading http://pypi-cache/packages/00/b3/95531cee452028869d0e08974561f83e9c256c98f62c7a45a51893a61c54/openmim-0.3.9-py2.py3-none-any.whl.metadata (16 kB)
+Requirement already satisfied: Click in /usr/local/lib/python3.8/dist-packages (from openmim) (8.1.3)
+Requirement already satisfied: colorama in /usr/local/lib/python3.8/dist-packages (from openmim) (0.4.6)
+Collecting model-index (from openmim)
+  Downloading http://pypi-cache/packages/0f/a6/4d4cbbef704f186d143e2859296a610a355992e4eae71582bd598093b36a/model_index-0.1.11-py3-none-any.whl.metadata (3.9 kB)
+Looking in indexes: http://pypi-cache/index, https://pypi.ngc.nvidia.com
+Collecting pip
+  Downloading http://pypi-cache/packages/c9/bc/b7db44f5f39f9d0494071bddae6880eb645970366d0a200022a1a93d57f5/pip-25.0.1-py3-none-any.whl (1.8 MB)
+Collecting model-index (from openmim)
+  Downloading http://pypi-cache/packages/0f/a6/4d4cbbef704f186d143e2859296a610a355992e4eae71582bd598093b36a/model_index-0.1.11-py3-none-any.whl.metadata (3.9 kB)
+Collecting openmim
+  Downloading http://pypi-cache/packages/00/b3/95531cee452028869d0e08974561f83e9c256c98f62c7a45a51893a61c54/openmim-0.3.9-py2.py3-none-any.whl.metadata (16 kB)
+Requirement already satisfied: Click in /usr/local/lib/python3.8/dist-packages (from openmim) (8.1.3)
+Requirement already satisfied: colorama in /usr/local/lib/python3.8/dist-packages (from openmim) (0.4.6)
+Collecting model-index (from openmim)
+  Downloading http://pypi-cache/packages/0f/a6/4d4cbbef704f186d143e2859296a610a355992e4eae71582bd598093b36a/model_index-0.1.11-py3-none-any.whl.metadata (3.9 kB)
+Collecting opendatalab (from openmim)
+  Downloading http://pypi-cache/packages/10/82/28fa3a91b7c4852fbad9ad32c7b49e4b1e212ab7ccf7296736da0935070d/opendatalab-0.0.10-py3-none-any.whl.metadata (6.4 kB)
+Requirement already satisfied: pandas in /usr/local/lib/python3.8/dist-packages (from openmim) (1.0.1)
+Requirement already satisfied: pip>=19.3 in /usr/local/lib/python3.8/dist-packages (from openmim) (25.0.1)
+Requirement already satisfied: requests in /usr/local/lib/python3.8/dist-packages (from openmim) (2.28.1)
+Installing collected packages: pip
+  Attempting uninstall: pip
+    Found existing installation: pip 21.2.4
+    Can't uninstall 'pip'. No files were found to uninstall.
+Collecting opendatalab (from openmim)
+  Downloading http://pypi-cache/packages/10/82/28fa3a91b7c4852fbad9ad32c7b49e4b1e212ab7ccf7296736da0935070d/opendatalab-0.0.10-py3-none-any.whl.metadata (6.4 kB)
+Requirement already satisfied: pandas in /usr/local/lib/python3.8/dist-packages (from openmim) (1.0.1)
+Requirement already satisfied: pip>=19.3 in /usr/local/lib/python3.8/dist-packages (from openmim) (25.0.1)
+Requirement already satisfied: requests in /usr/local/lib/python3.8/dist-packages (from openmim) (2.28.1)
+Successfully installed pip-25.0.1
+Collecting rich (from openmim)
+  Downloading http://pypi-cache/packages/0d/9b/63f4c7ebc259242c89b3acafdb37b41d1185c07ff0011164674e9076b491/rich-14.0.0-py3-none-any.whl.metadata (18 kB)
+Requirement already satisfied: tabulate in /usr/local/lib/python3.8/dist-packages (from openmim) (0.9.0)
+Requirement already satisfied: pyyaml in /usr/local/lib/python3.8/dist-packages (from model-index->openmim) (6.0)
+Requirement already satisfied: markdown in /usr/local/lib/python3.8/dist-packages (from model-index->openmim) (3.4.1)
+Collecting opendatalab (from openmim)
+  Downloading http://pypi-cache/packages/10/82/28fa3a91b7c4852fbad9ad32c7b49e4b1e212ab7ccf7296736da0935070d/opendatalab-0.0.10-py3-none-any.whl.metadata (6.4 kB)
+Requirement already satisfied: pandas in /usr/local/lib/python3.8/dist-packages (from openmim) (1.0.1)
+Requirement already satisfied: pip>=19.3 in /usr/local/lib/python3.8/dist-packages (from openmim) (25.0.1)
+Requirement already satisfied: requests in /usr/local/lib/python3.8/dist-packages (from openmim) (2.28.1)
+Collecting rich (from openmim)
+  Downloading http://pypi-cache/packages/0d/9b/63f4c7ebc259242c89b3acafdb37b41d1185c07ff0011164674e9076b491/rich-14.0.0-py3-none-any.whl.metadata (18 kB)
+Requirement already satisfied: tabulate in /usr/local/lib/python3.8/dist-packages (from openmim) (0.9.0)
+Requirement already satisfied: pyyaml in /usr/local/lib/python3.8/dist-packages (from model-index->openmim) (6.0)
+Requirement already satisfied: markdown in /usr/local/lib/python3.8/dist-packages (from model-index->openmim) (3.4.1)
+Looking in indexes: http://pypi-cache/index, https://pypi.ngc.nvidia.com
+Collecting ordered-set (from model-index->openmim)
+  Downloading http://pypi-cache/packages/33/55/af02708f230eb77084a299d7b08175cff006dea4f2721074b92cdb0296c0/ordered_set-4.1.0-py3-none-any.whl.metadata (5.3 kB)
+Collecting openmim
+  Downloading http://pypi-cache/packages/00/b3/95531cee452028869d0e08974561f83e9c256c98f62c7a45a51893a61c54/openmim-0.3.9-py2.py3-none-any.whl.metadata (16 kB)
+Requirement already satisfied: Click in /usr/local/lib/python3.8/dist-packages (from openmim) (8.1.3)
+Requirement already satisfied: colorama in /usr/local/lib/python3.8/dist-packages (from openmim) (0.4.6)
+Collecting model-index (from openmim)
+  Downloading http://pypi-cache/packages/0f/a6/4d4cbbef704f186d143e2859296a610a355992e4eae71582bd598093b36a/model_index-0.1.11-py3-none-any.whl.metadata (3.9 kB)
+Collecting opendatalab (from openmim)
+  Downloading http://pypi-cache/packages/10/82/28fa3a91b7c4852fbad9ad32c7b49e4b1e212ab7ccf7296736da0935070d/opendatalab-0.0.10-py3-none-any.whl.metadata (6.4 kB)
+Requirement already satisfied: pandas in /usr/local/lib/python3.8/dist-packages (from openmim) (1.0.1)
+Requirement already satisfied: pip>=19.3 in /usr/local/lib/python3.8/dist-packages (from openmim) (25.0.1)
+Requirement already satisfied: requests in /usr/local/lib/python3.8/dist-packages (from openmim) (2.28.1)
+Collecting rich (from openmim)
+  Downloading http://pypi-cache/packages/0d/9b/63f4c7ebc259242c89b3acafdb37b41d1185c07ff0011164674e9076b491/rich-14.0.0-py3-none-any.whl.metadata (18 kB)
+Requirement already satisfied: tabulate in /usr/local/lib/python3.8/dist-packages (from openmim) (0.9.0)
+Requirement already satisfied: pyyaml in /usr/local/lib/python3.8/dist-packages (from model-index->openmim) (6.0)
+Requirement already satisfied: markdown in /usr/local/lib/python3.8/dist-packages (from model-index->openmim) (3.4.1)
+Collecting ordered-set (from model-index->openmim)
+  Downloading http://pypi-cache/packages/33/55/af02708f230eb77084a299d7b08175cff006dea4f2721074b92cdb0296c0/ordered_set-4.1.0-py3-none-any.whl.metadata (5.3 kB)
+Collecting pycryptodome (from opendatalab->openmim)
+  Downloading http://pypi-cache/packages/5f/e9/a09476d436d0ff1402ac3867d933c61805ec2326c6ea557aeeac3825604e/pycryptodome-3.23.0-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (3.4 kB)
+Requirement already satisfied: tqdm in /usr/local/lib/python3.8/dist-packages (from opendatalab->openmim) (4.64.1)
+Collecting ordered-set (from model-index->openmim)
+  Downloading http://pypi-cache/packages/33/55/af02708f230eb77084a299d7b08175cff006dea4f2721074b92cdb0296c0/ordered_set-4.1.0-py3-none-any.whl.metadata (5.3 kB)
+Collecting rich (from openmim)
+  Downloading http://pypi-cache/packages/0d/9b/63f4c7ebc259242c89b3acafdb37b41d1185c07ff0011164674e9076b491/rich-14.0.0-py3-none-any.whl.metadata (18 kB)
+Requirement already satisfied: tabulate in /usr/local/lib/python3.8/dist-packages (from openmim) (0.9.0)
+Requirement already satisfied: pyyaml in /usr/local/lib/python3.8/dist-packages (from model-index->openmim) (6.0)
+Requirement already satisfied: markdown in /usr/local/lib/python3.8/dist-packages (from model-index->openmim) (3.4.1)
+Collecting ordered-set (from model-index->openmim)
+  Downloading http://pypi-cache/packages/33/55/af02708f230eb77084a299d7b08175cff006dea4f2721074b92cdb0296c0/ordered_set-4.1.0-py3-none-any.whl.metadata (5.3 kB)
+Collecting pycryptodome (from opendatalab->openmim)
+  Downloading http://pypi-cache/packages/5f/e9/a09476d436d0ff1402ac3867d933c61805ec2326c6ea557aeeac3825604e/pycryptodome-3.23.0-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (3.4 kB)
+Requirement already satisfied: tqdm in /usr/local/lib/python3.8/dist-packages (from opendatalab->openmim) (4.64.1)
+Collecting pycryptodome (from opendatalab->openmim)
+  Downloading http://pypi-cache/packages/5f/e9/a09476d436d0ff1402ac3867d933c61805ec2326c6ea557aeeac3825604e/pycryptodome-3.23.0-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (3.4 kB)
+Requirement already satisfied: tqdm in /usr/local/lib/python3.8/dist-packages (from opendatalab->openmim) (4.64.1)
+Collecting pycryptodome (from opendatalab->openmim)
+  Downloading http://pypi-cache/packages/5f/e9/a09476d436d0ff1402ac3867d933c61805ec2326c6ea557aeeac3825604e/pycryptodome-3.23.0-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (3.4 kB)
+Requirement already satisfied: tqdm in /usr/local/lib/python3.8/dist-packages (from opendatalab->openmim) (4.64.1)
+Collecting openxlab (from opendatalab->openmim)
+  Downloading http://pypi-cache/packages/f6/44/72835f891368287cb4d297165a48f00a1f3b9c6b05f2cda759d6fe505ead/openxlab-0.1.2-py3-none-any.whl.metadata (3.8 kB)
+Requirement already satisfied: charset-normalizer<3,>=2 in /usr/local/lib/python3.8/dist-packages (from requests->openmim) (2.1.1)
+Requirement already satisfied: idna<4,>=2.5 in /usr/local/lib/python3.8/dist-packages (from requests->openmim) (3.4)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /usr/local/lib/python3.8/dist-packages (from requests->openmim) (1.26.12)
+Requirement already satisfied: certifi>=2017.4.17 in /usr/local/lib/python3.8/dist-packages (from requests->openmim) (2022.9.24)
+Requirement already satisfied: python-dateutil>=2.6.1 in /usr/local/lib/python3.8/dist-packages (from pandas->openmim) (2.8.1)
+Requirement already satisfied: pytz>=2017.2 in /usr/local/lib/python3.8/dist-packages (from pandas->openmim) (2019.3)
+Requirement already satisfied: numpy>=1.13.3 in /usr/local/lib/python3.8/dist-packages (from pandas->openmim) (1.16.5)
+Collecting openxlab (from opendatalab->openmim)
+  Downloading http://pypi-cache/packages/f6/44/72835f891368287cb4d297165a48f00a1f3b9c6b05f2cda759d6fe505ead/openxlab-0.1.2-py3-none-any.whl.metadata (3.8 kB)
+Requirement already satisfied: charset-normalizer<3,>=2 in /usr/local/lib/python3.8/dist-packages (from requests->openmim) (2.1.1)
+Requirement already satisfied: idna<4,>=2.5 in /usr/local/lib/python3.8/dist-packages (from requests->openmim) (3.4)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /usr/local/lib/python3.8/dist-packages (from requests->openmim) (1.26.12)
+Requirement already satisfied: certifi>=2017.4.17 in /usr/local/lib/python3.8/dist-packages (from requests->openmim) (2022.9.24)
+Requirement already satisfied: python-dateutil>=2.6.1 in /usr/local/lib/python3.8/dist-packages (from pandas->openmim) (2.8.1)
+Requirement already satisfied: pytz>=2017.2 in /usr/local/lib/python3.8/dist-packages (from pandas->openmim) (2019.3)
+Requirement already satisfied: numpy>=1.13.3 in /usr/local/lib/python3.8/dist-packages (from pandas->openmim) (1.16.5)
+Collecting openxlab (from opendatalab->openmim)
+  Downloading http://pypi-cache/packages/f6/44/72835f891368287cb4d297165a48f00a1f3b9c6b05f2cda759d6fe505ead/openxlab-0.1.2-py3-none-any.whl.metadata (3.8 kB)
+Requirement already satisfied: charset-normalizer<3,>=2 in /usr/local/lib/python3.8/dist-packages (from requests->openmim) (2.1.1)
+Requirement already satisfied: idna<4,>=2.5 in /usr/local/lib/python3.8/dist-packages (from requests->openmim) (3.4)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /usr/local/lib/python3.8/dist-packages (from requests->openmim) (1.26.12)
+Requirement already satisfied: certifi>=2017.4.17 in /usr/local/lib/python3.8/dist-packages (from requests->openmim) (2022.9.24)
+Requirement already satisfied: python-dateutil>=2.6.1 in /usr/local/lib/python3.8/dist-packages (from pandas->openmim) (2.8.1)
+Requirement already satisfied: pytz>=2017.2 in /usr/local/lib/python3.8/dist-packages (from pandas->openmim) (2019.3)
+Requirement already satisfied: numpy>=1.13.3 in /usr/local/lib/python3.8/dist-packages (from pandas->openmim) (1.16.5)
+Collecting openxlab (from opendatalab->openmim)
+  Downloading http://pypi-cache/packages/f6/44/72835f891368287cb4d297165a48f00a1f3b9c6b05f2cda759d6fe505ead/openxlab-0.1.2-py3-none-any.whl.metadata (3.8 kB)
+Requirement already satisfied: charset-normalizer<3,>=2 in /usr/local/lib/python3.8/dist-packages (from requests->openmim) (2.1.1)
+Requirement already satisfied: idna<4,>=2.5 in /usr/local/lib/python3.8/dist-packages (from requests->openmim) (3.4)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /usr/local/lib/python3.8/dist-packages (from requests->openmim) (1.26.12)
+Requirement already satisfied: certifi>=2017.4.17 in /usr/local/lib/python3.8/dist-packages (from requests->openmim) (2022.9.24)
+Requirement already satisfied: python-dateutil>=2.6.1 in /usr/local/lib/python3.8/dist-packages (from pandas->openmim) (2.8.1)
+Requirement already satisfied: pytz>=2017.2 in /usr/local/lib/python3.8/dist-packages (from pandas->openmim) (2019.3)
+Requirement already satisfied: numpy>=1.13.3 in /usr/local/lib/python3.8/dist-packages (from pandas->openmim) (1.16.5)
+Collecting markdown-it-py>=2.2.0 (from rich->openmim)
+  Downloading http://pypi-cache/packages/42/d7/1ec15b46af6af88f19b8e5ffea08fa375d433c998b8a7639e76935c14f1f/markdown_it_py-3.0.0-py3-none-any.whl.metadata (6.9 kB)
+Requirement already satisfied: pygments<3.0.0,>=2.13.0 in /usr/local/lib/python3.8/dist-packages (from rich->openmim) (2.13.0)
+Requirement already satisfied: typing-extensions<5.0,>=4.0.0 in /usr/local/lib/python3.8/dist-packages (from rich->openmim) (4.4.0)
+Requirement already satisfied: mdurl~=0.1 in /usr/local/lib/python3.8/dist-packages (from markdown-it-py>=2.2.0->rich->openmim) (0.1.2)
+Requirement already satisfied: six>=1.5 in /usr/local/lib/python3.8/dist-packages (from python-dateutil>=2.6.1->pandas->openmim) (1.13.0)
+Requirement already satisfied: importlib-metadata>=4.4 in /usr/local/lib/python3.8/dist-packages (from markdown->model-index->openmim) (5.0.0)
+Collecting markdown-it-py>=2.2.0 (from rich->openmim)
+  Downloading http://pypi-cache/packages/42/d7/1ec15b46af6af88f19b8e5ffea08fa375d433c998b8a7639e76935c14f1f/markdown_it_py-3.0.0-py3-none-any.whl.metadata (6.9 kB)
+Collecting markdown-it-py>=2.2.0 (from rich->openmim)
+Requirement already satisfied: pygments<3.0.0,>=2.13.0 in /usr/local/lib/python3.8/dist-packages (from rich->openmim) (2.13.0)
+Requirement already satisfied: typing-extensions<5.0,>=4.0.0 in /usr/local/lib/python3.8/dist-packages (from rich->openmim) (4.4.0)
+  Downloading http://pypi-cache/packages/42/d7/1ec15b46af6af88f19b8e5ffea08fa375d433c998b8a7639e76935c14f1f/markdown_it_py-3.0.0-py3-none-any.whl.metadata (6.9 kB)
+Requirement already satisfied: mdurl~=0.1 in /usr/local/lib/python3.8/dist-packages (from markdown-it-py>=2.2.0->rich->openmim) (0.1.2)
+Requirement already satisfied: six>=1.5 in /usr/local/lib/python3.8/dist-packages (from python-dateutil>=2.6.1->pandas->openmim) (1.13.0)
+Requirement already satisfied: pygments<3.0.0,>=2.13.0 in /usr/local/lib/python3.8/dist-packages (from rich->openmim) (2.13.0)
+Requirement already satisfied: typing-extensions<5.0,>=4.0.0 in /usr/local/lib/python3.8/dist-packages (from rich->openmim) (4.4.0)
+Requirement already satisfied: mdurl~=0.1 in /usr/local/lib/python3.8/dist-packages (from markdown-it-py>=2.2.0->rich->openmim) (0.1.2)
+Requirement already satisfied: importlib-metadata>=4.4 in /usr/local/lib/python3.8/dist-packages (from markdown->model-index->openmim) (5.0.0)
+Requirement already satisfied: six>=1.5 in /usr/local/lib/python3.8/dist-packages (from python-dateutil>=2.6.1->pandas->openmim) (1.13.0)
+Requirement already satisfied: importlib-metadata>=4.4 in /usr/local/lib/python3.8/dist-packages (from markdown->model-index->openmim) (5.0.0)
+Collecting markdown-it-py>=2.2.0 (from rich->openmim)
+  Downloading http://pypi-cache/packages/42/d7/1ec15b46af6af88f19b8e5ffea08fa375d433c998b8a7639e76935c14f1f/markdown_it_py-3.0.0-py3-none-any.whl.metadata (6.9 kB)
+Requirement already satisfied: pygments<3.0.0,>=2.13.0 in /usr/local/lib/python3.8/dist-packages (from rich->openmim) (2.13.0)
+Requirement already satisfied: typing-extensions<5.0,>=4.0.0 in /usr/local/lib/python3.8/dist-packages (from rich->openmim) (4.4.0)
+Requirement already satisfied: mdurl~=0.1 in /usr/local/lib/python3.8/dist-packages (from markdown-it-py>=2.2.0->rich->openmim) (0.1.2)
+Requirement already satisfied: six>=1.5 in /usr/local/lib/python3.8/dist-packages (from python-dateutil>=2.6.1->pandas->openmim) (1.13.0)
+Requirement already satisfied: importlib-metadata>=4.4 in /usr/local/lib/python3.8/dist-packages (from markdown->model-index->openmim) (5.0.0)
+Collecting filelock~=3.14.0 (from openxlab->opendatalab->openmim)
+  Downloading http://pypi-cache/packages/41/24/0b023b6537dfc9bae2c779353998e3e99ac7dfff4222fc6126650e93c3f3/filelock-3.14.0-py3-none-any.whl.metadata (2.8 kB)
+Collecting filelock~=3.14.0 (from openxlab->opendatalab->openmim)
+  Downloading http://pypi-cache/packages/41/24/0b023b6537dfc9bae2c779353998e3e99ac7dfff4222fc6126650e93c3f3/filelock-3.14.0-py3-none-any.whl.metadata (2.8 kB)
+Collecting filelock~=3.14.0 (from openxlab->opendatalab->openmim)
+  Downloading http://pypi-cache/packages/41/24/0b023b6537dfc9bae2c779353998e3e99ac7dfff4222fc6126650e93c3f3/filelock-3.14.0-py3-none-any.whl.metadata (2.8 kB)
+Collecting filelock~=3.14.0 (from openxlab->opendatalab->openmim)
+  Downloading http://pypi-cache/packages/41/24/0b023b6537dfc9bae2c779353998e3e99ac7dfff4222fc6126650e93c3f3/filelock-3.14.0-py3-none-any.whl.metadata (2.8 kB)
+Collecting oss2~=2.17.0 (from openxlab->opendatalab->openmim)
+  Downloading http://pypi-cache/packages/86/e7/017f8a5948d70e130815eebd14c25dfad916bd574590f2d7e046f19eee3f/oss2-2.17.0.tar.gz (259 kB)
+  Preparing metadata (setup.py): started
+Collecting oss2~=2.17.0 (from openxlab->opendatalab->openmim)
+  Downloading http://pypi-cache/packages/86/e7/017f8a5948d70e130815eebd14c25dfad916bd574590f2d7e046f19eee3f/oss2-2.17.0.tar.gz (259 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting packaging~=24.0 (from openxlab->opendatalab->openmim)
+  Downloading http://pypi-cache/packages/88/ef/eb23f262cca3c0c4eb7ab1933c3b1f03d021f2c48f54763065b6f0e321be/packaging-24.2-py3-none-any.whl.metadata (3.2 kB)
+Collecting oss2~=2.17.0 (from openxlab->opendatalab->openmim)
+  Downloading http://pypi-cache/packages/86/e7/017f8a5948d70e130815eebd14c25dfad916bd574590f2d7e046f19eee3f/oss2-2.17.0.tar.gz (259 kB)
+  Preparing metadata (setup.py): finished with status 'done'
+  Preparing metadata (setup.py): started
+Collecting packaging~=24.0 (from openxlab->opendatalab->openmim)
+  Downloading http://pypi-cache/packages/88/ef/eb23f262cca3c0c4eb7ab1933c3b1f03d021f2c48f54763065b6f0e321be/packaging-24.2-py3-none-any.whl.metadata (3.2 kB)
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting packaging~=24.0 (from openxlab->opendatalab->openmim)
+  Downloading http://pypi-cache/packages/88/ef/eb23f262cca3c0c4eb7ab1933c3b1f03d021f2c48f54763065b6f0e321be/packaging-24.2-py3-none-any.whl.metadata (3.2 kB)
+Collecting oss2~=2.17.0 (from openxlab->opendatalab->openmim)
+  Downloading http://pypi-cache/packages/86/e7/017f8a5948d70e130815eebd14c25dfad916bd574590f2d7e046f19eee3f/oss2-2.17.0.tar.gz (259 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting packaging~=24.0 (from openxlab->opendatalab->openmim)
+  Downloading http://pypi-cache/packages/88/ef/eb23f262cca3c0c4eb7ab1933c3b1f03d021f2c48f54763065b6f0e321be/packaging-24.2-py3-none-any.whl.metadata (3.2 kB)
+Collecting pytz>=2017.2 (from pandas->openmim)
+  Downloading http://pypi-cache/packages/3b/dd/9b84302ba85ac6d3d3042d3e8698374838bde1c386b4adb1223d7a0efd4e/pytz-2023.4-py2.py3-none-any.whl.metadata (22 kB)
+Collecting pytz>=2017.2 (from pandas->openmim)
+  Downloading http://pypi-cache/packages/3b/dd/9b84302ba85ac6d3d3042d3e8698374838bde1c386b4adb1223d7a0efd4e/pytz-2023.4-py2.py3-none-any.whl.metadata (22 kB)
+Collecting pytz>=2017.2 (from pandas->openmim)
+  Downloading http://pypi-cache/packages/3b/dd/9b84302ba85ac6d3d3042d3e8698374838bde1c386b4adb1223d7a0efd4e/pytz-2023.4-py2.py3-none-any.whl.metadata (22 kB)
+Collecting requests (from openmim)
+  Downloading http://pypi-cache/packages/d2/f4/274d1dbe96b41cf4e0efb70cbced278ffd61b5c7bb70338b62af94ccb25b/requests-2.28.2-py3-none-any.whl.metadata (4.6 kB)
+Collecting rich (from openmim)
+  Downloading http://pypi-cache/packages/fc/1e/482e5eec0b89b593e81d78f819a9412849814e22225842b598908e7ac560/rich-13.4.2-py3-none-any.whl.metadata (18 kB)
+Collecting pytz>=2017.2 (from pandas->openmim)
+  Downloading http://pypi-cache/packages/3b/dd/9b84302ba85ac6d3d3042d3e8698374838bde1c386b4adb1223d7a0efd4e/pytz-2023.4-py2.py3-none-any.whl.metadata (22 kB)
+Collecting requests (from openmim)
+  Downloading http://pypi-cache/packages/d2/f4/274d1dbe96b41cf4e0efb70cbced278ffd61b5c7bb70338b62af94ccb25b/requests-2.28.2-py3-none-any.whl.metadata (4.6 kB)
+Collecting rich (from openmim)
+  Downloading http://pypi-cache/packages/fc/1e/482e5eec0b89b593e81d78f819a9412849814e22225842b598908e7ac560/rich-13.4.2-py3-none-any.whl.metadata (18 kB)
+Collecting requests (from openmim)
+  Downloading http://pypi-cache/packages/d2/f4/274d1dbe96b41cf4e0efb70cbced278ffd61b5c7bb70338b62af94ccb25b/requests-2.28.2-py3-none-any.whl.metadata (4.6 kB)
+Collecting rich (from openmim)
+  Downloading http://pypi-cache/packages/fc/1e/482e5eec0b89b593e81d78f819a9412849814e22225842b598908e7ac560/rich-13.4.2-py3-none-any.whl.metadata (18 kB)
+Collecting setuptools~=60.2.0 (from openxlab->opendatalab->openmim)
+  Downloading http://pypi-cache/packages/8e/16/8f64922c8d7cd7ec193b145c9b11ad281064ff8604452ba19a6d5bbd7ed9/setuptools-60.2.0-py3-none-any.whl.metadata (5.1 kB)
+Collecting setuptools~=60.2.0 (from openxlab->opendatalab->openmim)
+  Downloading http://pypi-cache/packages/8e/16/8f64922c8d7cd7ec193b145c9b11ad281064ff8604452ba19a6d5bbd7ed9/setuptools-60.2.0-py3-none-any.whl.metadata (5.1 kB)
+Collecting setuptools~=60.2.0 (from openxlab->opendatalab->openmim)
+  Downloading http://pypi-cache/packages/8e/16/8f64922c8d7cd7ec193b145c9b11ad281064ff8604452ba19a6d5bbd7ed9/setuptools-60.2.0-py3-none-any.whl.metadata (5.1 kB)
+Collecting requests (from openmim)
+  Downloading http://pypi-cache/packages/d2/f4/274d1dbe96b41cf4e0efb70cbced278ffd61b5c7bb70338b62af94ccb25b/requests-2.28.2-py3-none-any.whl.metadata (4.6 kB)
+Collecting rich (from openmim)
+  Downloading http://pypi-cache/packages/fc/1e/482e5eec0b89b593e81d78f819a9412849814e22225842b598908e7ac560/rich-13.4.2-py3-none-any.whl.metadata (18 kB)
+Collecting tqdm (from opendatalab->openmim)
+  Downloading http://pypi-cache/packages/c0/ab/bd9ba7f84c509c8b377628bc66696d52623e30c6c0830db3c78748eec4b4/tqdm-4.65.2-py3-none-any.whl.metadata (56 kB)
+Requirement already satisfied: zipp>=0.5 in /usr/local/lib/python3.8/dist-packages (from importlib-metadata>=4.4->markdown->model-index->openmim) (3.10.0)
+Collecting setuptools~=60.2.0 (from openxlab->opendatalab->openmim)
+  Downloading http://pypi-cache/packages/8e/16/8f64922c8d7cd7ec193b145c9b11ad281064ff8604452ba19a6d5bbd7ed9/setuptools-60.2.0-py3-none-any.whl.metadata (5.1 kB)
+Collecting tqdm (from opendatalab->openmim)
+  Downloading http://pypi-cache/packages/c0/ab/bd9ba7f84c509c8b377628bc66696d52623e30c6c0830db3c78748eec4b4/tqdm-4.65.2-py3-none-any.whl.metadata (56 kB)
+Collecting crcmod>=1.7 (from oss2~=2.17.0->openxlab->opendatalab->openmim)
+  Downloading http://pypi-cache/packages/6b/b0/e595ce2a2527e169c3bcd6c33d2473c1918e0b7f6826a043ca1245dd4e5b/crcmod-1.7.tar.gz (89 kB)
+Requirement already satisfied: zipp>=0.5 in /usr/local/lib/python3.8/dist-packages (from importlib-metadata>=4.4->markdown->model-index->openmim) (3.10.0)
+  Preparing metadata (setup.py): started
+Collecting tqdm (from opendatalab->openmim)
+  Downloading http://pypi-cache/packages/c0/ab/bd9ba7f84c509c8b377628bc66696d52623e30c6c0830db3c78748eec4b4/tqdm-4.65.2-py3-none-any.whl.metadata (56 kB)
+Requirement already satisfied: zipp>=0.5 in /usr/local/lib/python3.8/dist-packages (from importlib-metadata>=4.4->markdown->model-index->openmim) (3.10.0)
+Collecting crcmod>=1.7 (from oss2~=2.17.0->openxlab->opendatalab->openmim)
+  Downloading http://pypi-cache/packages/6b/b0/e595ce2a2527e169c3bcd6c33d2473c1918e0b7f6826a043ca1245dd4e5b/crcmod-1.7.tar.gz (89 kB)
+  Preparing metadata (setup.py): started
+Collecting tqdm (from opendatalab->openmim)
+  Downloading http://pypi-cache/packages/c0/ab/bd9ba7f84c509c8b377628bc66696d52623e30c6c0830db3c78748eec4b4/tqdm-4.65.2-py3-none-any.whl.metadata (56 kB)
+Requirement already satisfied: zipp>=0.5 in /usr/local/lib/python3.8/dist-packages (from importlib-metadata>=4.4->markdown->model-index->openmim) (3.10.0)
+Collecting crcmod>=1.7 (from oss2~=2.17.0->openxlab->opendatalab->openmim)
+  Preparing metadata (setup.py): finished with status 'done'
+  Downloading http://pypi-cache/packages/6b/b0/e595ce2a2527e169c3bcd6c33d2473c1918e0b7f6826a043ca1245dd4e5b/crcmod-1.7.tar.gz (89 kB)
+Collecting crcmod>=1.7 (from oss2~=2.17.0->openxlab->opendatalab->openmim)
+  Downloading http://pypi-cache/packages/6b/b0/e595ce2a2527e169c3bcd6c33d2473c1918e0b7f6826a043ca1245dd4e5b/crcmod-1.7.tar.gz (89 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+  Preparing metadata (setup.py): finished with status 'done'
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting aliyun-python-sdk-kms>=2.4.1 (from oss2~=2.17.0->openxlab->opendatalab->openmim)
+  Downloading http://pypi-cache/packages/11/5c/0132193d7da2c735669a1ed103b142fd63c9455984d48c5a88a1a516efaa/aliyun_python_sdk_kms-2.16.5-py2.py3-none-any.whl.metadata (1.5 kB)
+Collecting aliyun-python-sdk-kms>=2.4.1 (from oss2~=2.17.0->openxlab->opendatalab->openmim)
+  Downloading http://pypi-cache/packages/11/5c/0132193d7da2c735669a1ed103b142fd63c9455984d48c5a88a1a516efaa/aliyun_python_sdk_kms-2.16.5-py2.py3-none-any.whl.metadata (1.5 kB)
+Collecting aliyun-python-sdk-kms>=2.4.1 (from oss2~=2.17.0->openxlab->opendatalab->openmim)
+  Downloading http://pypi-cache/packages/11/5c/0132193d7da2c735669a1ed103b142fd63c9455984d48c5a88a1a516efaa/aliyun_python_sdk_kms-2.16.5-py2.py3-none-any.whl.metadata (1.5 kB)
+Collecting aliyun-python-sdk-kms>=2.4.1 (from oss2~=2.17.0->openxlab->opendatalab->openmim)
+  Downloading http://pypi-cache/packages/11/5c/0132193d7da2c735669a1ed103b142fd63c9455984d48c5a88a1a516efaa/aliyun_python_sdk_kms-2.16.5-py2.py3-none-any.whl.metadata (1.5 kB)
+Collecting aliyun-python-sdk-core>=2.13.12 (from oss2~=2.17.0->openxlab->opendatalab->openmim)
+  Downloading http://pypi-cache/packages/3e/09/da9f58eb38b4fdb97ba6523274fbf445ef6a06be64b433693da8307b4bec/aliyun-python-sdk-core-2.16.0.tar.gz (449 kB)
+  Preparing metadata (setup.py): started
+Collecting aliyun-python-sdk-core>=2.13.12 (from oss2~=2.17.0->openxlab->opendatalab->openmim)
+  Downloading http://pypi-cache/packages/3e/09/da9f58eb38b4fdb97ba6523274fbf445ef6a06be64b433693da8307b4bec/aliyun-python-sdk-core-2.16.0.tar.gz (449 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting aliyun-python-sdk-core>=2.13.12 (from oss2~=2.17.0->openxlab->opendatalab->openmim)
+  Downloading http://pypi-cache/packages/3e/09/da9f58eb38b4fdb97ba6523274fbf445ef6a06be64b433693da8307b4bec/aliyun-python-sdk-core-2.16.0.tar.gz (449 kB)
+  Preparing metadata (setup.py): started
+Collecting aliyun-python-sdk-core>=2.13.12 (from oss2~=2.17.0->openxlab->opendatalab->openmim)
+  Downloading http://pypi-cache/packages/3e/09/da9f58eb38b4fdb97ba6523274fbf445ef6a06be64b433693da8307b4bec/aliyun-python-sdk-core-2.16.0.tar.gz (449 kB)
+  Preparing metadata (setup.py): finished with status 'done'
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting jmespath<1.0.0,>=0.9.3 (from aliyun-python-sdk-core>=2.13.12->oss2~=2.17.0->openxlab->opendatalab->openmim)
+  Downloading http://pypi-cache/packages/07/cb/5f001272b6faeb23c1c9e0acc04d48eaaf5c862c17709d20e3469c6e0139/jmespath-0.10.0-py2.py3-none-any.whl.metadata (8.0 kB)
+Collecting cryptography>=3.0.0 (from aliyun-python-sdk-core>=2.13.12->oss2~=2.17.0->openxlab->opendatalab->openmim)
+  Downloading http://pypi-cache/packages/7f/e3/57b010282346980475e77d414080acdcb3dab9a0be63071efc2041a2c6bd/cryptography-45.0.4-cp37-abi3-manylinux_2_28_x86_64.whl.metadata (5.7 kB)
+Collecting jmespath<1.0.0,>=0.9.3 (from aliyun-python-sdk-core>=2.13.12->oss2~=2.17.0->openxlab->opendatalab->openmim)
+Collecting jmespath<1.0.0,>=0.9.3 (from aliyun-python-sdk-core>=2.13.12->oss2~=2.17.0->openxlab->opendatalab->openmim)
+  Downloading http://pypi-cache/packages/07/cb/5f001272b6faeb23c1c9e0acc04d48eaaf5c862c17709d20e3469c6e0139/jmespath-0.10.0-py2.py3-none-any.whl.metadata (8.0 kB)
+  Downloading http://pypi-cache/packages/07/cb/5f001272b6faeb23c1c9e0acc04d48eaaf5c862c17709d20e3469c6e0139/jmespath-0.10.0-py2.py3-none-any.whl.metadata (8.0 kB)
+Requirement already satisfied: cffi>=1.14 in /usr/local/lib/python3.8/dist-packages (from cryptography>=3.0.0->aliyun-python-sdk-core>=2.13.12->oss2~=2.17.0->openxlab->opendatalab->openmim) (1.15.1)
+Requirement already satisfied: pycparser in /usr/local/lib/python3.8/dist-packages (from cffi>=1.14->cryptography>=3.0.0->aliyun-python-sdk-core>=2.13.12->oss2~=2.17.0->openxlab->opendatalab->openmim) (2.21)
+Downloading http://pypi-cache/packages/00/b3/95531cee452028869d0e08974561f83e9c256c98f62c7a45a51893a61c54/openmim-0.3.9-py2.py3-none-any.whl (52 kB)
+Downloading http://pypi-cache/packages/0f/a6/4d4cbbef704f186d143e2859296a610a355992e4eae71582bd598093b36a/model_index-0.1.11-py3-none-any.whl (34 kB)
+Downloading http://pypi-cache/packages/10/82/28fa3a91b7c4852fbad9ad32c7b49e4b1e212ab7ccf7296736da0935070d/opendatalab-0.0.10-py3-none-any.whl (29 kB)
+Downloading http://pypi-cache/packages/42/d7/1ec15b46af6af88f19b8e5ffea08fa375d433c998b8a7639e76935c14f1f/markdown_it_py-3.0.0-py3-none-any.whl (87 kB)
+Downloading http://pypi-cache/packages/f6/44/72835f891368287cb4d297165a48f00a1f3b9c6b05f2cda759d6fe505ead/openxlab-0.1.2-py3-none-any.whl (311 kB)
+Downloading http://pypi-cache/packages/d2/f4/274d1dbe96b41cf4e0efb70cbced278ffd61b5c7bb70338b62af94ccb25b/requests-2.28.2-py3-none-any.whl (62 kB)
+Downloading http://pypi-cache/packages/fc/1e/482e5eec0b89b593e81d78f819a9412849814e22225842b598908e7ac560/rich-13.4.2-py3-none-any.whl (239 kB)
+Downloading http://pypi-cache/packages/3b/dd/9b84302ba85ac6d3d3042d3e8698374838bde1c386b4adb1223d7a0efd4e/pytz-2023.4-py2.py3-none-any.whl (506 kB)
+Downloading http://pypi-cache/packages/c0/ab/bd9ba7f84c509c8b377628bc66696d52623e30c6c0830db3c78748eec4b4/tqdm-4.65.2-py3-none-any.whl (77 kB)
+Downloading http://pypi-cache/packages/33/55/af02708f230eb77084a299d7b08175cff006dea4f2721074b92cdb0296c0/ordered_set-4.1.0-py3-none-any.whl (7.6 kB)
+Downloading http://pypi-cache/packages/5f/e9/a09476d436d0ff1402ac3867d933c61805ec2326c6ea557aeeac3825604e/pycryptodome-3.23.0-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.3/2.3 MB 737.2 MB/s eta 0:00:00
+Downloading http://pypi-cache/packages/41/24/0b023b6537dfc9bae2c779353998e3e99ac7dfff4222fc6126650e93c3f3/filelock-3.14.0-py3-none-any.whl (12 kB)
+Downloading http://pypi-cache/packages/88/ef/eb23f262cca3c0c4eb7ab1933c3b1f03d021f2c48f54763065b6f0e321be/packaging-24.2-py3-none-any.whl (65 kB)
+Downloading http://pypi-cache/packages/8e/16/8f64922c8d7cd7ec193b145c9b11ad281064ff8604452ba19a6d5bbd7ed9/setuptools-60.2.0-py3-none-any.whl (953 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 953.1/953.1 kB 720.5 MB/s eta 0:00:00
+Downloading http://pypi-cache/packages/11/5c/0132193d7da2c735669a1ed103b142fd63c9455984d48c5a88a1a516efaa/aliyun_python_sdk_kms-2.16.5-py2.py3-none-any.whl (99 kB)
+Downloading http://pypi-cache/packages/7f/e3/57b010282346980475e77d414080acdcb3dab9a0be63071efc2041a2c6bd/cryptography-45.0.4-cp37-abi3-manylinux_2_28_x86_64.whl (4.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.5/4.5 MB 707.9 MB/s eta 0:00:00
+Downloading http://pypi-cache/packages/07/cb/5f001272b6faeb23c1c9e0acc04d48eaaf5c862c17709d20e3469c6e0139/jmespath-0.10.0-py2.py3-none-any.whl (24 kB)
+Building wheels for collected packages: oss2, aliyun-python-sdk-core, crcmod
+  Building wheel for oss2 (setup.py): started
+Collecting cryptography>=3.0.0 (from aliyun-python-sdk-core>=2.13.12->oss2~=2.17.0->openxlab->opendatalab->openmim)
+  Downloading http://pypi-cache/packages/7f/e3/57b010282346980475e77d414080acdcb3dab9a0be63071efc2041a2c6bd/cryptography-45.0.4-cp37-abi3-manylinux_2_28_x86_64.whl.metadata (5.7 kB)
+Requirement already satisfied: cffi>=1.14 in /usr/local/lib/python3.8/dist-packages (from cryptography>=3.0.0->aliyun-python-sdk-core>=2.13.12->oss2~=2.17.0->openxlab->opendatalab->openmim) (1.15.1)
+Requirement already satisfied: pycparser in /usr/local/lib/python3.8/dist-packages (from cffi>=1.14->cryptography>=3.0.0->aliyun-python-sdk-core>=2.13.12->oss2~=2.17.0->openxlab->opendatalab->openmim) (2.21)
+Downloading http://pypi-cache/packages/00/b3/95531cee452028869d0e08974561f83e9c256c98f62c7a45a51893a61c54/openmim-0.3.9-py2.py3-none-any.whl (52 kB)
+Downloading http://pypi-cache/packages/0f/a6/4d4cbbef704f186d143e2859296a610a355992e4eae71582bd598093b36a/model_index-0.1.11-py3-none-any.whl (34 kB)
+Downloading http://pypi-cache/packages/10/82/28fa3a91b7c4852fbad9ad32c7b49e4b1e212ab7ccf7296736da0935070d/opendatalab-0.0.10-py3-none-any.whl (29 kB)
+Downloading http://pypi-cache/packages/42/d7/1ec15b46af6af88f19b8e5ffea08fa375d433c998b8a7639e76935c14f1f/markdown_it_py-3.0.0-py3-none-any.whl (87 kB)
+Downloading http://pypi-cache/packages/f6/44/72835f891368287cb4d297165a48f00a1f3b9c6b05f2cda759d6fe505ead/openxlab-0.1.2-py3-none-any.whl (311 kB)
+Downloading http://pypi-cache/packages/d2/f4/274d1dbe96b41cf4e0efb70cbced278ffd61b5c7bb70338b62af94ccb25b/requests-2.28.2-py3-none-any.whl (62 kB)
+Downloading http://pypi-cache/packages/fc/1e/482e5eec0b89b593e81d78f819a9412849814e22225842b598908e7ac560/rich-13.4.2-py3-none-any.whl (239 kB)
+Downloading http://pypi-cache/packages/3b/dd/9b84302ba85ac6d3d3042d3e8698374838bde1c386b4adb1223d7a0efd4e/pytz-2023.4-py2.py3-none-any.whl (506 kB)
+Downloading http://pypi-cache/packages/c0/ab/bd9ba7f84c509c8b377628bc66696d52623e30c6c0830db3c78748eec4b4/tqdm-4.65.2-py3-none-any.whl (77 kB)
+Downloading http://pypi-cache/packages/33/55/af02708f230eb77084a299d7b08175cff006dea4f2721074b92cdb0296c0/ordered_set-4.1.0-py3-none-any.whl (7.6 kB)
+Downloading http://pypi-cache/packages/5f/e9/a09476d436d0ff1402ac3867d933c61805ec2326c6ea557aeeac3825604e/pycryptodome-3.23.0-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.3/2.3 MB 762.4 MB/s eta 0:00:00
+Downloading http://pypi-cache/packages/41/24/0b023b6537dfc9bae2c779353998e3e99ac7dfff4222fc6126650e93c3f3/filelock-3.14.0-py3-none-any.whl (12 kB)
+Downloading http://pypi-cache/packages/88/ef/eb23f262cca3c0c4eb7ab1933c3b1f03d021f2c48f54763065b6f0e321be/packaging-24.2-py3-none-any.whl (65 kB)
+Downloading http://pypi-cache/packages/8e/16/8f64922c8d7cd7ec193b145c9b11ad281064ff8604452ba19a6d5bbd7ed9/setuptools-60.2.0-py3-none-any.whl (953 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 953.1/953.1 kB 874.2 MB/s eta 0:00:00
+Downloading http://pypi-cache/packages/11/5c/0132193d7da2c735669a1ed103b142fd63c9455984d48c5a88a1a516efaa/aliyun_python_sdk_kms-2.16.5-py2.py3-none-any.whl (99 kB)
+Downloading http://pypi-cache/packages/7f/e3/57b010282346980475e77d414080acdcb3dab9a0be63071efc2041a2c6bd/cryptography-45.0.4-cp37-abi3-manylinux_2_28_x86_64.whl (4.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.5/4.5 MB 676.0 MB/s eta 0:00:00
+Downloading http://pypi-cache/packages/07/cb/5f001272b6faeb23c1c9e0acc04d48eaaf5c862c17709d20e3469c6e0139/jmespath-0.10.0-py2.py3-none-any.whl (24 kB)
+Collecting jmespath<1.0.0,>=0.9.3 (from aliyun-python-sdk-core>=2.13.12->oss2~=2.17.0->openxlab->opendatalab->openmim)
+  Downloading http://pypi-cache/packages/07/cb/5f001272b6faeb23c1c9e0acc04d48eaaf5c862c17709d20e3469c6e0139/jmespath-0.10.0-py2.py3-none-any.whl.metadata (8.0 kB)
+  Building wheel for oss2 (setup.py): finished with status 'done'
+  Created wheel for oss2: filename=oss2-2.17.0-py3-none-any.whl size=112394 sha256=d87ed9f41bb4d153528da66b88c7cb868e8cbabafa11531e04bafc296a523320
+  Stored in directory: /tmp/pip-ephem-wheel-cache-fy16xnx0/wheels/16/60/dd/f483176ae17472797e51ec6b55900c4b38f898d3fd2995086b
+Building wheels for collected packages: oss2, aliyun-python-sdk-core, crcmod
+  Building wheel for oss2 (setup.py): started
+  Building wheel for aliyun-python-sdk-core (setup.py): started
+Collecting cryptography>=3.0.0 (from aliyun-python-sdk-core>=2.13.12->oss2~=2.17.0->openxlab->opendatalab->openmim)
+  Downloading http://pypi-cache/packages/7f/e3/57b010282346980475e77d414080acdcb3dab9a0be63071efc2041a2c6bd/cryptography-45.0.4-cp37-abi3-manylinux_2_28_x86_64.whl.metadata (5.7 kB)
+  Building wheel for oss2 (setup.py): finished with status 'done'
+  Created wheel for oss2: filename=oss2-2.17.0-py3-none-any.whl size=112394 sha256=d87ed9f41bb4d153528da66b88c7cb868e8cbabafa11531e04bafc296a523320
+  Stored in directory: /tmp/pip-ephem-wheel-cache-w_frf_t9/wheels/16/60/dd/f483176ae17472797e51ec6b55900c4b38f898d3fd2995086b
+  Building wheel for aliyun-python-sdk-core (setup.py): started
+Requirement already satisfied: cffi>=1.14 in /usr/local/lib/python3.8/dist-packages (from cryptography>=3.0.0->aliyun-python-sdk-core>=2.13.12->oss2~=2.17.0->openxlab->opendatalab->openmim) (1.15.1)
+Requirement already satisfied: pycparser in /usr/local/lib/python3.8/dist-packages (from cffi>=1.14->cryptography>=3.0.0->aliyun-python-sdk-core>=2.13.12->oss2~=2.17.0->openxlab->opendatalab->openmim) (2.21)
+Downloading http://pypi-cache/packages/00/b3/95531cee452028869d0e08974561f83e9c256c98f62c7a45a51893a61c54/openmim-0.3.9-py2.py3-none-any.whl (52 kB)
+Downloading http://pypi-cache/packages/0f/a6/4d4cbbef704f186d143e2859296a610a355992e4eae71582bd598093b36a/model_index-0.1.11-py3-none-any.whl (34 kB)
+Downloading http://pypi-cache/packages/10/82/28fa3a91b7c4852fbad9ad32c7b49e4b1e212ab7ccf7296736da0935070d/opendatalab-0.0.10-py3-none-any.whl (29 kB)
+Downloading http://pypi-cache/packages/42/d7/1ec15b46af6af88f19b8e5ffea08fa375d433c998b8a7639e76935c14f1f/markdown_it_py-3.0.0-py3-none-any.whl (87 kB)
+Downloading http://pypi-cache/packages/f6/44/72835f891368287cb4d297165a48f00a1f3b9c6b05f2cda759d6fe505ead/openxlab-0.1.2-py3-none-any.whl (311 kB)
+Downloading http://pypi-cache/packages/d2/f4/274d1dbe96b41cf4e0efb70cbced278ffd61b5c7bb70338b62af94ccb25b/requests-2.28.2-py3-none-any.whl (62 kB)
+Downloading http://pypi-cache/packages/fc/1e/482e5eec0b89b593e81d78f819a9412849814e22225842b598908e7ac560/rich-13.4.2-py3-none-any.whl (239 kB)
+Downloading http://pypi-cache/packages/3b/dd/9b84302ba85ac6d3d3042d3e8698374838bde1c386b4adb1223d7a0efd4e/pytz-2023.4-py2.py3-none-any.whl (506 kB)
+Downloading http://pypi-cache/packages/c0/ab/bd9ba7f84c509c8b377628bc66696d52623e30c6c0830db3c78748eec4b4/tqdm-4.65.2-py3-none-any.whl (77 kB)
+Downloading http://pypi-cache/packages/33/55/af02708f230eb77084a299d7b08175cff006dea4f2721074b92cdb0296c0/ordered_set-4.1.0-py3-none-any.whl (7.6 kB)
+Downloading http://pypi-cache/packages/5f/e9/a09476d436d0ff1402ac3867d933c61805ec2326c6ea557aeeac3825604e/pycryptodome-3.23.0-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.3/2.3 MB 738.0 MB/s eta 0:00:00
+Downloading http://pypi-cache/packages/41/24/0b023b6537dfc9bae2c779353998e3e99ac7dfff4222fc6126650e93c3f3/filelock-3.14.0-py3-none-any.whl (12 kB)
+Downloading http://pypi-cache/packages/88/ef/eb23f262cca3c0c4eb7ab1933c3b1f03d021f2c48f54763065b6f0e321be/packaging-24.2-py3-none-any.whl (65 kB)
+Downloading http://pypi-cache/packages/8e/16/8f64922c8d7cd7ec193b145c9b11ad281064ff8604452ba19a6d5bbd7ed9/setuptools-60.2.0-py3-none-any.whl (953 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 953.1/953.1 kB 839.6 MB/s eta 0:00:00
+Downloading http://pypi-cache/packages/11/5c/0132193d7da2c735669a1ed103b142fd63c9455984d48c5a88a1a516efaa/aliyun_python_sdk_kms-2.16.5-py2.py3-none-any.whl (99 kB)
+Downloading http://pypi-cache/packages/7f/e3/57b010282346980475e77d414080acdcb3dab9a0be63071efc2041a2c6bd/cryptography-45.0.4-cp37-abi3-manylinux_2_28_x86_64.whl (4.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.5/4.5 MB 681.6 MB/s eta 0:00:00
+Downloading http://pypi-cache/packages/07/cb/5f001272b6faeb23c1c9e0acc04d48eaaf5c862c17709d20e3469c6e0139/jmespath-0.10.0-py2.py3-none-any.whl (24 kB)
+  Building wheel for aliyun-python-sdk-core (setup.py): finished with status 'done'
+  Created wheel for aliyun-python-sdk-core: filename=aliyun_python_sdk_core-2.16.0-py3-none-any.whl size=535327 sha256=67de998ce432a83df3f2c523a46eda5f957bf765d722b664a2de0e74f36ef0fd
+  Stored in directory: /tmp/pip-ephem-wheel-cache-fy16xnx0/wheels/17/79/4e/5bbfa738da011934e630500e895eea53ea3b1348a6e2fae541
+  Building wheel for crcmod (setup.py): started
+Building wheels for collected packages: oss2, aliyun-python-sdk-core, crcmod
+  Building wheel for oss2 (setup.py): started
+Collecting cryptography>=3.0.0 (from aliyun-python-sdk-core>=2.13.12->oss2~=2.17.0->openxlab->opendatalab->openmim)
+  Downloading http://pypi-cache/packages/7f/e3/57b010282346980475e77d414080acdcb3dab9a0be63071efc2041a2c6bd/cryptography-45.0.4-cp37-abi3-manylinux_2_28_x86_64.whl.metadata (5.7 kB)
+Requirement already satisfied: cffi>=1.14 in /usr/local/lib/python3.8/dist-packages (from cryptography>=3.0.0->aliyun-python-sdk-core>=2.13.12->oss2~=2.17.0->openxlab->opendatalab->openmim) (1.15.1)
+Requirement already satisfied: pycparser in /usr/local/lib/python3.8/dist-packages (from cffi>=1.14->cryptography>=3.0.0->aliyun-python-sdk-core>=2.13.12->oss2~=2.17.0->openxlab->opendatalab->openmim) (2.21)
+Downloading http://pypi-cache/packages/00/b3/95531cee452028869d0e08974561f83e9c256c98f62c7a45a51893a61c54/openmim-0.3.9-py2.py3-none-any.whl (52 kB)
+Downloading http://pypi-cache/packages/0f/a6/4d4cbbef704f186d143e2859296a610a355992e4eae71582bd598093b36a/model_index-0.1.11-py3-none-any.whl (34 kB)
+Downloading http://pypi-cache/packages/10/82/28fa3a91b7c4852fbad9ad32c7b49e4b1e212ab7ccf7296736da0935070d/opendatalab-0.0.10-py3-none-any.whl (29 kB)
+Downloading http://pypi-cache/packages/42/d7/1ec15b46af6af88f19b8e5ffea08fa375d433c998b8a7639e76935c14f1f/markdown_it_py-3.0.0-py3-none-any.whl (87 kB)
+Downloading http://pypi-cache/packages/f6/44/72835f891368287cb4d297165a48f00a1f3b9c6b05f2cda759d6fe505ead/openxlab-0.1.2-py3-none-any.whl (311 kB)
+Downloading http://pypi-cache/packages/d2/f4/274d1dbe96b41cf4e0efb70cbced278ffd61b5c7bb70338b62af94ccb25b/requests-2.28.2-py3-none-any.whl (62 kB)
+Downloading http://pypi-cache/packages/fc/1e/482e5eec0b89b593e81d78f819a9412849814e22225842b598908e7ac560/rich-13.4.2-py3-none-any.whl (239 kB)
+Downloading http://pypi-cache/packages/3b/dd/9b84302ba85ac6d3d3042d3e8698374838bde1c386b4adb1223d7a0efd4e/pytz-2023.4-py2.py3-none-any.whl (506 kB)
+Downloading http://pypi-cache/packages/c0/ab/bd9ba7f84c509c8b377628bc66696d52623e30c6c0830db3c78748eec4b4/tqdm-4.65.2-py3-none-any.whl (77 kB)
+Downloading http://pypi-cache/packages/33/55/af02708f230eb77084a299d7b08175cff006dea4f2721074b92cdb0296c0/ordered_set-4.1.0-py3-none-any.whl (7.6 kB)
+Downloading http://pypi-cache/packages/5f/e9/a09476d436d0ff1402ac3867d933c61805ec2326c6ea557aeeac3825604e/pycryptodome-3.23.0-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.3/2.3 MB 623.2 MB/s eta 0:00:00
+Downloading http://pypi-cache/packages/41/24/0b023b6537dfc9bae2c779353998e3e99ac7dfff4222fc6126650e93c3f3/filelock-3.14.0-py3-none-any.whl (12 kB)
+Downloading http://pypi-cache/packages/88/ef/eb23f262cca3c0c4eb7ab1933c3b1f03d021f2c48f54763065b6f0e321be/packaging-24.2-py3-none-any.whl (65 kB)
+Downloading http://pypi-cache/packages/8e/16/8f64922c8d7cd7ec193b145c9b11ad281064ff8604452ba19a6d5bbd7ed9/setuptools-60.2.0-py3-none-any.whl (953 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 953.1/953.1 kB 762.8 MB/s eta 0:00:00
+Downloading http://pypi-cache/packages/11/5c/0132193d7da2c735669a1ed103b142fd63c9455984d48c5a88a1a516efaa/aliyun_python_sdk_kms-2.16.5-py2.py3-none-any.whl (99 kB)
+Downloading http://pypi-cache/packages/7f/e3/57b010282346980475e77d414080acdcb3dab9a0be63071efc2041a2c6bd/cryptography-45.0.4-cp37-abi3-manylinux_2_28_x86_64.whl (4.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.5/4.5 MB 725.7 MB/s eta 0:00:00
+Downloading http://pypi-cache/packages/07/cb/5f001272b6faeb23c1c9e0acc04d48eaaf5c862c17709d20e3469c6e0139/jmespath-0.10.0-py2.py3-none-any.whl (24 kB)
+Building wheels for collected packages: oss2, aliyun-python-sdk-core, crcmod
+  Building wheel for oss2 (setup.py): started
+  Building wheel for aliyun-python-sdk-core (setup.py): finished with status 'done'
+  Created wheel for aliyun-python-sdk-core: filename=aliyun_python_sdk_core-2.16.0-py3-none-any.whl size=535327 sha256=67de998ce432a83df3f2c523a46eda5f957bf765d722b664a2de0e74f36ef0fd
+  Stored in directory: /tmp/pip-ephem-wheel-cache-w_frf_t9/wheels/17/79/4e/5bbfa738da011934e630500e895eea53ea3b1348a6e2fae541
+  Building wheel for crcmod (setup.py): started
+  Building wheel for oss2 (setup.py): finished with status 'done'
+  Created wheel for oss2: filename=oss2-2.17.0-py3-none-any.whl size=112394 sha256=d87ed9f41bb4d153528da66b88c7cb868e8cbabafa11531e04bafc296a523320
+  Stored in directory: /tmp/pip-ephem-wheel-cache-02u9cdtf/wheels/16/60/dd/f483176ae17472797e51ec6b55900c4b38f898d3fd2995086b
+  Building wheel for aliyun-python-sdk-core (setup.py): started
+  Building wheel for oss2 (setup.py): finished with status 'done'
+  Created wheel for oss2: filename=oss2-2.17.0-py3-none-any.whl size=112394 sha256=d87ed9f41bb4d153528da66b88c7cb868e8cbabafa11531e04bafc296a523320
+  Stored in directory: /tmp/pip-ephem-wheel-cache-qp64a33f/wheels/16/60/dd/f483176ae17472797e51ec6b55900c4b38f898d3fd2995086b
+  Building wheel for aliyun-python-sdk-core (setup.py): started
+  Building wheel for crcmod (setup.py): finished with status 'done'
+  Created wheel for crcmod: filename=crcmod-1.7-cp38-cp38-linux_x86_64.whl size=36032 sha256=2a83cd636a620b13ba727448619a4ffb4d2f66b0126127448530967b73b473b4
+  Stored in directory: /tmp/pip-ephem-wheel-cache-fy16xnx0/wheels/f1/98/2f/b4b0edef5ce26a98095255b9a0ef1d472dfddb6f6e2be2933b
+Successfully built oss2 aliyun-python-sdk-core crcmod
+  Building wheel for aliyun-python-sdk-core (setup.py): finished with status 'done'
+  Created wheel for aliyun-python-sdk-core: filename=aliyun_python_sdk_core-2.16.0-py3-none-any.whl size=535327 sha256=67de998ce432a83df3f2c523a46eda5f957bf765d722b664a2de0e74f36ef0fd
+  Stored in directory: /tmp/pip-ephem-wheel-cache-02u9cdtf/wheels/17/79/4e/5bbfa738da011934e630500e895eea53ea3b1348a6e2fae541
+  Building wheel for crcmod (setup.py): started
+  Building wheel for crcmod (setup.py): finished with status 'done'
+  Created wheel for crcmod: filename=crcmod-1.7-cp38-cp38-linux_x86_64.whl size=36032 sha256=420d790dc7d527ace13defe4330626e6b1cb4c671a8eaae927ece74b23f66444
+  Stored in directory: /tmp/pip-ephem-wheel-cache-w_frf_t9/wheels/f1/98/2f/b4b0edef5ce26a98095255b9a0ef1d472dfddb6f6e2be2933b
+Successfully built oss2 aliyun-python-sdk-core crcmod
+  Building wheel for aliyun-python-sdk-core (setup.py): finished with status 'done'
+  Created wheel for aliyun-python-sdk-core: filename=aliyun_python_sdk_core-2.16.0-py3-none-any.whl size=535327 sha256=67de998ce432a83df3f2c523a46eda5f957bf765d722b664a2de0e74f36ef0fd
+  Stored in directory: /tmp/pip-ephem-wheel-cache-qp64a33f/wheels/17/79/4e/5bbfa738da011934e630500e895eea53ea3b1348a6e2fae541
+  Building wheel for crcmod (setup.py): started
+Installing collected packages: pytz, crcmod, tqdm, setuptools, requests, pycryptodome, packaging, ordered-set, markdown-it-py, jmespath, filelock, rich, cryptography, model-index, aliyun-python-sdk-core, aliyun-python-sdk-kms, oss2, openxlab, opendatalab, openmim
+  Attempting uninstall: pytz
+    Found existing installation: pytz 2019.3
+    Uninstalling pytz-2019.3:
+      Successfully uninstalled pytz-2019.3
+  Attempting uninstall: tqdm
+    Found existing installation: tqdm 4.64.1
+    Uninstalling tqdm-4.64.1:
+      Successfully uninstalled tqdm-4.64.1
+  Attempting uninstall: setuptools
+    Found existing installation: setuptools 59.5.0
+    Uninstalling setuptools-59.5.0:
+  Building wheel for crcmod (setup.py): finished with status 'done'
+  Created wheel for crcmod: filename=crcmod-1.7-cp38-cp38-linux_x86_64.whl size=36033 sha256=8173f77b52441471424271e63f92e534e9e52413d69616172a7dfcd781f255c8
+  Stored in directory: /tmp/pip-ephem-wheel-cache-02u9cdtf/wheels/f1/98/2f/b4b0edef5ce26a98095255b9a0ef1d472dfddb6f6e2be2933b
+Successfully built oss2 aliyun-python-sdk-core crcmod
+Installing collected packages: pytz, crcmod, tqdm, setuptools, requests, pycryptodome, packaging, ordered-set, markdown-it-py, jmespath, filelock, rich, cryptography, model-index, aliyun-python-sdk-core, aliyun-python-sdk-kms, oss2, openxlab, opendatalab, openmim
+  Attempting uninstall: pytz
+    Found existing installation: pytz 2019.3
+    Can't uninstall 'pytz'. No files were found to uninstall.
+  Attempting uninstall: tqdm
+    Found existing installation: tqdm 4.64.1
+    Can't uninstall 'tqdm'. No files were found to uninstall.
+  Building wheel for crcmod (setup.py): finished with status 'done'
+  Created wheel for crcmod: filename=crcmod-1.7-cp38-cp38-linux_x86_64.whl size=36035 sha256=3a0f5e963a2c871f3ef9eb2eb327ba49e76bed33a3e0fb37cf2c94f8f659f97f
+  Stored in directory: /tmp/pip-ephem-wheel-cache-qp64a33f/wheels/f1/98/2f/b4b0edef5ce26a98095255b9a0ef1d472dfddb6f6e2be2933b
+Successfully built oss2 aliyun-python-sdk-core crcmod
+  Attempting uninstall: setuptools
+    Found existing installation: setuptools 59.5.0
+    Uninstalling setuptools-59.5.0:
+      Successfully uninstalled setuptools-59.5.0
+  Attempting uninstall: requests
+    Found existing installation: requests 2.28.1
+Installing collected packages: pytz, crcmod, tqdm, setuptools, requests, pycryptodome, packaging, ordered-set, markdown-it-py, jmespath, filelock, rich, cryptography, model-index, aliyun-python-sdk-core, aliyun-python-sdk-kms, oss2, openxlab, opendatalab, openmim
+  Attempting uninstall: pytz
+    Found existing installation: pytz 2019.3
+    Uninstalling requests-2.28.1:
+      Successfully uninstalled requests-2.28.1
+    Can't uninstall 'pytz'. No files were found to uninstall.
+  Attempting uninstall: tqdm
+    Found existing installation: tqdm 4.64.1
+    Can't uninstall 'tqdm'. No files were found to uninstall.
+  Attempting uninstall: setuptools
+    Found existing installation: setuptools 59.5.0
+    Can't uninstall 'setuptools'. No files were found to uninstall.
+Installing collected packages: pytz, crcmod, tqdm, setuptools, requests, pycryptodome, packaging, ordered-set, markdown-it-py, jmespath, filelock, rich, cryptography, model-index, aliyun-python-sdk-core, aliyun-python-sdk-kms, oss2, openxlab, opendatalab, openmim
+  Attempting uninstall: pytz
+    Found existing installation: pytz 2019.3
+    Can't uninstall 'pytz'. No files were found to uninstall.
+  Attempting uninstall: tqdm
+    Found existing installation: tqdm 4.64.1
+    Can't uninstall 'tqdm'. No files were found to uninstall.
+  Attempting uninstall: setuptools
+    Found existing installation: setuptools 59.5.0
+    Can't uninstall 'setuptools'. No files were found to uninstall.
+  Attempting uninstall: packaging
+    Found existing installation: packaging 21.3
+    Uninstalling packaging-21.3:
+      Successfully uninstalled packaging-21.3
+  Attempting uninstall: markdown-it-py
+    Found existing installation: markdown-it-py 2.1.0
+    Uninstalling markdown-it-py-2.1.0:
+      Successfully uninstalled markdown-it-py-2.1.0
+  Attempting uninstall: requests
+    Found existing installation: requests 2.28.1
+    Can't uninstall 'requests'. No files were found to uninstall.
+  Attempting uninstall: filelock
+    Found existing installation: filelock 3.12.0
+    Uninstalling filelock-3.12.0:
+      Successfully uninstalled filelock-3.12.0
+  Attempting uninstall: requests
+    Found existing installation: requests 2.28.1
+    Can't uninstall 'requests'. No files were found to uninstall.
+  Attempting uninstall: packaging
+    Found existing installation: packaging 21.3
+    Can't uninstall 'packaging'. No files were found to uninstall.
+  Attempting uninstall: markdown-it-py
+    Found existing installation: markdown-it-py 2.1.0
+    Can't uninstall 'markdown-it-py'. No files were found to uninstall.
+  Attempting uninstall: filelock
+    Found existing installation: filelock 3.12.0
+    Can't uninstall 'filelock'. No files were found to uninstall.
+  Attempting uninstall: packaging
+    Found existing installation: packaging 21.3
+    Can't uninstall 'packaging'. No files were found to uninstall.
+  Attempting uninstall: markdown-it-py
+    Found existing installation: markdown-it-py 2.1.0
+    Can't uninstall 'markdown-it-py'. No files were found to uninstall.
+  Attempting uninstall: filelock
+    Found existing installation: filelock 3.12.0
+    Can't uninstall 'filelock'. No files were found to uninstall.
+Successfully installed aliyun-python-sdk-core-2.16.0 aliyun-python-sdk-kms-2.16.5 crcmod-1.7 cryptography-45.0.4 filelock-3.14.0 jmespath-0.10.0 markdown-it-py-3.0.0 model-index-0.1.11 opendatalab-0.0.10 openmim-0.3.9 openxlab-0.1.2 ordered-set-4.1.0 oss2-2.17.0 packaging-24.2 pycryptodome-3.23.0 pytz-2023.4 requests-2.28.2 rich-13.4.2 setuptools-60.2.0 tqdm-4.65.2
+Successfully installed aliyun-python-sdk-core-2.16.0 aliyun-python-sdk-kms-2.16.5 crcmod-1.7 cryptography-45.0.4 filelock-3.14.0 jmespath-0.10.0 markdown-it-py-3.0.0 model-index-0.1.11 opendatalab-0.0.10 openmim-0.3.9 openxlab-0.1.2 ordered-set-4.1.0 oss2-2.17.0 packaging-24.2 pycryptodome-3.23.0 pytz-2023.4 requests-2.28.2 rich-13.4.2 setuptools-60.2.0 tqdm-4.65.2
+Successfully installed aliyun-python-sdk-core-2.16.0 aliyun-python-sdk-kms-2.16.5 crcmod-1.7 cryptography-45.0.4 filelock-3.14.0 jmespath-0.10.0 markdown-it-py-3.0.0 model-index-0.1.11 opendatalab-0.0.10 openmim-0.3.9 openxlab-0.1.2 ordered-set-4.1.0 oss2-2.17.0 packaging-24.2 pycryptodome-3.23.0 pytz-2023.4 requests-2.28.2 rich-13.4.2 setuptools-60.2.0 tqdm-4.65.2
+Looking in indexes: http://pypi-cache/index, https://pypi.ngc.nvidia.com
+Looking in links: https://download.openmmlab.com/mmcv/dist/cu117/torch2.0.0/index.html
+Looking in indexes: http://pypi-cache/index, https://pypi.ngc.nvidia.com
+Looking in links: https://download.openmmlab.com/mmcv/dist/cu117/torch2.0.0/index.html
+Looking in indexes: http://pypi-cache/index, https://pypi.ngc.nvidia.com
+Looking in links: https://download.openmmlab.com/mmcv/dist/cu117/torch2.0.0/index.html
+Looking in indexes: http://pypi-cache/index, https://pypi.ngc.nvidia.com
+Looking in links: https://download.openmmlab.com/mmcv/dist/cu117/torch2.0.0/index.html
+Collecting mmcv-full==1.6.0
+  Downloading http://pypi-cache/packages/17/bd/3cf61e29f3dcc80dfad9de055b1385d70d103b47586bd4e1051f1c2d035d/mmcv-full-1.6.0.tar.gz (554 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 554.9/554.9 kB 425.8 MB/s eta 0:00:00
+Collecting mmcv-full==1.6.0
+  Downloading http://pypi-cache/packages/17/bd/3cf61e29f3dcc80dfad9de055b1385d70d103b47586bd4e1051f1c2d035d/mmcv-full-1.6.0.tar.gz (554 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 554.9/554.9 kB 711.2 MB/s eta 0:00:00
+Collecting mmcv-full==1.6.0
+  Downloading http://pypi-cache/packages/17/bd/3cf61e29f3dcc80dfad9de055b1385d70d103b47586bd4e1051f1c2d035d/mmcv-full-1.6.0.tar.gz (554 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 554.9/554.9 kB 736.1 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): started
+Collecting mmcv-full==1.6.0
+  Downloading http://pypi-cache/packages/17/bd/3cf61e29f3dcc80dfad9de055b1385d70d103b47586bd4e1051f1c2d035d/mmcv-full-1.6.0.tar.gz (554 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 554.9/554.9 kB 697.2 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+  Preparing metadata (setup.py): finished with status 'done'
+  Preparing metadata (setup.py): finished with status 'done'
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting addict (from mmcv-full==1.6.0)
+  Downloading http://pypi-cache/packages/6a/00/b08f23b7d7e1e14ce01419a467b583edbb93c6cdb8654e54a9cc579cd61f/addict-2.4.0-py3-none-any.whl.metadata (1.0 kB)
+Requirement already satisfied: numpy in /usr/local/lib/python3.8/dist-packages (from mmcv-full==1.6.0) (1.16.5)
+Requirement already satisfied: packaging in /usr/local/lib/python3.8/dist-packages (from mmcv-full==1.6.0) (24.2)
+Requirement already satisfied: Pillow in /usr/local/lib/python3.8/dist-packages (from mmcv-full==1.6.0) (9.0.1)
+Requirement already satisfied: pyyaml in /usr/local/lib/python3.8/dist-packages (from mmcv-full==1.6.0) (6.0)
+Collecting addict (from mmcv-full==1.6.0)
+  Downloading http://pypi-cache/packages/6a/00/b08f23b7d7e1e14ce01419a467b583edbb93c6cdb8654e54a9cc579cd61f/addict-2.4.0-py3-none-any.whl.metadata (1.0 kB)
+Requirement already satisfied: numpy in /usr/local/lib/python3.8/dist-packages (from mmcv-full==1.6.0) (1.16.5)
+Requirement already satisfied: packaging in /usr/local/lib/python3.8/dist-packages (from mmcv-full==1.6.0) (24.2)
+Requirement already satisfied: Pillow in /usr/local/lib/python3.8/dist-packages (from mmcv-full==1.6.0) (9.0.1)
+Requirement already satisfied: pyyaml in /usr/local/lib/python3.8/dist-packages (from mmcv-full==1.6.0) (6.0)
+Collecting addict (from mmcv-full==1.6.0)
+  Downloading http://pypi-cache/packages/6a/00/b08f23b7d7e1e14ce01419a467b583edbb93c6cdb8654e54a9cc579cd61f/addict-2.4.0-py3-none-any.whl.metadata (1.0 kB)
+Requirement already satisfied: numpy in /usr/local/lib/python3.8/dist-packages (from mmcv-full==1.6.0) (1.16.5)
+Requirement already satisfied: packaging in /usr/local/lib/python3.8/dist-packages (from mmcv-full==1.6.0) (24.2)
+Requirement already satisfied: Pillow in /usr/local/lib/python3.8/dist-packages (from mmcv-full==1.6.0) (9.0.1)
+Requirement already satisfied: pyyaml in /usr/local/lib/python3.8/dist-packages (from mmcv-full==1.6.0) (6.0)
+Collecting addict (from mmcv-full==1.6.0)
+  Downloading http://pypi-cache/packages/6a/00/b08f23b7d7e1e14ce01419a467b583edbb93c6cdb8654e54a9cc579cd61f/addict-2.4.0-py3-none-any.whl.metadata (1.0 kB)
+Requirement already satisfied: numpy in /usr/local/lib/python3.8/dist-packages (from mmcv-full==1.6.0) (1.16.5)
+Requirement already satisfied: packaging in /usr/local/lib/python3.8/dist-packages (from mmcv-full==1.6.0) (24.2)
+Requirement already satisfied: Pillow in /usr/local/lib/python3.8/dist-packages (from mmcv-full==1.6.0) (9.0.1)
+Requirement already satisfied: pyyaml in /usr/local/lib/python3.8/dist-packages (from mmcv-full==1.6.0) (6.0)
+Collecting yapf (from mmcv-full==1.6.0)
+  Downloading http://pypi-cache/packages/37/81/6acd6601f61e31cfb8729d3da6d5df966f80f374b78eff83760714487338/yapf-0.43.0-py3-none-any.whl.metadata (46 kB)
+Collecting yapf (from mmcv-full==1.6.0)
+  Downloading http://pypi-cache/packages/37/81/6acd6601f61e31cfb8729d3da6d5df966f80f374b78eff83760714487338/yapf-0.43.0-py3-none-any.whl.metadata (46 kB)
+Collecting yapf (from mmcv-full==1.6.0)
+  Downloading http://pypi-cache/packages/37/81/6acd6601f61e31cfb8729d3da6d5df966f80f374b78eff83760714487338/yapf-0.43.0-py3-none-any.whl.metadata (46 kB)
+Collecting yapf (from mmcv-full==1.6.0)
+  Downloading http://pypi-cache/packages/37/81/6acd6601f61e31cfb8729d3da6d5df966f80f374b78eff83760714487338/yapf-0.43.0-py3-none-any.whl.metadata (46 kB)
+Collecting opencv-python>=3 (from mmcv-full==1.6.0)
+  Downloading http://pypi-cache/packages/2c/8b/90eb44a40476fa0e71e05a0283947cfd74a5d36121a11d926ad6f3193cc4/opencv_python-4.11.0.86-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (20 kB)
+Collecting opencv-python>=3 (from mmcv-full==1.6.0)
+  Downloading http://pypi-cache/packages/2c/8b/90eb44a40476fa0e71e05a0283947cfd74a5d36121a11d926ad6f3193cc4/opencv_python-4.11.0.86-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (20 kB)
+Collecting numpy (from mmcv-full==1.6.0)
+  Downloading http://pypi-cache/packages/98/5d/5738903efe0ecb73e51eb44feafba32bdba2081263d40c5043568ff60faf/numpy-1.24.4-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (5.6 kB)
+Collecting numpy (from mmcv-full==1.6.0)
+  Downloading http://pypi-cache/packages/98/5d/5738903efe0ecb73e51eb44feafba32bdba2081263d40c5043568ff60faf/numpy-1.24.4-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (5.6 kB)
+Collecting opencv-python>=3 (from mmcv-full==1.6.0)
+  Downloading http://pypi-cache/packages/2c/8b/90eb44a40476fa0e71e05a0283947cfd74a5d36121a11d926ad6f3193cc4/opencv_python-4.11.0.86-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (20 kB)
+Collecting opencv-python>=3 (from mmcv-full==1.6.0)
+  Downloading http://pypi-cache/packages/2c/8b/90eb44a40476fa0e71e05a0283947cfd74a5d36121a11d926ad6f3193cc4/opencv_python-4.11.0.86-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (20 kB)
+Collecting numpy (from mmcv-full==1.6.0)
+  Downloading http://pypi-cache/packages/98/5d/5738903efe0ecb73e51eb44feafba32bdba2081263d40c5043568ff60faf/numpy-1.24.4-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (5.6 kB)
+Collecting numpy (from mmcv-full==1.6.0)
+  Downloading http://pypi-cache/packages/98/5d/5738903efe0ecb73e51eb44feafba32bdba2081263d40c5043568ff60faf/numpy-1.24.4-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (5.6 kB)
+Collecting platformdirs>=3.5.1 (from yapf->mmcv-full==1.6.0)
+  Downloading http://pypi-cache/packages/3c/a6/bc1012356d8ece4d66dd75c4b9fc6c1f6650ddd5991e421177d9f8f671be/platformdirs-4.3.6-py3-none-any.whl.metadata (11 kB)
+Requirement already satisfied: tomli>=2.0.1 in /usr/local/lib/python3.8/dist-packages (from yapf->mmcv-full==1.6.0) (2.0.1)
+Downloading http://pypi-cache/packages/2c/8b/90eb44a40476fa0e71e05a0283947cfd74a5d36121a11d926ad6f3193cc4/opencv_python-4.11.0.86-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (63.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 63.0/63.0 MB 697.6 MB/s eta 0:00:00
+Downloading http://pypi-cache/packages/98/5d/5738903efe0ecb73e51eb44feafba32bdba2081263d40c5043568ff60faf/numpy-1.24.4-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (17.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 17.3/17.3 MB 401.0 MB/s eta 0:00:00
+Downloading http://pypi-cache/packages/6a/00/b08f23b7d7e1e14ce01419a467b583edbb93c6cdb8654e54a9cc579cd61f/addict-2.4.0-py3-none-any.whl (3.8 kB)
+Downloading http://pypi-cache/packages/37/81/6acd6601f61e31cfb8729d3da6d5df966f80f374b78eff83760714487338/yapf-0.43.0-py3-none-any.whl (256 kB)
+Downloading http://pypi-cache/packages/3c/a6/bc1012356d8ece4d66dd75c4b9fc6c1f6650ddd5991e421177d9f8f671be/platformdirs-4.3.6-py3-none-any.whl (18 kB)
+Building wheels for collected packages: mmcv-full
+  Building wheel for mmcv-full (setup.py): started
+Collecting platformdirs>=3.5.1 (from yapf->mmcv-full==1.6.0)
+  Downloading http://pypi-cache/packages/3c/a6/bc1012356d8ece4d66dd75c4b9fc6c1f6650ddd5991e421177d9f8f671be/platformdirs-4.3.6-py3-none-any.whl.metadata (11 kB)
+Requirement already satisfied: tomli>=2.0.1 in /usr/local/lib/python3.8/dist-packages (from yapf->mmcv-full==1.6.0) (2.0.1)
+Downloading http://pypi-cache/packages/2c/8b/90eb44a40476fa0e71e05a0283947cfd74a5d36121a11d926ad6f3193cc4/opencv_python-4.11.0.86-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (63.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 63.0/63.0 MB 689.1 MB/s eta 0:00:00
+Downloading http://pypi-cache/packages/98/5d/5738903efe0ecb73e51eb44feafba32bdba2081263d40c5043568ff60faf/numpy-1.24.4-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (17.3 MB)
+Collecting platformdirs>=3.5.1 (from yapf->mmcv-full==1.6.0)
+  Downloading http://pypi-cache/packages/3c/a6/bc1012356d8ece4d66dd75c4b9fc6c1f6650ddd5991e421177d9f8f671be/platformdirs-4.3.6-py3-none-any.whl.metadata (11 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 17.3/17.3 MB 703.2 MB/s eta 0:00:00
+Requirement already satisfied: tomli>=2.0.1 in /usr/local/lib/python3.8/dist-packages (from yapf->mmcv-full==1.6.0) (2.0.1)
+Downloading http://pypi-cache/packages/6a/00/b08f23b7d7e1e14ce01419a467b583edbb93c6cdb8654e54a9cc579cd61f/addict-2.4.0-py3-none-any.whl (3.8 kB)
+Downloading http://pypi-cache/packages/37/81/6acd6601f61e31cfb8729d3da6d5df966f80f374b78eff83760714487338/yapf-0.43.0-py3-none-any.whl (256 kB)
+Downloading http://pypi-cache/packages/2c/8b/90eb44a40476fa0e71e05a0283947cfd74a5d36121a11d926ad6f3193cc4/opencv_python-4.11.0.86-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (63.0 MB)
+Downloading http://pypi-cache/packages/3c/a6/bc1012356d8ece4d66dd75c4b9fc6c1f6650ddd5991e421177d9f8f671be/platformdirs-4.3.6-py3-none-any.whl (18 kB)
+Building wheels for collected packages: mmcv-full
+  Building wheel for mmcv-full (setup.py): started
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 63.0/63.0 MB 681.1 MB/s eta 0:00:00
+Downloading http://pypi-cache/packages/98/5d/5738903efe0ecb73e51eb44feafba32bdba2081263d40c5043568ff60faf/numpy-1.24.4-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (17.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 17.3/17.3 MB 690.2 MB/s eta 0:00:00
+Downloading http://pypi-cache/packages/6a/00/b08f23b7d7e1e14ce01419a467b583edbb93c6cdb8654e54a9cc579cd61f/addict-2.4.0-py3-none-any.whl (3.8 kB)
+Downloading http://pypi-cache/packages/37/81/6acd6601f61e31cfb8729d3da6d5df966f80f374b78eff83760714487338/yapf-0.43.0-py3-none-any.whl (256 kB)
+Downloading http://pypi-cache/packages/3c/a6/bc1012356d8ece4d66dd75c4b9fc6c1f6650ddd5991e421177d9f8f671be/platformdirs-4.3.6-py3-none-any.whl (18 kB)
+Collecting platformdirs>=3.5.1 (from yapf->mmcv-full==1.6.0)
+  Downloading http://pypi-cache/packages/3c/a6/bc1012356d8ece4d66dd75c4b9fc6c1f6650ddd5991e421177d9f8f671be/platformdirs-4.3.6-py3-none-any.whl.metadata (11 kB)
+Requirement already satisfied: tomli>=2.0.1 in /usr/local/lib/python3.8/dist-packages (from yapf->mmcv-full==1.6.0) (2.0.1)
+Downloading http://pypi-cache/packages/2c/8b/90eb44a40476fa0e71e05a0283947cfd74a5d36121a11d926ad6f3193cc4/opencv_python-4.11.0.86-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (63.0 MB)
+Building wheels for collected packages: mmcv-full
+  Building wheel for mmcv-full (setup.py): started
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 63.0/63.0 MB 684.7 MB/s eta 0:00:00
+Downloading http://pypi-cache/packages/98/5d/5738903efe0ecb73e51eb44feafba32bdba2081263d40c5043568ff60faf/numpy-1.24.4-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (17.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 17.3/17.3 MB 683.2 MB/s eta 0:00:00
+Downloading http://pypi-cache/packages/6a/00/b08f23b7d7e1e14ce01419a467b583edbb93c6cdb8654e54a9cc579cd61f/addict-2.4.0-py3-none-any.whl (3.8 kB)
+Downloading http://pypi-cache/packages/37/81/6acd6601f61e31cfb8729d3da6d5df966f80f374b78eff83760714487338/yapf-0.43.0-py3-none-any.whl (256 kB)
+Downloading http://pypi-cache/packages/3c/a6/bc1012356d8ece4d66dd75c4b9fc6c1f6650ddd5991e421177d9f8f671be/platformdirs-4.3.6-py3-none-any.whl (18 kB)
+Building wheels for collected packages: mmcv-full
+  Building wheel for mmcv-full (setup.py): started
+  Building wheel for mmcv-full (setup.py): still running...
+  Building wheel for mmcv-full (setup.py): still running...
+  Building wheel for mmcv-full (setup.py): still running...
+  Building wheel for mmcv-full (setup.py): still running...
+  Building wheel for mmcv-full (setup.py): still running...
+  Building wheel for mmcv-full (setup.py): still running...
+  Building wheel for mmcv-full (setup.py): finished with status 'done'
+  Created wheel for mmcv-full: filename=mmcv_full-1.6.0-cp38-cp38-linux_x86_64.whl size=28131482 sha256=c76aabd608ea074a83ef7898eb5eccbad83cdd3ab20896437cb5ac786e6c48f0
+  Stored in directory: /tmp/pip-ephem-wheel-cache-f_vzec75/wheels/d5/8c/65/001f9a2318c13bd21fd43b627b0b244f73ffa274fba34aaa71
+Successfully built mmcv-full
+  Building wheel for mmcv-full (setup.py): finished with status 'done'
+  Created wheel for mmcv-full: filename=mmcv_full-1.6.0-cp38-cp38-linux_x86_64.whl size=28131058 sha256=077691537ccc4960fc6cfb4f2e91dae9c47680896b593f056ecb6b79861d060e
+  Stored in directory: /tmp/pip-ephem-wheel-cache-_d3wb7cw/wheels/d5/8c/65/001f9a2318c13bd21fd43b627b0b244f73ffa274fba34aaa71
+Successfully built mmcv-full
+Installing collected packages: addict, platformdirs, numpy, yapf, opencv-python, mmcv-full
+  Attempting uninstall: platformdirs
+    Found existing installation: platformdirs 2.5.4
+    Uninstalling platformdirs-2.5.4:
+      Successfully uninstalled platformdirs-2.5.4
+  Attempting uninstall: numpy
+    Found existing installation: numpy 1.16.5
+    Uninstalling numpy-1.16.5:
+      Successfully uninstalled numpy-1.16.5
+Installing collected packages: addict, platformdirs, numpy, yapf, opencv-python, mmcv-full
+  Attempting uninstall: platformdirs
+    Found existing installation: platformdirs 2.5.4
+    Can't uninstall 'platformdirs'. No files were found to uninstall.
+  Attempting uninstall: numpy
+    Found existing installation: numpy 1.16.5
+    Can't uninstall 'numpy'. No files were found to uninstall.
+Successfully installed addict-2.4.0 mmcv-full-1.6.0 numpy-1.24.4 opencv-python-4.11.0.86 platformdirs-4.3.6 yapf-0.43.0
+Successfully installed addict-2.4.0 mmcv-full-1.6.0 numpy-1.24.4 opencv-python-4.11.0.86 platformdirs-4.3.6 yapf-0.43.0
+  Building wheel for mmcv-full (setup.py): finished with status 'done'
+  Created wheel for mmcv-full: filename=mmcv_full-1.6.0-cp38-cp38-linux_x86_64.whl size=28129904 sha256=148d2d6e3e9c83479d99ab76da2269bfe4732fe6916c9aeae70b8284588862dc
+  Stored in directory: /tmp/pip-ephem-wheel-cache-ivcrluys/wheels/d5/8c/65/001f9a2318c13bd21fd43b627b0b244f73ffa274fba34aaa71
+Successfully built mmcv-full
+Installing collected packages: addict, platformdirs, numpy, yapf, opencv-python, mmcv-full
+  Attempting uninstall: platformdirs
+    Found existing installation: platformdirs 2.5.4
+    Can't uninstall 'platformdirs'. No files were found to uninstall.
+  Attempting uninstall: numpy
+    Found existing installation: numpy 1.16.5
+    Can't uninstall 'numpy'. No files were found to uninstall.
+Looking in indexes: http://pypi-cache/index, https://pypi.ngc.nvidia.com
+Looking in indexes: http://pypi-cache/index, https://pypi.ngc.nvidia.com
+Collecting fvcore
+  Downloading http://pypi-cache/packages/a5/93/d056a9c4efc6c79ba7b5159cc66bb436db93d2cc46dca18ed65c59cc8e4e/fvcore-0.1.5.post20221221.tar.gz (50 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Successfully installed addict-2.4.0 mmcv-full-1.6.0 numpy-1.24.4 opencv-python-4.11.0.86 platformdirs-4.3.6 yapf-0.43.0
+Collecting fvcore
+  Downloading http://pypi-cache/packages/a5/93/d056a9c4efc6c79ba7b5159cc66bb436db93d2cc46dca18ed65c59cc8e4e/fvcore-0.1.5.post20221221.tar.gz (50 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting iopath
+  Downloading http://pypi-cache/packages/72/73/b3d451dfc523756cf177d3ebb0af76dc7751b341c60e2a21871be400ae29/iopath-0.1.10.tar.gz (42 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting iopath
+  Downloading http://pypi-cache/packages/72/73/b3d451dfc523756cf177d3ebb0af76dc7751b341c60e2a21871be400ae29/iopath-0.1.10.tar.gz (42 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting einops
+  Downloading http://pypi-cache/packages/87/62/9773de14fe6c45c23649e98b83231fffd7b9892b6cf863251dc2afa73643/einops-0.8.1-py3-none-any.whl.metadata (13 kB)
+Requirement already satisfied: numpy in /usr/local/lib/python3.8/dist-packages (from fvcore) (1.24.4)
+Collecting einops
+  Downloading http://pypi-cache/packages/87/62/9773de14fe6c45c23649e98b83231fffd7b9892b6cf863251dc2afa73643/einops-0.8.1-py3-none-any.whl.metadata (13 kB)
+Requirement already satisfied: numpy in /usr/local/lib/python3.8/dist-packages (from fvcore) (1.24.4)
+Looking in indexes: http://pypi-cache/index, https://pypi.ngc.nvidia.com
+Collecting fvcore
+  Downloading http://pypi-cache/packages/a5/93/d056a9c4efc6c79ba7b5159cc66bb436db93d2cc46dca18ed65c59cc8e4e/fvcore-0.1.5.post20221221.tar.gz (50 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting iopath
+  Downloading http://pypi-cache/packages/72/73/b3d451dfc523756cf177d3ebb0af76dc7751b341c60e2a21871be400ae29/iopath-0.1.10.tar.gz (42 kB)
+  Preparing metadata (setup.py): started
+  Building wheel for mmcv-full (setup.py): still running...
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting einops
+  Downloading http://pypi-cache/packages/87/62/9773de14fe6c45c23649e98b83231fffd7b9892b6cf863251dc2afa73643/einops-0.8.1-py3-none-any.whl.metadata (13 kB)
+Requirement already satisfied: numpy in /usr/local/lib/python3.8/dist-packages (from fvcore) (1.24.4)
+Collecting yacs>=0.1.6 (from fvcore)
+  Downloading http://pypi-cache/packages/38/4f/fe9a4d472aa867878ce3bb7efb16654c5d63672b86dc0e6e953a67018433/yacs-0.1.8-py3-none-any.whl.metadata (639 bytes)
+Requirement already satisfied: pyyaml>=5.1 in /usr/local/lib/python3.8/dist-packages (from fvcore) (6.0)
+Requirement already satisfied: tqdm in /usr/local/lib/python3.8/dist-packages (from fvcore) (4.65.2)
+Collecting yacs>=0.1.6 (from fvcore)
+  Downloading http://pypi-cache/packages/38/4f/fe9a4d472aa867878ce3bb7efb16654c5d63672b86dc0e6e953a67018433/yacs-0.1.8-py3-none-any.whl.metadata (639 bytes)
+Requirement already satisfied: pyyaml>=5.1 in /usr/local/lib/python3.8/dist-packages (from fvcore) (6.0)
+Requirement already satisfied: tqdm in /usr/local/lib/python3.8/dist-packages (from fvcore) (4.65.2)
+Collecting yacs>=0.1.6 (from fvcore)
+  Downloading http://pypi-cache/packages/38/4f/fe9a4d472aa867878ce3bb7efb16654c5d63672b86dc0e6e953a67018433/yacs-0.1.8-py3-none-any.whl.metadata (639 bytes)
+Requirement already satisfied: pyyaml>=5.1 in /usr/local/lib/python3.8/dist-packages (from fvcore) (6.0)
+Requirement already satisfied: tqdm in /usr/local/lib/python3.8/dist-packages (from fvcore) (4.65.2)
+Collecting termcolor>=1.1 (from fvcore)
+  Downloading http://pypi-cache/packages/d9/5f/8c716e47b3a50cbd7c146f45881e11d9414def768b7cd9c5e6650ec2a80a/termcolor-2.4.0-py3-none-any.whl.metadata (6.1 kB)
+Requirement already satisfied: Pillow in /usr/local/lib/python3.8/dist-packages (from fvcore) (9.0.1)
+Requirement already satisfied: tabulate in /usr/local/lib/python3.8/dist-packages (from fvcore) (0.9.0)
+Requirement already satisfied: typing_extensions in /usr/local/lib/python3.8/dist-packages (from iopath) (4.4.0)
+Collecting termcolor>=1.1 (from fvcore)
+  Downloading http://pypi-cache/packages/d9/5f/8c716e47b3a50cbd7c146f45881e11d9414def768b7cd9c5e6650ec2a80a/termcolor-2.4.0-py3-none-any.whl.metadata (6.1 kB)
+Requirement already satisfied: Pillow in /usr/local/lib/python3.8/dist-packages (from fvcore) (9.0.1)
+Requirement already satisfied: tabulate in /usr/local/lib/python3.8/dist-packages (from fvcore) (0.9.0)
+Requirement already satisfied: typing_extensions in /usr/local/lib/python3.8/dist-packages (from iopath) (4.4.0)
+Collecting termcolor>=1.1 (from fvcore)
+  Downloading http://pypi-cache/packages/d9/5f/8c716e47b3a50cbd7c146f45881e11d9414def768b7cd9c5e6650ec2a80a/termcolor-2.4.0-py3-none-any.whl.metadata (6.1 kB)
+Requirement already satisfied: Pillow in /usr/local/lib/python3.8/dist-packages (from fvcore) (9.0.1)
+Requirement already satisfied: tabulate in /usr/local/lib/python3.8/dist-packages (from fvcore) (0.9.0)
+Requirement already satisfied: typing_extensions in /usr/local/lib/python3.8/dist-packages (from iopath) (4.4.0)
+Collecting portalocker (from iopath)
+  Downloading http://pypi-cache/packages/3d/4c/4cb6bb4061910ac74c444be76e7d17dba97d9057030cca2f96947c3f7a0f/portalocker-3.0.0-py3-none-any.whl.metadata (8.5 kB)
+Downloading http://pypi-cache/packages/87/62/9773de14fe6c45c23649e98b83231fffd7b9892b6cf863251dc2afa73643/einops-0.8.1-py3-none-any.whl (64 kB)
+Downloading http://pypi-cache/packages/d9/5f/8c716e47b3a50cbd7c146f45881e11d9414def768b7cd9c5e6650ec2a80a/termcolor-2.4.0-py3-none-any.whl (7.7 kB)
+Downloading http://pypi-cache/packages/38/4f/fe9a4d472aa867878ce3bb7efb16654c5d63672b86dc0e6e953a67018433/yacs-0.1.8-py3-none-any.whl (14 kB)
+Downloading http://pypi-cache/packages/3d/4c/4cb6bb4061910ac74c444be76e7d17dba97d9057030cca2f96947c3f7a0f/portalocker-3.0.0-py3-none-any.whl (19 kB)
+Building wheels for collected packages: fvcore, iopath
+  Building wheel for fvcore (setup.py): started
+Collecting portalocker (from iopath)
+  Downloading http://pypi-cache/packages/3d/4c/4cb6bb4061910ac74c444be76e7d17dba97d9057030cca2f96947c3f7a0f/portalocker-3.0.0-py3-none-any.whl.metadata (8.5 kB)
+Downloading http://pypi-cache/packages/87/62/9773de14fe6c45c23649e98b83231fffd7b9892b6cf863251dc2afa73643/einops-0.8.1-py3-none-any.whl (64 kB)
+Downloading http://pypi-cache/packages/d9/5f/8c716e47b3a50cbd7c146f45881e11d9414def768b7cd9c5e6650ec2a80a/termcolor-2.4.0-py3-none-any.whl (7.7 kB)
+  Building wheel for fvcore (setup.py): finished with status 'done'
+  Created wheel for fvcore: filename=fvcore-0.1.5.post20221221-py3-none-any.whl size=61431 sha256=e6909405871adf387b0ed9ed10b4eecd90c97e4d3370c6e4f8717bd04ee01c84
+  Stored in directory: /tmp/pip-ephem-wheel-cache-2xdtzw4u/wheels/4f/df/18/f44ed114b5816829930ed7b91cd9bb654c82f20e07c299f4c1
+Downloading http://pypi-cache/packages/38/4f/fe9a4d472aa867878ce3bb7efb16654c5d63672b86dc0e6e953a67018433/yacs-0.1.8-py3-none-any.whl (14 kB)
+  Building wheel for iopath (setup.py): started
+Downloading http://pypi-cache/packages/3d/4c/4cb6bb4061910ac74c444be76e7d17dba97d9057030cca2f96947c3f7a0f/portalocker-3.0.0-py3-none-any.whl (19 kB)
+Building wheels for collected packages: fvcore, iopath
+  Building wheel for fvcore (setup.py): started
+Collecting portalocker (from iopath)
+  Downloading http://pypi-cache/packages/3d/4c/4cb6bb4061910ac74c444be76e7d17dba97d9057030cca2f96947c3f7a0f/portalocker-3.0.0-py3-none-any.whl.metadata (8.5 kB)
+Downloading http://pypi-cache/packages/87/62/9773de14fe6c45c23649e98b83231fffd7b9892b6cf863251dc2afa73643/einops-0.8.1-py3-none-any.whl (64 kB)
+Downloading http://pypi-cache/packages/d9/5f/8c716e47b3a50cbd7c146f45881e11d9414def768b7cd9c5e6650ec2a80a/termcolor-2.4.0-py3-none-any.whl (7.7 kB)
+Downloading http://pypi-cache/packages/38/4f/fe9a4d472aa867878ce3bb7efb16654c5d63672b86dc0e6e953a67018433/yacs-0.1.8-py3-none-any.whl (14 kB)
+Downloading http://pypi-cache/packages/3d/4c/4cb6bb4061910ac74c444be76e7d17dba97d9057030cca2f96947c3f7a0f/portalocker-3.0.0-py3-none-any.whl (19 kB)
+Building wheels for collected packages: fvcore, iopath
+  Building wheel for fvcore (setup.py): started
+  Building wheel for iopath (setup.py): finished with status 'done'
+  Created wheel for iopath: filename=iopath-0.1.10-py3-none-any.whl size=31547 sha256=3e8f729dfe9aee5c1b280d3a59b60b218be94da16668d091e4e2e322fd30d348
+  Stored in directory: /tmp/pip-ephem-wheel-cache-2xdtzw4u/wheels/4b/8e/74/b5e44943bda300dc7f6cc14cee373107e6fc0a6e765131a968
+Successfully built fvcore iopath
+  Building wheel for fvcore (setup.py): finished with status 'done'
+  Created wheel for fvcore: filename=fvcore-0.1.5.post20221221-py3-none-any.whl size=61431 sha256=e6909405871adf387b0ed9ed10b4eecd90c97e4d3370c6e4f8717bd04ee01c84
+  Stored in directory: /tmp/pip-ephem-wheel-cache-sn54jkmb/wheels/4f/df/18/f44ed114b5816829930ed7b91cd9bb654c82f20e07c299f4c1
+  Building wheel for iopath (setup.py): started
+  Building wheel for fvcore (setup.py): finished with status 'done'
+  Created wheel for fvcore: filename=fvcore-0.1.5.post20221221-py3-none-any.whl size=61431 sha256=e6909405871adf387b0ed9ed10b4eecd90c97e4d3370c6e4f8717bd04ee01c84
+  Stored in directory: /tmp/pip-ephem-wheel-cache-3zu3v9sv/wheels/4f/df/18/f44ed114b5816829930ed7b91cd9bb654c82f20e07c299f4c1
+  Building wheel for iopath (setup.py): started
+  Building wheel for iopath (setup.py): finished with status 'done'
+  Created wheel for iopath: filename=iopath-0.1.10-py3-none-any.whl size=31547 sha256=3e8f729dfe9aee5c1b280d3a59b60b218be94da16668d091e4e2e322fd30d348
+  Stored in directory: /tmp/pip-ephem-wheel-cache-sn54jkmb/wheels/4b/8e/74/b5e44943bda300dc7f6cc14cee373107e6fc0a6e765131a968
+Successfully built fvcore iopath
+  Building wheel for iopath (setup.py): finished with status 'done'
+  Created wheel for iopath: filename=iopath-0.1.10-py3-none-any.whl size=31547 sha256=7d6d93a917be60e01c80eb75acd1b3c179cef6387b2924203f731e4f7b4d736c
+  Stored in directory: /tmp/pip-ephem-wheel-cache-3zu3v9sv/wheels/4b/8e/74/b5e44943bda300dc7f6cc14cee373107e6fc0a6e765131a968
+Successfully built fvcore iopath
+Installing collected packages: yacs, termcolor, portalocker, einops, iopath, fvcore
+Successfully installed einops-0.8.1 fvcore-0.1.5.post20221221 iopath-0.1.10 portalocker-3.0.0 termcolor-2.4.0 yacs-0.1.8
+Installing collected packages: yacs, termcolor, portalocker, einops, iopath, fvcore
+Installing collected packages: yacs, termcolor, portalocker, einops, iopath, fvcore
+Successfully installed einops-0.8.1 fvcore-0.1.5.post20221221 iopath-0.1.10 portalocker-3.0.0 termcolor-2.4.0 yacs-0.1.8
+Successfully installed einops-0.8.1 fvcore-0.1.5.post20221221 iopath-0.1.10 portalocker-3.0.0 termcolor-2.4.0 yacs-0.1.8
+  Building wheel for mmcv-full (setup.py): still running...
+  Building wheel for mmcv-full (setup.py): still running...
+  Building wheel for mmcv-full (setup.py): still running...
+  Building wheel for mmcv-full (setup.py): still running...
+  Building wheel for mmcv-full (setup.py): still running...
+  Building wheel for mmcv-full (setup.py): still running...
+  Building wheel for mmcv-full (setup.py): still running...
+  Building wheel for mmcv-full (setup.py): still running...
+  Building wheel for mmcv-full (setup.py): still running...
+  Building wheel for mmcv-full (setup.py): still running...
+  Building wheel for mmcv-full (setup.py): finished with status 'done'
+  Created wheel for mmcv-full: filename=mmcv_full-1.6.0-cp38-cp38-linux_x86_64.whl size=40320580 sha256=cdaca2c4dc9466c8b1eee3be82f20e146e1bb4604a0c394a5c36f1b33644d942
+  Stored in directory: /tmp/pip-ephem-wheel-cache-idz25_wx/wheels/d5/8c/65/001f9a2318c13bd21fd43b627b0b244f73ffa274fba34aaa71
+Successfully built mmcv-full
+Installing collected packages: addict, platformdirs, numpy, yapf, opencv-python, mmcv-full
+  Attempting uninstall: platformdirs
+    Found existing installation: platformdirs 2.5.4
+    Can't uninstall 'platformdirs'. No files were found to uninstall.
+  Attempting uninstall: numpy
+    Found existing installation: numpy 1.16.5
+    Can't uninstall 'numpy'. No files were found to uninstall.
+Successfully installed addict-2.4.0 mmcv-full-1.6.0 numpy-1.24.4 opencv-python-4.11.0.86 platformdirs-4.3.6 yapf-0.43.0
+Looking in indexes: http://pypi-cache/index, https://pypi.ngc.nvidia.com
+Requirement already satisfied: fvcore in /usr/local/lib/python3.8/dist-packages (0.1.5.post20221221)
+Requirement already satisfied: iopath in /usr/local/lib/python3.8/dist-packages (0.1.10)
+Requirement already satisfied: einops in /usr/local/lib/python3.8/dist-packages (0.8.1)
+Requirement already satisfied: numpy in /usr/local/lib/python3.8/dist-packages (from fvcore) (1.24.4)
+Requirement already satisfied: yacs>=0.1.6 in /usr/local/lib/python3.8/dist-packages (from fvcore) (0.1.8)
+Requirement already satisfied: pyyaml>=5.1 in /usr/local/lib/python3.8/dist-packages (from fvcore) (6.0)
+Requirement already satisfied: tqdm in /usr/local/lib/python3.8/dist-packages (from fvcore) (4.65.2)
+Requirement already satisfied: termcolor>=1.1 in /usr/local/lib/python3.8/dist-packages (from fvcore) (2.4.0)
+Requirement already satisfied: Pillow in /usr/local/lib/python3.8/dist-packages (from fvcore) (9.0.1)
+Requirement already satisfied: tabulate in /usr/local/lib/python3.8/dist-packages (from fvcore) (0.9.0)
+Requirement already satisfied: typing-extensions in /usr/local/lib/python3.8/dist-packages (from iopath) (4.4.0)
+Requirement already satisfied: portalocker in /usr/local/lib/python3.8/dist-packages (from iopath) (3.0.0)

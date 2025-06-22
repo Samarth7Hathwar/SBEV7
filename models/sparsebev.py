@@ -245,7 +245,6 @@ plt.close()
             augmented_radar[0] = augmented_radar[0].unsqueeze(1)
         # ptss_context, ptss_occupancy, _ = self.backbone_pts(augmented_radar[0])   #DARC
         ptss_context, _ = self.backbone_pts(augmented_radar[0])     #take output of neck
-        
         img_feats = self.extract_feat(img, img_metas)   #sbev
 
         # camera features + radar features
@@ -280,8 +279,21 @@ plt.close()
         curr_cam_feats=[]
         for feat_index in range(0,len(ptss_context)):
             radar_feat = ptss_context[feat_index].permute(1, 0, 2, 3, 4)
-            radar_feats.append(self.reshape_samples(radar_feat))
-            curr_cam_feats.append(img_feats[feat_index][:,:6,:,:,:])
+            #radar_feats.append(self.reshape_samples(radar_feat))
+
+            # Sam : I am adding here
+            radar_feat_reshaped = self.reshape_samples(radar_feat)
+            # Flipping Vertically
+            #radar_feat_reshaped = torch.flip(radar_feat_reshaped, dims=[-2])
+            radar_feats.append(radar_feat_reshaped)
+            cam_feat = img_feats[feat_index][:, :6, :, :, :]
+            curr_cam_feats.append(cam_feat)
+            #print(f"Level {feat_index} - Radar Feat Shape: {radar_feat_reshaped.shape}")  # Should be [B, 6, C, H, W]
+            #print(f"Level {feat_index} - Camera Feat Shape: {cam_feat.shape}")            # Should be [B, 6, C, H, W]
+            # Sam : Ending here
+
+            #radar_feats.append(cam_feat)
+            #curr_cam_feats.append(img_feats[feat_index][:,:6,:,:,:])
 
         fused_feats = self.fuser(curr_cam_feats, radar_feats)
 
@@ -293,7 +305,6 @@ plt.close()
             img_metas[i]['gt_labels_3d'] = gt_labels_3d[i]
 
         losses = self.forward_pts_train(img_feats, gt_bboxes_3d, gt_labels_3d, img_metas, gt_bboxes_ignore)
-        
         return losses
 
     def reshape_samples(self, radar_samples, samples_per_batch=6):
@@ -350,6 +361,7 @@ plt.close()
 
         for feat_index in range(0,len(fused_feats)):
             img_feats[feat_index][:,:6,:,:,:] = fused_feats[feat_index]
+        
 
         bbox_list = [dict() for _ in range(len(img_metas))]
         bbox_pts = self.simple_test_pts(img_feats, img_metas, rescale=rescale)
@@ -433,6 +445,43 @@ plt.close()
             curr_cam_feats.append(img_feats[feat_index][:,:6,:,:,:])
 
         fused_feats = self.fuser(curr_cam_feats, radar_feats)
+
+
+        # SAM add here start
+        # ===== Debugging: Visualize Camera vs Radar Features After Fusion =====
+        import matplotlib.pyplot as plt
+        import os
+
+        # Create output directory if not exists
+        os.makedirs("/netscratch/hathwar/guided_research/SparseBEV7_Radar_S5_withNeck/images/experiment1", exist_ok=True)
+        # Choose which level (scale) and view (camera index) to visualize
+        level_to_plot = 1  # You can change this to 0,1,2,3
+        view_idx = 4       # Change between 0–5 depending on which camera
+
+        # Take camera feature (before fusion)
+        cam_feat = curr_cam_feats[level_to_plot][0][view_idx].mean(dim=0).cpu().detach().numpy()
+
+        # Take radar feature (reshaped, before fusion)
+        radar_feat = radar_feats[level_to_plot][0][view_idx].mean(dim=0).cpu().detach().numpy()
+
+        # Plot
+        plt.figure(figsize=(10, 5))
+        plt.subplot(1, 2, 1)
+        plt.title(f'Camera View {view_idx} - Level {level_to_plot}')
+        plt.imshow(cam_feat, cmap='viridis')
+        plt.colorbar()
+
+        plt.subplot(1, 2, 2)
+        plt.title(f'Radar View {view_idx} - Level {level_to_plot}')
+        plt.imshow(radar_feat, cmap='viridis')
+        plt.colorbar()
+
+        plt.tight_layout()
+        plt.savefig(f'/netscratch/hathwar/guided_research/SparseBEV7_Radar_S5_withNeck/images/experiment1/cam_radar_feat_L{level_to_plot}_V{view_idx}.png')
+        plt.close()
+
+        # SAM Add ends here
+
 
         for feat_index in range(0,len(fused_feats)):
             img_feats[feat_index][:,:6,:,:,:] = fused_feats[feat_index]
